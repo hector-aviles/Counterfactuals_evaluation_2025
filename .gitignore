@@ -4,7 +4,8 @@
 *.net
 *.csv
 *.png
-
+.~lock.train_fold_*.*
+*.txt
 
 # LaTeX intermediates
 *.aux

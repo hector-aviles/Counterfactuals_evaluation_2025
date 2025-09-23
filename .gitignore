@@ -1,0 +1,17 @@
+*.pl
+*.ps
+*.dot
+*.net
+*.csv
+*.png
+
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+
+# Python bytecode and cache
+*.pyc
+__pycache__/
+

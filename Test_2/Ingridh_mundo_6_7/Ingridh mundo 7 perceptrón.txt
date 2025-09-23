@@ -1,0 +1,33 @@
+Ingridh mundo 7 perceptrón 
+1	si chocó
+2	no
+3	no
+4	no
+5 	Si chocó
+6	no
+7	no
+8	si chocó
+9	si chocó
+10	si chocó
+11	si chocó
+12	no
+13	no
+14	no
+15	si chocó
+16	no
+17	si chocó
+18	si chocó
+19	si chocó
+20	no
+21	no
+22	no
+23	si chocó
+24	no
+25	no	
+26	no
+27	no
+28	si chocó
+29	no
+30	no
+31	no
+

@@ -1,0 +1,14 @@
+
+
+World    &   MLP  &     MLP+PLTNs \\ 
+World 1  &   4    &        30   \\ 
+World 2  &   0    &        30   \\
+World 3  &   1    &        27   \\
+World 4  &   0    &        30   \\   
+World 5  &   0    &        30   \\  
+World 6  &   0    &        1    \\
+World 7  &   18   &        30    \\ 
+World 8  &   0    &        23   \\ 
+
+
+

@@ -1,0 +1,4569 @@
+#########################################################
+perceptron straight_road_left
+#########################################################
+
+
+#1
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/8b13ae30-c6e8-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1397019.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:37141/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1397050]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 8b13ae30-c6e8-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1397084]
+started core service [/rosout]
+process[webots-2]: started with pid [1397087]
+process[lane_detector-3]: started with pid [1397088]
+process[obstacle_detector-4]: started with pid [1397099]
+process[behaviors-5]: started with pid [1397108]
+process[crash_detector-6]: started with pid [1397114]
+process[stop-7]: started with pid [1397127]
+process[lane_identification-8]: started with pid [1397145]
+process[car_to_lidar-9]: started with pid [1397171]
+process[car_to_camera-10]: started with pid [1397195]
+process[car_to_gyro-11]: started with pid [1397217]
+process[car_to_accelerometer-12]: started with pid [1397253]
+process[car_to_gps-13]: started with pid [1397284]
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Starting change lane on right
+Crash detected accel diff =  161.70412034924124
+STOP: Starting system shutdown...
+Crash detected accel diff =  169.07325891425526
+Crash detected accel diff =  244.80699162480624
+Crash detected accel diff =  262.7164057283758
+ERROR: Unknown node(s):
+ * /policy
+Crash detected accel diff =  154.6147742995088
+Crash detected accel diff =  113.65747124654004
+Moving to left to align with right lane
+ERROR: Unknown node(s):
+ * /logger
+Crash detected accel diff =  408.7632814280052
+Crash detected accel diff =  567.5148050907444
+Change lane on right finished
+Crash detected accel diff =  162.430650543432
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+ERROR: Unknown node(s):
+ * /behaviors
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_detector
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': True, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=change_to_right
+Waiting for the action change_to_right to finish...
+
+#########################################################
+
+#2
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/ddeab996-c6e8-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1398924.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:45181/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1398955]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to ddeab996-c6e8-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1398988]
+started core service [/rosout]
+process[webots-2]: started with pid [1398991]
+process[lane_detector-3]: started with pid [1398996]
+process[obstacle_detector-4]: started with pid [1399003]
+process[behaviors-5]: started with pid [1399012]
+process[crash_detector-6]: started with pid [1399022]
+process[stop-7]: started with pid [1399035]
+process[lane_identification-8]: started with pid [1399055]
+process[car_to_lidar-9]: started with pid [1399079]
+process[car_to_camera-10]: started with pid [1399105]
+process[car_to_gyro-11]: started with pid [1399134]
+process[car_to_accelerometer-12]: started with pid [1399165]
+process[car_to_gps-13]: started with pid [1399197]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  114.00438358381012
+STOP: Starting system shutdown...
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/ddeab996-c6e8-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/ddeab996-c6e8-11ef-adc8-39205c988c9a/lane_detector-3*.log
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/ddeab996-c6e8-11ef-adc8-39205c988c9a/lane_identification-8*.log
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+killing /obstacle_detector
+shutdown request: user request
+killed
+[obstacle_detector-4] process has finished cleanly
+log file: /home/robocup/.ros/log/ddeab996-c6e8-11ef-adc8-39205c988c9a/obstacle_detector-4*.log
+killing /crash_detector
+shutdown request: user request
+killed
+[crash_detector-6] process has finished cleanly
+log file: /home/robocup/.ros/log/ddeab996-c6e8-11ef-adc8-39205c988c9a/crash_detector-6*.log
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+^Ckilled
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[stop-7] killing on exit
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+
+#########################################################
+
+#3
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/3b798678-c6e9-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1400950.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:46219/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1400981]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 3b798678-c6e9-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1401014]
+started core service [/rosout]
+process[webots-2]: started with pid [1401017]
+process[lane_detector-3]: started with pid [1401022]
+process[obstacle_detector-4]: started with pid [1401024]
+process[behaviors-5]: started with pid [1401031]
+process[crash_detector-6]: started with pid [1401039]
+process[stop-7]: started with pid [1401051]
+process[lane_identification-8]: started with pid [1401062]
+process[car_to_lidar-9]: started with pid [1401076]
+process[car_to_camera-10]: started with pid [1401090]
+process[car_to_gyro-11]: started with pid [1401108]
+process[car_to_accelerometer-12]: started with pid [1401131]
+process[car_to_gps-13]: started with pid [1401161]
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  145.73921187515097
+STOP: Starting system shutdown...
+Crash detected accel diff =  145.46221439012845
+killing /policy
+Crash detected accel diff =  127.85663401789587
+Crash detected accel diff =  122.84202210831917
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/3b798678-c6e9-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/3b798678-c6e9-11ef-adc8-39205c988c9a/lane_detector-3*.log
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/3b798678-c6e9-11ef-adc8-39205c988c9a/lane_identification-8*.log
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+killing /obstacle_detector
+shutdown request: user request
+killed
+[obstacle_detector-4] process has finished cleanly
+log file: /home/robocup/.ros/log/3b798678-c6e9-11ef-adc8-39205c988c9a/obstacle_detector-4*.log
+killing /crash_detector
+shutdown request: user request
+killed
+[crash_detector-6] process has finished cleanly
+log file: /home/robocup/.ros/log/3b798678-c6e9-11ef-adc8-39205c988c9a/crash_detector-6*.log
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[stop-7] process has finished cleanly
+log file: /home/robocup/.ros/log/3b798678-c6e9-11ef-adc8-39205c988c9a/stop-7*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#4
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/7e15cd20-c6e9-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1402853.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:43519/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1402884]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 7e15cd20-c6e9-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1402917]
+started core service [/rosout]
+process[webots-2]: started with pid [1402920]
+process[lane_detector-3]: started with pid [1402922]
+process[obstacle_detector-4]: started with pid [1402926]
+process[behaviors-5]: started with pid [1402933]
+process[crash_detector-6]: started with pid [1402941]
+process[stop-7]: started with pid [1402953]
+process[lane_identification-8]: started with pid [1402971]
+process[car_to_lidar-9]: started with pid [1402981]
+process[car_to_camera-10]: started with pid [1403008]
+process[car_to_gyro-11]: started with pid [1403031]
+process[car_to_accelerometer-12]: started with pid [1403053]
+process[car_to_gps-13]: started with pid [1403095]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  113.60645600361212
+STOP: Starting system shutdown...
+Crash detected accel diff =  122.71068174753006
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/7e15cd20-c6e9-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/7e15cd20-c6e9-11ef-adc8-39205c988c9a/lane_detector-3*.log
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/7e15cd20-c6e9-11ef-adc8-39205c988c9a/lane_identification-8*.log
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+killing /obstacle_detector
+shutdown request: user request
+killed
+[obstacle_detector-4] process has finished cleanly
+log file: /home/robocup/.ros/log/7e15cd20-c6e9-11ef-adc8-39205c988c9a/obstacle_detector-4*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /crash_detector
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#5
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/c6844db6-c6e9-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1404753.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:43427/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1404784]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to c6844db6-c6e9-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1404817]
+started core service [/rosout]
+process[webots-2]: started with pid [1404820]
+process[lane_detector-3]: started with pid [1404821]
+process[obstacle_detector-4]: started with pid [1404827]
+process[behaviors-5]: started with pid [1404838]
+process[crash_detector-6]: started with pid [1404851]
+process[stop-7]: started with pid [1404864]
+process[lane_identification-8]: started with pid [1404875]
+process[car_to_lidar-9]: started with pid [1404891]
+process[car_to_camera-10]: started with pid [1404921]
+process[car_to_gyro-11]: started with pid [1404951]
+process[car_to_accelerometer-12]: started with pid [1404980]
+process[car_to_gps-13]: started with pid [1405013]
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  204.76814271176704
+STOP: Starting system shutdown...
+Crash detected accel diff =  128.88015531874606
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/c6844db6-c6e9-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/c6844db6-c6e9-11ef-adc8-39205c988c9a/lane_detector-3*.log
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/c6844db6-c6e9-11ef-adc8-39205c988c9a/lane_identification-8*.log
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+killing /obstacle_detector
+shutdown request: user request
+killed
+[obstacle_detector-4] process has finished cleanly
+log file: /home/robocup/.ros/log/c6844db6-c6e9-11ef-adc8-39205c988c9a/obstacle_detector-4*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /crash_detector
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#6
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/329cf296-c6ea-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1406668.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:42193/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1406699]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 329cf296-c6ea-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1406732]
+started core service [/rosout]
+process[webots-2]: started with pid [1406735]
+process[lane_detector-3]: started with pid [1406740]
+process[obstacle_detector-4]: started with pid [1406741]
+process[behaviors-5]: started with pid [1406748]
+process[crash_detector-6]: started with pid [1406758]
+process[stop-7]: started with pid [1406775]
+process[lane_identification-8]: started with pid [1406781]
+process[car_to_lidar-9]: started with pid [1406798]
+process[car_to_camera-10]: started with pid [1406825]
+process[car_to_gyro-11]: started with pid [1406840]
+process[car_to_accelerometer-12]: started with pid [1406869]
+process[car_to_gps-13]: started with pid [1406902]
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING STOP NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  114.5782401733384
+STOP: Starting system shutdown...
+killing /policy
+killed
+ERROR: Unknown node(s):
+ * /logger
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/329cf296-c6ea-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/329cf296-c6ea-11ef-adc8-39205c988c9a/lane_detector-3*.log
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/329cf296-c6ea-11ef-adc8-39205c988c9a/lane_identification-8*.log
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+killing /obstacle_detector
+shutdown request: user request
+killed
+[obstacle_detector-4] process has finished cleanly
+log file: /home/robocup/.ros/log/329cf296-c6ea-11ef-adc8-39205c988c9a/obstacle_detector-4*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/bin/rosnode", line 34, in <module>
+    import rosnode
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosnode/__init__.py", line 62, in <module>
+    import rostopic
+  File "/opt/ros/noetic/lib/python3/dist-packages/rostopic/__init__.py", line 48, in <module>
+    import yaml
+  File "/usr/lib/python3/dist-packages/yaml/__init__.py", line 9, in <module>
+    from .dumper import *
+  File "/usr/lib/python3/dist-packages/yaml/dumper.py", line 4, in <module>
+    from .emitter import *
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 914, in _find_spec
+  File "<frozen importlib._bootstrap>", line 802, in find_spec
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#7
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/aceb36c0-c6ea-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1408566.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:42797/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1408597]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to aceb36c0-c6ea-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1408630]
+started core service [/rosout]
+process[webots-2]: started with pid [1408633]
+process[lane_detector-3]: started with pid [1408634]
+process[obstacle_detector-4]: started with pid [1408639]
+process[behaviors-5]: started with pid [1408653]
+process[crash_detector-6]: started with pid [1408660]
+process[stop-7]: started with pid [1408670]
+process[lane_identification-8]: started with pid [1408684]
+process[car_to_lidar-9]: started with pid [1408706]
+process[car_to_camera-10]: started with pid [1408723]
+process[car_to_gyro-11]: started with pid [1408754]
+process[car_to_accelerometer-12]: started with pid [1408786]
+process[car_to_gps-13]: started with pid [1408823]
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  102.53132160740624
+STOP: Starting system shutdown...
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/aceb36c0-c6ea-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/aceb36c0-c6ea-11ef-adc8-39205c988c9a/lane_detector-3*.log
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/aceb36c0-c6ea-11ef-adc8-39205c988c9a/lane_identification-8*.log
+Crash detected accel diff =  128.45257757112884
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+^Ckilling /obstacle_detector
+shutdown request: user request
+Crash detected accel diff =  107.03352362194909
+[car_to_gps-13] killing on exit
+killed
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /crash_detector
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#8
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/04f92a7a-c6eb-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1410469.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:36901/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1410500]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 04f92a7a-c6eb-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1410533]
+started core service [/rosout]
+process[webots-2]: started with pid [1410536]
+process[lane_detector-3]: started with pid [1410540]
+process[obstacle_detector-4]: started with pid [1410545]
+process[behaviors-5]: started with pid [1410550]
+process[crash_detector-6]: started with pid [1410559]
+process[stop-7]: started with pid [1410571]
+process[lane_identification-8]: started with pid [1410589]
+process[car_to_lidar-9]: started with pid [1410598]
+process[car_to_camera-10]: started with pid [1410619]
+process[car_to_gyro-11]: started with pid [1410641]
+process[car_to_accelerometer-12]: started with pid [1410659]
+process[car_to_gps-13]: started with pid [1410687]
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  114.9379351662951
+STOP: Starting system shutdown...
+Crash detected accel diff =  100.69317715959042
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/04f92a7a-c6eb-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/04f92a7a-c6eb-11ef-adc8-39205c988c9a/lane_detector-3*.log
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/04f92a7a-c6eb-11ef-adc8-39205c988c9a/lane_identification-8*.log
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+killing /obstacle_detector
+shutdown request: user request
+^Ckilled
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /crash_detector
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#9
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/a33c444c-c6eb-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1414400.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:42783/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1414431]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to a33c444c-c6eb-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1414464]
+started core service [/rosout]
+process[webots-2]: started with pid [1414467]
+process[lane_detector-3]: started with pid [1414472]
+process[obstacle_detector-4]: started with pid [1414479]
+process[behaviors-5]: started with pid [1414489]
+process[crash_detector-6]: started with pid [1414496]
+process[stop-7]: started with pid [1414513]
+process[lane_identification-8]: started with pid [1414528]
+process[car_to_lidar-9]: started with pid [1414554]
+process[car_to_camera-10]: started with pid [1414575]
+process[car_to_gyro-11]: started with pid [1414606]
+process[car_to_accelerometer-12]: started with pid [1414635]
+process[car_to_gps-13]: started with pid [1414663]
+INITIALIZING STOP NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  113.68569136790873
+STOP: Starting system shutdown...
+killing /policy
+killed
+Crash detected accel diff =  333.7585317571543
+Crash detected accel diff =  310.8687474555948
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/a33c444c-c6eb-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/a33c444c-c6eb-11ef-adc8-39205c988c9a/lane_detector-3*.log
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/a33c444c-c6eb-11ef-adc8-39205c988c9a/lane_identification-8*.log
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+^Ckilling /obstacle_detector
+shutdown request: user request
+killed
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /crash_detector
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#10
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/eb37e5ee-c6eb-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1416306.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:38489/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1416337]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to eb37e5ee-c6eb-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1416370]
+started core service [/rosout]
+process[webots-2]: started with pid [1416373]
+process[lane_detector-3]: started with pid [1416378]
+process[obstacle_detector-4]: started with pid [1416383]
+process[behaviors-5]: started with pid [1416393]
+process[crash_detector-6]: started with pid [1416405]
+process[stop-7]: started with pid [1416417]
+process[lane_identification-8]: started with pid [1416433]
+process[car_to_lidar-9]: started with pid [1416450]
+process[car_to_camera-10]: started with pid [1416468]
+process[car_to_gyro-11]: started with pid [1416507]
+process[car_to_accelerometer-12]: started with pid [1416547]
+process[car_to_gps-13]: started with pid [1416577]
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  186.2754518345842
+STOP: Starting system shutdown...
+Crash detected accel diff =  215.88305685773972
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/eb37e5ee-c6eb-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /lane_identification
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#11
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/3938d5c8-c6ec-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1418205.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:38079/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1418236]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 3938d5c8-c6ec-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1418269]
+started core service [/rosout]
+process[webots-2]: started with pid [1418272]
+process[lane_detector-3]: started with pid [1418277]
+process[obstacle_detector-4]: started with pid [1418278]
+process[behaviors-5]: started with pid [1418292]
+process[crash_detector-6]: started with pid [1418296]
+process[stop-7]: started with pid [1418308]
+process[lane_identification-8]: started with pid [1418326]
+process[car_to_lidar-9]: started with pid [1418343]
+process[car_to_camera-10]: started with pid [1418358]
+process[car_to_gyro-11]: started with pid [1418386]
+process[car_to_accelerometer-12]: started with pid [1418410]
+process[car_to_gps-13]: started with pid [1418439]
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  215.3162749346748
+STOP: Starting system shutdown...
+Crash detected accel diff =  210.3302915215103
+killing /policy
+killed
+ERROR: Unknown node(s):
+ * /logger
+killing /behaviors
+shutdown request: user request
+killed
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+ERROR: Unknown node(s):
+ * /lane_detector
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#12
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/6fd65f92-c6ec-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1420091.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:43777/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1420122]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 6fd65f92-c6ec-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1420155]
+started core service [/rosout]
+process[webots-2]: started with pid [1420158]
+process[lane_detector-3]: started with pid [1420162]
+process[obstacle_detector-4]: started with pid [1420168]
+process[behaviors-5]: started with pid [1420173]
+process[crash_detector-6]: started with pid [1420182]
+process[stop-7]: started with pid [1420201]
+process[lane_identification-8]: started with pid [1420209]
+process[car_to_lidar-9]: started with pid [1420234]
+process[car_to_camera-10]: started with pid [1420262]
+process[car_to_gyro-11]: started with pid [1420287]
+process[car_to_accelerometer-12]: started with pid [1420309]
+process[car_to_gps-13]: started with pid [1420341]
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  107.93719342865181
+STOP: Starting system shutdown...
+killing /policy
+killed
+Crash detected accel diff =  173.3950520879063
+Crash detected accel diff =  168.41618766326232
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/6fd65f92-c6ec-11ef-adc8-39205c988c9a/behaviors-5*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/bin/rosnode", line 34, in <module>
+    import rosnode
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosnode/__init__.py", line 62, in <module>
+    import rostopic
+  File "/opt/ros/noetic/lib/python3/dist-packages/rostopic/__init__.py", line 65, in <module>
+    import rospy
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/__init__.py", line 49, in <module>
+    from .client import spin, myargv, init_node, \
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/client.py", line 60, in <module>
+    import rospy.impl.init
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/init.py", line 49, in <module>
+    import rosgraph.xmlrpc
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosgraph/xmlrpc.py", line 60, in <module>
+    from xmlrpc.server import SimpleXMLRPCServer, SimpleXMLRPCRequestHandler #Python 3.x
+  File "/usr/lib/python3.8/xmlrpc/server.py", line 108, in <module>
+    from http.server import BaseHTTPRequestHandler
+  File "/usr/lib/python3.8/http/server.py", line 100, in <module>
+    import shutil
+  File "/usr/lib/python3.8/shutil.py", line 29, in <module>
+    import lzma
+  File "/usr/lib/python3.8/lzma.py", line 38, in <module>
+    class LZMAFile(_compression.BaseStream):
+  File "/usr/lib/python3.8/abc.py", line 86, in __new__
+    _abc_init(cls)
+KeyboardInterrupt
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /lane_identification
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#13
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/a4621076-c6ec-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1421988.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:37161/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1422019]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to a4621076-c6ec-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1422052]
+started core service [/rosout]
+process[webots-2]: started with pid [1422055]
+process[lane_detector-3]: started with pid [1422059]
+process[obstacle_detector-4]: started with pid [1422067]
+process[behaviors-5]: started with pid [1422074]
+process[crash_detector-6]: started with pid [1422081]
+process[stop-7]: started with pid [1422096]
+process[lane_identification-8]: started with pid [1422112]
+process[car_to_lidar-9]: started with pid [1422134]
+process[car_to_camera-10]: started with pid [1422166]
+process[car_to_gyro-11]: started with pid [1422187]
+process[car_to_accelerometer-12]: started with pid [1422224]
+process[car_to_gps-13]: started with pid [1422253]
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING STOP NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  551.4759980988388
+STOP: Starting system shutdown...
+Crash detected accel diff =  564.0584229457818
+killing /policy
+killed
+ERROR: Unknown node(s):
+ * /logger
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/a4621076-c6ec-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+^Ckilled
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /lane_identification
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#14
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/d60f3572-c6ec-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1423878.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:45323/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1423909]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to d60f3572-c6ec-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1423942]
+started core service [/rosout]
+process[webots-2]: started with pid [1423945]
+process[lane_detector-3]: started with pid [1423947]
+process[obstacle_detector-4]: started with pid [1423955]
+process[behaviors-5]: started with pid [1423965]
+process[crash_detector-6]: started with pid [1423972]
+process[stop-7]: started with pid [1423987]
+process[lane_identification-8]: started with pid [1423998]
+process[car_to_lidar-9]: started with pid [1424014]
+process[car_to_camera-10]: started with pid [1424032]
+process[car_to_gyro-11]: started with pid [1424061]
+process[car_to_accelerometer-12]: started with pid [1424082]
+process[car_to_gps-13]: started with pid [1424123]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Starting steady motion
+Starting change lane on right
+Moving to left to align with right lane
+Crash detected accel diff =  107.61182885451666
+STOP: Starting system shutdown...
+Crash detected accel diff =  133.46804586412463
+killing /policy
+killed
+ERROR: Unknown node(s):
+ * /logger
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/d60f3572-c6ec-11ef-adc8-39205c988c9a/behaviors-5*.log
+Crash detected accel diff =  109.7402773915899
+killing /lane_detector
+shutdown request: user request
+^Ckilled
+Crash detected accel diff =  374.8580934553051
+Crash detected accel diff =  356.4527750328354
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /lane_identification
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': False, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': False, 'free_SW': False, 'free_W': True} MLP action=change_to_right
+Waiting for the action change_to_right to finish... ^Cshutdown request: user request
+
+#########################################################
+
+#15
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/12e3670c-c6ed-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1425776.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:38279/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1425807]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 12e3670c-c6ed-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1425840]
+started core service [/rosout]
+process[webots-2]: started with pid [1425843]
+process[lane_detector-3]: started with pid [1425848]
+process[obstacle_detector-4]: started with pid [1425852]
+process[behaviors-5]: started with pid [1425862]
+process[crash_detector-6]: started with pid [1425876]
+process[stop-7]: started with pid [1425887]
+process[lane_identification-8]: started with pid [1425901]
+process[car_to_lidar-9]: started with pid [1425926]
+process[car_to_camera-10]: started with pid [1425955]
+process[car_to_gyro-11]: started with pid [1425988]
+process[car_to_accelerometer-12]: started with pid [1426011]
+process[car_to_gps-13]: started with pid [1426044]
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  529.6070005916608
+STOP: Starting system shutdown...
+Crash detected accel diff =  515.7450359297434
+killing /policy
+killed
+killing /logger
+Crash detected accel diff =  108.12657981856199
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/12e3670c-c6ed-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/12e3670c-c6ed-11ef-adc8-39205c988c9a/lane_detector-3*.log
+Crash detected accel diff =  105.37765080687853
+killing /lane_identification
+shutdown request: user request
+killed
+[lane_identification-8] process has finished cleanly
+log file: /home/robocup/.ros/log/12e3670c-c6ed-11ef-adc8-39205c988c9a/lane_identification-8*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /obstacle_detector
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#16
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/45aa5fce-c6ed-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1427644.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:43129/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1427676]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 45aa5fce-c6ed-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1427709]
+started core service [/rosout]
+process[webots-2]: started with pid [1427712]
+process[lane_detector-3]: started with pid [1427714]
+process[obstacle_detector-4]: started with pid [1427724]
+process[behaviors-5]: started with pid [1427729]
+process[crash_detector-6]: started with pid [1427744]
+process[stop-7]: started with pid [1427756]
+process[lane_identification-8]: started with pid [1427769]
+process[car_to_lidar-9]: started with pid [1427786]
+process[car_to_camera-10]: started with pid [1427814]
+process[car_to_gyro-11]: started with pid [1427838]
+process[car_to_accelerometer-12]: started with pid [1427863]
+process[car_to_gps-13]: started with pid [1427900]
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  199.5206193032374
+STOP: Starting system shutdown...
+Crash detected accel diff =  126.06543835553717
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/45aa5fce-c6ed-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/45aa5fce-c6ed-11ef-adc8-39205c988c9a/lane_detector-3*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/bin/rosnode", line 34, in <module>
+    import rosnode
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosnode/__init__.py", line 62, in <module>
+    import rostopic
+  File "/opt/ros/noetic/lib/python3/dist-packages/rostopic/__init__.py", line 48, in <module>
+    import yaml
+  File "/usr/lib/python3/dist-packages/yaml/__init__.py", line 8, in <module>
+    from .loader import *
+  File "/usr/lib/python3/dist-packages/yaml/loader.py", line 4, in <module>
+    from .reader import *
+  File "/usr/lib/python3/dist-packages/yaml/reader.py", line 45, in <module>
+    class Reader(object):
+  File "/usr/lib/python3/dist-packages/yaml/reader.py", line 137, in Reader
+    NON_PRINTABLE = re.compile('[^\x09\x0A\x0D\x20-\x7E\x85\xA0-\uD7FF\uE000-\uFFFD\U00010000-\U0010ffff]')
+  File "/usr/lib/python3.8/re.py", line 252, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.8/re.py", line 304, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.8/sre_compile.py", line 768, in compile
+    code = _code(p, flags)
+  File "/usr/lib/python3.8/sre_compile.py", line 604, in _code
+    _compile_info(code, p, flags)
+  File "/usr/lib/python3.8/sre_compile.py", line 590, in _compile_info
+    charset, hascased = _optimize_charset(charset)
+  File "/usr/lib/python3.8/sre_compile.py", line 312, in _optimize_charset
+    charmap[i] = 1
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#17
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/9980bd0a-c6ed-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1429522.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:38895/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1429554]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 9980bd0a-c6ed-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1429587]
+started core service [/rosout]
+process[webots-2]: started with pid [1429590]
+process[lane_detector-3]: started with pid [1429591]
+process[obstacle_detector-4]: started with pid [1429602]
+process[behaviors-5]: started with pid [1429609]
+process[crash_detector-6]: started with pid [1429622]
+process[stop-7]: started with pid [1429631]
+process[lane_identification-8]: started with pid [1429642]
+process[car_to_lidar-9]: started with pid [1429666]
+process[car_to_camera-10]: started with pid [1429694]
+process[car_to_gyro-11]: started with pid [1429713]
+process[car_to_accelerometer-12]: started with pid [1429748]
+process[car_to_gps-13]: started with pid [1429777]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  218.73706260961754
+STOP: Starting system shutdown...
+Crash detected accel diff =  217.48022792089623
+Crash detected accel diff =  101.66058647801403
+Crash detected accel diff =  105.2890999575401
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+^Ckilled
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /lane_detector
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#18
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/3cbf0fb2-c6ee-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1431546.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:35941/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1431577]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 3cbf0fb2-c6ee-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1431610]
+started core service [/rosout]
+process[webots-2]: started with pid [1431613]
+process[lane_detector-3]: started with pid [1431617]
+process[obstacle_detector-4]: started with pid [1431625]
+process[behaviors-5]: started with pid [1431634]
+process[crash_detector-6]: started with pid [1431644]
+process[stop-7]: started with pid [1431653]
+process[lane_identification-8]: started with pid [1431671]
+process[car_to_lidar-9]: started with pid [1431690]
+process[car_to_camera-10]: started with pid [1431717]
+process[car_to_gyro-11]: started with pid [1431738]
+process[car_to_accelerometer-12]: started with pid [1431764]
+process[car_to_gps-13]: started with pid [1431795]
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  130.78449351206922
+STOP: Starting system shutdown...
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+ERROR: Unknown node(s):
+ * /lane_detector
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#19
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/7912f1d6-c6ee-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1433443.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:45893/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1433474]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 7912f1d6-c6ee-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1433507]
+started core service [/rosout]
+process[webots-2]: started with pid [1433510]
+process[lane_detector-3]: started with pid [1433512]
+process[obstacle_detector-4]: started with pid [1433517]
+process[behaviors-5]: started with pid [1433526]
+process[crash_detector-6]: started with pid [1433539]
+process[stop-7]: started with pid [1433546]
+process[lane_identification-8]: started with pid [1433561]
+process[car_to_lidar-9]: started with pid [1433574]
+process[car_to_camera-10]: started with pid [1433602]
+process[car_to_gyro-11]: started with pid [1433628]
+process[car_to_accelerometer-12]: started with pid [1433653]
+process[car_to_gps-13]: started with pid [1433701]
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING STOP NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  153.22334978334572
+STOP: Starting system shutdown...
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+^Ckilled
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+ERROR: Unknown node(s):
+ * /lane_detector
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#20
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/aca332c2-c6ee-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1435326.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:36805/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1435357]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to aca332c2-c6ee-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1435390]
+started core service [/rosout]
+process[webots-2]: started with pid [1435393]
+process[lane_detector-3]: started with pid [1435394]
+process[obstacle_detector-4]: started with pid [1435402]
+process[behaviors-5]: started with pid [1435409]
+process[crash_detector-6]: started with pid [1435419]
+process[stop-7]: started with pid [1435436]
+process[lane_identification-8]: started with pid [1435452]
+process[car_to_lidar-9]: started with pid [1435476]
+process[car_to_camera-10]: started with pid [1435512]
+process[car_to_gyro-11]: started with pid [1435540]
+process[car_to_accelerometer-12]: started with pid [1435569]
+process[car_to_gps-13]: started with pid [1435594]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  102.77676659431495
+STOP: Starting system shutdown...
+Starting change lane on right
+killing /policy
+Crash detected accel diff =  107.13982665944332
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+^Ckilled
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+ERROR: Unknown node(s):
+ * /lane_detector
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': True, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=change_to_right
+Waiting for the action change_to_right to finish... shutdown request: user request
+
+#########################################################
+
+#21
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/0f9f99ce-c6ef-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1437283.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:44729/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1437314]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 0f9f99ce-c6ef-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1437347]
+started core service [/rosout]
+process[webots-2]: started with pid [1437350]
+process[lane_detector-3]: started with pid [1437355]
+process[obstacle_detector-4]: started with pid [1437362]
+process[behaviors-5]: started with pid [1437369]
+process[crash_detector-6]: started with pid [1437381]
+process[stop-7]: started with pid [1437393]
+process[lane_identification-8]: started with pid [1437409]
+process[car_to_lidar-9]: started with pid [1437435]
+process[car_to_camera-10]: started with pid [1437458]
+process[car_to_gyro-11]: started with pid [1437485]
+process[car_to_accelerometer-12]: started with pid [1437516]
+process[car_to_gps-13]: started with pid [1437538]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  121.77258815109097
+STOP: Starting system shutdown...
+killing /policy
+killed
+killing /logger
+killed
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+killing /lane_detector
+shutdown request: user request
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+killed
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#22
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/51a3eab4-c6ef-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1439154.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:37403/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1439185]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 51a3eab4-c6ef-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1439218]
+started core service [/rosout]
+process[webots-2]: started with pid [1439221]
+process[lane_detector-3]: started with pid [1439226]
+process[obstacle_detector-4]: started with pid [1439231]
+process[behaviors-5]: started with pid [1439239]
+process[crash_detector-6]: started with pid [1439248]
+process[stop-7]: started with pid [1439266]
+process[lane_identification-8]: started with pid [1439283]
+process[car_to_lidar-9]: started with pid [1439302]
+process[car_to_camera-10]: started with pid [1439326]
+process[car_to_gyro-11]: started with pid [1439359]
+process[car_to_accelerometer-12]: started with pid [1439390]
+process[car_to_gps-13]: started with pid [1439423]
+INITIALIZING STOP NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  334.27163815530406
+STOP: Starting system shutdown...
+Crash detected accel diff =  316.5515541067705
+killing /policy
+killed
+ERROR: Unknown node(s):
+ * /logger
+killing /behaviors
+shutdown request: user request
+^Ckilled
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+ERROR: Unknown node(s):
+ * /lane_detector
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /lane_identification
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#23
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/8bb3e9e8-c6ef-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1441041.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:42527/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1441072]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 8bb3e9e8-c6ef-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1441105]
+started core service [/rosout]
+process[webots-2]: started with pid [1441108]
+process[lane_detector-3]: started with pid [1441109]
+process[obstacle_detector-4]: started with pid [1441119]
+process[behaviors-5]: started with pid [1441126]
+process[crash_detector-6]: started with pid [1441138]
+process[stop-7]: started with pid [1441147]
+process[lane_identification-8]: started with pid [1441161]
+process[car_to_lidar-9]: started with pid [1441184]
+process[car_to_camera-10]: started with pid [1441203]
+process[car_to_gyro-11]: started with pid [1441227]
+process[car_to_accelerometer-12]: started with pid [1441255]
+process[car_to_gps-13]: started with pid [1441296]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  546.0712437125006
+STOP: Starting system shutdown...
+Crash detected accel diff =  563.5143181818327
+killing /policy
+killed
+Crash detected accel diff =  123.79797216680836
+killing /logger
+killed
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/bin/rosnode", line 34, in <module>
+    import rosnode
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosnode/__init__.py", line 62, in <module>
+    import rostopic
+  File "/opt/ros/noetic/lib/python3/dist-packages/rostopic/__init__.py", line 60, in <module>
+    import genpy
+  File "/opt/ros/noetic/lib/python3/dist-packages/genpy/__init__.py", line 34, in <module>
+    from . message import Message, SerializationError, DeserializationError, MessageException, struct_I
+  File "/opt/ros/noetic/lib/python3/dist-packages/genpy/message.py", line 64, in <module>
+    import numpy as np
+  File "/usr/local/lib/python3.8/dist-packages/numpy/__init__.py", line 147, in <module>
+    from . import lib
+  File "/usr/local/lib/python3.8/dist-packages/numpy/lib/__init__.py", line 25, in <module>
+    from .index_tricks import *
+  File "/usr/local/lib/python3.8/dist-packages/numpy/lib/index_tricks.py", line 12, in <module>
+    import numpy.matrixlib as matrixlib
+  File "/usr/local/lib/python3.8/dist-packages/numpy/matrixlib/__init__.py", line 4, in <module>
+    from .defmatrix import *
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 657, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 562, in module_from_spec
+  File "<frozen importlib._bootstrap>", line 541, in _init_module_attrs
+  File "<frozen importlib._bootstrap>", line 382, in cached
+  File "<frozen importlib._bootstrap_external>", line 485, in _get_cached
+KeyboardInterrupt
+killing /lane_detector
+shutdown request: user request
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+killed
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#24
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/69b45e58-c6f0-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1444602.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:43829/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1444633]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 69b45e58-c6f0-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1444666]
+started core service [/rosout]
+process[webots-2]: started with pid [1444669]
+process[lane_detector-3]: started with pid [1444673]
+process[obstacle_detector-4]: started with pid [1444676]
+process[behaviors-5]: started with pid [1444690]
+process[crash_detector-6]: started with pid [1444702]
+process[stop-7]: started with pid [1444716]
+process[lane_identification-8]: started with pid [1444733]
+process[car_to_lidar-9]: started with pid [1444753]
+process[car_to_camera-10]: started with pid [1444778]
+process[car_to_gyro-11]: started with pid [1444809]
+process[car_to_accelerometer-12]: started with pid [1444839]
+process[car_to_gps-13]: started with pid [1444864]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  496.0472534764735
+STOP: Starting system shutdown...
+Crash detected accel diff =  482.7308815234079
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/69b45e58-c6f0-11ef-adc8-39205c988c9a/behaviors-5*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+ERROR: Unknown node(s):
+ * /lane_identification
+[webots-2] killing on exit
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#25
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/a3dd1b42-c6f0-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1446459.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:36343/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1446490]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to a3dd1b42-c6f0-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1446523]
+started core service [/rosout]
+process[webots-2]: started with pid [1446526]
+process[lane_detector-3]: started with pid [1446527]
+process[obstacle_detector-4]: started with pid [1446538]
+process[behaviors-5]: started with pid [1446542]
+process[crash_detector-6]: started with pid [1446557]
+process[stop-7]: started with pid [1446569]
+process[lane_identification-8]: started with pid [1446579]
+process[car_to_lidar-9]: started with pid [1446602]
+process[car_to_camera-10]: started with pid [1446630]
+process[car_to_gyro-11]: started with pid [1446656]
+process[car_to_accelerometer-12]: started with pid [1446683]
+process[car_to_gps-13]: started with pid [1446719]
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  198.59239805726935
+STOP: Starting system shutdown...
+Crash detected accel diff =  103.95529710308182
+killing /policy
+killed
+killing /logger
+killed
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/bin/rosnode", line 34, in <module>
+    import rosnode
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosnode/__init__.py", line 60, in <module>
+    import rosgraph
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosgraph/__init__.py", line 36, in <module>
+    from . masterapi import Master, MasterFailure, MasterError, MasterException
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosgraph/masterapi.py", line 47, in <module>
+    from . network import parse_http_host_and_port
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosgraph/network.py", line 43, in <module>
+    import logging
+  File "/usr/lib/python3.8/logging/__init__.py", line 445, in <module>
+    class StrFormatStyle(PercentStyle):
+  File "/usr/lib/python3.8/logging/__init__.py", line 451, in StrFormatStyle
+    field_spec = re.compile(r'^(\d+|\w+)(\.\w+|\[[^]]+\])*$')
+  File "/usr/lib/python3.8/re.py", line 252, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.8/re.py", line 304, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.8/sre_compile.py", line 768, in compile
+    code = _code(p, flags)
+  File "/usr/lib/python3.8/sre_compile.py", line 607, in _code
+    _compile(code, p.data, flags)
+  File "/usr/lib/python3.8/sre_compile.py", line 168, in _compile
+    _compile(code, p, _combine_flags(flags, add_flags, del_flags))
+  File "/usr/lib/python3.8/sre_compile.py", line 209, in _compile
+    _compile(code, av, flags)
+  File "/usr/lib/python3.8/sre_compile.py", line 90, in _compile
+    for op, av in pattern:
+KeyboardInterrupt
+killing /lane_detector
+shutdown request: user request
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+killed
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#26
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/d9dec574-c6f0-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1448328.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:46247/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1448359]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to d9dec574-c6f0-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1448392]
+started core service [/rosout]
+process[webots-2]: started with pid [1448395]
+process[lane_detector-3]: started with pid [1448400]
+process[obstacle_detector-4]: started with pid [1448405]
+process[behaviors-5]: started with pid [1448415]
+process[crash_detector-6]: started with pid [1448427]
+process[stop-7]: started with pid [1448438]
+process[lane_identification-8]: started with pid [1448454]
+process[car_to_lidar-9]: started with pid [1448471]
+process[car_to_camera-10]: started with pid [1448491]
+process[car_to_gyro-11]: started with pid [1448520]
+process[car_to_accelerometer-12]: started with pid [1448548]
+process[car_to_gps-13]: started with pid [1448589]
+INITIALIZING STOP NODE...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  124.97072359364739
+STOP: Starting system shutdown...
+Crash detected accel diff =  129.21001972984186
+killing /policy
+Crash detected accel diff =  127.63493525572352
+killed
+ERROR: Unknown node(s):
+ * /logger
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/d9dec574-c6f0-11ef-adc8-39205c988c9a/behaviors-5*.log
+killing /lane_detector
+shutdown request: user request
+killed
+[lane_detector-3] process has finished cleanly
+log file: /home/robocup/.ros/log/d9dec574-c6f0-11ef-adc8-39205c988c9a/lane_detector-3*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/bin/rosnode", line 34, in <module>
+    import rosnode
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosnode/__init__.py", line 62, in <module>
+    import rostopic
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 956, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1038, in get_data
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#27
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/23756242-c6f1-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1450198.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:33499/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1450229]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 23756242-c6f1-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1450262]
+started core service [/rosout]
+process[webots-2]: started with pid [1450265]
+process[lane_detector-3]: started with pid [1450267]
+process[obstacle_detector-4]: started with pid [1450277]
+process[behaviors-5]: started with pid [1450286]
+process[crash_detector-6]: started with pid [1450292]
+process[stop-7]: started with pid [1450302]
+process[lane_identification-8]: started with pid [1450321]
+process[car_to_lidar-9]: started with pid [1450334]
+process[car_to_camera-10]: started with pid [1450354]
+process[car_to_gyro-11]: started with pid [1450386]
+process[car_to_accelerometer-12]: started with pid [1450425]
+process[car_to_gps-13]: started with pid [1450448]
+INITIALIZING STOP NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Starting change lane on right
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': True, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=change_to_right
+Waiting for the action change_to_right to finish... 
+
+#########################################################
+
+#28
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/87868da6-c6f1-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1452017.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:42441/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1452048]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 87868da6-c6f1-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1452081]
+started core service [/rosout]
+process[webots-2]: started with pid [1452084]
+process[lane_detector-3]: started with pid [1452086]
+process[obstacle_detector-4]: started with pid [1452094]
+process[behaviors-5]: started with pid [1452104]
+process[crash_detector-6]: started with pid [1452107]
+process[stop-7]: started with pid [1452125]
+process[lane_identification-8]: started with pid [1452133]
+process[car_to_lidar-9]: started with pid [1452159]
+process[car_to_camera-10]: started with pid [1452171]
+process[car_to_gyro-11]: started with pid [1452201]
+process[car_to_accelerometer-12]: started with pid [1452233]
+process[car_to_gps-13]: started with pid [1452268]
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING STOP NODE...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Starting change lane on left
+Moving to right to align with left lane
+Change lane on left finished
+Starting change lane on left
+Moving to right to align with left lane
+^CChange lane on left finished
+[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': False, 'free_SE': False, 'free_SW': False, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': True, 'free_NW': True, 'free_SE': False, 'free_SW': False, 'free_W': True} MLP action=change_to_left
+Waiting for the action change_to_left to finish... Done.
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': False, 'free_W': True} MLP action=change_to_left
+Waiting for the action change_to_left to finish... Done.
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+
+#########################################################
+
+#29
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/e3403372-c6f1-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1453749.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:33137/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1453780]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to e3403372-c6f1-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1453813]
+started core service [/rosout]
+process[webots-2]: started with pid [1453816]
+process[lane_detector-3]: started with pid [1453817]
+process[obstacle_detector-4]: started with pid [1453826]
+process[behaviors-5]: started with pid [1453836]
+process[crash_detector-6]: started with pid [1453841]
+process[stop-7]: started with pid [1453858]
+process[lane_identification-8]: started with pid [1453870]
+process[car_to_lidar-9]: started with pid [1453887]
+process[car_to_camera-10]: started with pid [1453915]
+process[car_to_gyro-11]: started with pid [1453941]
+process[car_to_accelerometer-12]: started with pid [1453968]
+process[car_to_gps-13]: started with pid [1454003]
+INITIALIZING STOP NODE...
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  145.13758994036831
+STOP: Starting system shutdown...
+Crash detected accel diff =  101.17281150837958
+killing /policy
+killed
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[behaviors-5] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+ERROR: Unknown node(s):
+ * /lane_detector
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': True, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request
+
+#########################################################
+
+#30
+
+- ( launch )
+
+... logging to /home/robocup/.ros/log/1d2c809a-c6f2-11ef-adc8-39205c988c9a/roslaunch-KatyPerry-1455642.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://KatyPerry:42267/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /behaviors/dist_to_car: 15
+ * /behaviors/k_following: 10
+ * /behaviors/max_speed: 30
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    behaviors (perceptron/behaviors.py)
+    car_to_accelerometer (tf/static_transform_publisher)
+    car_to_camera (tf/static_transform_publisher)
+    car_to_gps (tf/static_transform_publisher)
+    car_to_gyro (tf/static_transform_publisher)
+    car_to_lidar (tf/static_transform_publisher)
+    crash_detector (perceptron/crash_detector.py)
+    lane_detector (perceptron/lane_detector_canny_hough.py)
+    lane_identification (perceptron/lane_identification.py)
+    obstacle_detector (perceptron/obstacle_detector.py)
+    stop (perceptron/stop.py)
+    webots (webots_ros/webots_launcher.py)
+
+auto-starting new master
+process[master]: started with pid [1455673]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 1d2c809a-c6f2-11ef-adc8-39205c988c9a
+process[rosout-1]: started with pid [1455706]
+started core service [/rosout]
+process[webots-2]: started with pid [1455709]
+process[lane_detector-3]: started with pid [1455713]
+process[obstacle_detector-4]: started with pid [1455721]
+process[behaviors-5]: started with pid [1455730]
+process[crash_detector-6]: started with pid [1455740]
+process[stop-7]: started with pid [1455752]
+process[lane_identification-8]: started with pid [1455771]
+process[car_to_lidar-9]: started with pid [1455787]
+process[car_to_camera-10]: started with pid [1455824]
+process[car_to_gyro-11]: started with pid [1455854]
+process[car_to_accelerometer-12]: started with pid [1455883]
+process[car_to_gps-13]: started with pid [1455915]
+INITIALIZING OBSTACLE DETECTOR (NOV 2024)...
+INITIALIZING STOP NODE...
+INITIALIZING BEHAVIORS NODE (SEP 2024)...
+INITIALIZING CRASH_DETECTOR...
+INITIALIZING LANE IDENTIFICATION NODE...
+INITIALIZING LANE DETECTION DEMO...
+Waiting for lane detection...
+Using:
+Max speed: 30
+K_rho: 0.001
+K_theta: 0.01
+K_following: 10
+Dist to car: 15
+Waiting for task...
+Starting steady motion
+Starting follow car
+Crash detected accel diff =  109.22071180114197
+STOP: Starting system shutdown...
+Crash detected accel diff =  111.39609474257786
+killing /policy
+Crash detected accel diff =  114.32875969513799
+Crash detected accel diff =  120.81365039171811
+killed
+Crash detected accel diff =  142.58918796533186
+Crash detected accel diff =  118.75564604592405
+killing /logger
+killed
+killing /behaviors
+shutdown request: user request
+killed
+[behaviors-5] process has finished cleanly
+log file: /home/robocup/.ros/log/1d2c809a-c6f2-11ef-adc8-39205c988c9a/behaviors-5*.log
+^C[car_to_gps-13] killing on exit
+[car_to_accelerometer-12] killing on exit
+[car_to_gyro-11] killing on exit
+[car_to_camera-10] killing on exit
+[car_to_lidar-9] killing on exit
+[lane_identification-8] killing on exit
+[stop-7] killing on exit
+[crash_detector-6] killing on exit
+[obstacle_detector-4] killing on exit
+[lane_detector-3] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/bin/rosnode", line 34, in <module>
+    import rosnode
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosnode/__init__.py", line 62, in <module>
+    import rostopic
+  File "/opt/ros/noetic/lib/python3/dist-packages/rostopic/__init__.py", line 62, in <module>
+    import roslib.message
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslib/__init__.py", line 53, in <module>
+    import roslib.stacks  # noqa: F401, I100
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslib/stacks.py", line 45, in <module>
+    import roslib.packages
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslib/packages.py", line 48, in <module>
+    from catkin.find_in_workspaces import find_in_workspaces as catkin_find
+  File "/opt/ros/noetic/lib/python3/dist-packages/catkin/find_in_workspaces.py", line 39, in <module>
+    from catkin_pkg.packages import find_packages
+  File "/usr/lib/python3/dist-packages/catkin_pkg/packages.py", line 38, in <module>
+    from .package import _get_package_xml
+  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 44, in <module>
+    from catkin_pkg.condition import evaluate_condition
+  File "/usr/lib/python3/dist-packages/catkin_pkg/condition.py", line 17, in <module>
+    import pyparsing as pp
+  File "/usr/lib/python3/dist-packages/pyparsing.py", line 6373, in <module>
+    commaSeparatedList = delimitedList(Optional(quotedString.copy() | _commasepitem, default="")).setName("commaSeparatedList")
+  File "/usr/lib/python3/dist-packages/pyparsing.py", line 2291, in __or__
+    return MatchFirst([self, other])
+  File "/usr/lib/python3/dist-packages/pyparsing.py", line 4220, in __init__
+    super(MatchFirst, self).__init__(exprs, savelist)
+  File "/usr/lib/python3/dist-packages/pyparsing.py", line 3866, in __init__
+    if any(isinstance(expr, basestring) for expr in exprs):
+  File "/usr/lib/python3/dist-packages/pyparsing.py", line 3866, in <genexpr>
+    if any(isinstance(expr, basestring) for expr in exprs):
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_identification
+[webots-2] killing on exit
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/webots_ros/webots_launcher.py", line 81, in <module>
+    subprocess.call(command)
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+ERROR: Unknown node(s):
+ * /lane_tracking_control_P
+ERROR: Unknown node(s):
+ * /obstacle_detector
+ERROR: Unknown node(s):
+ * /crash_detector
+ERROR: Unknown node(s):
+ * /latent_collision_detector
+STOP: System shutdown finished.killing /stop
+shutdown request: user request
+killed
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+
+- ( Política )
+
+Running with speed_left=15.0, speed_right=3.0, and MLP=MLP_10.mlp
+INITIALIZING POLICY...
+/home/robocup/WhatIf-Results/catkin_ws/src/perceptron/decision_models/MLP_10.mlp
+Publishing policy_started 0
+Publishing policy_started 1
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': True, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': True, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=cruise
+{'curr_lane': False, 'free_E': True, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+{'curr_lane': False, 'free_E': False, 'free_NE': False, 'free_NW': False, 'free_SE': False, 'free_SW': True, 'free_W': True} MLP action=keep
+shutdown request: user request

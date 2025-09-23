@@ -1,0 +1,163 @@
+To modify your ProbLog twin network code to explicitly perform Judea Pearl’s three-step counterfactual process (Abduction, Action, Prediction) without relying solely on `evidence` statements for the factual world, we need to break down the computation into distinct phases. The goal is to compute the same counterfactual query—e.g., "Given `action_e(change_to_left)`, `free_NE_e = true`, `free_W_e = false`, and `latent_collision_e = true` in the factual world, what’s the probability of `latent_collision_i` if `action_i(keep)` had occurred?"—while making each step explicit.
+
+In the original code, ProbLog implicitly handles abduction by conditioning on evidence when computing probabilities. To follow Pearl’s steps explicitly, we’ll:
+1. Perform **abduction** by calculating the posterior probabilities of the exogenous variables (`u1`, `u2`) given the factual observations.
+2. Apply the **action** by enforcing the intervention (`action_i(keep)`) in the counterfactual world.
+3. Compute the **prediction** by querying `latent_collision_i` using the abducted probabilities and the intervention.
+
+Here’s how to modify the code step-by-step, with explanations:
+
+---
+
+### Step-by-Step Modification and Explanation
+
+#### Original Query Context
+- **Factual Observations**: `action_e(change_to_left)`, `free_NE_e = true`, `free_W_e = false`, `latent_collision_e = true`.
+- **Counterfactual Intervention**: `action_i(keep)`.
+- **Query**: Probability of `latent_collision_i`.
+
+#### Step 1: Abduction
+- **Goal**: Infer the posterior probabilities of the exogenous variables `u1` and `u2` given the factual observations.
+- **Why**: `u1` determines `free_NE_e`, and `u2` determines `free_W_e`. These are shared between the factual and counterfactual worlds, so we need their updated probabilities based on the evidence.
+- **How in ProbLog**:
+  - Use the factual network (`_e`) to compute `P(u1, u2 | action_e(change_to_left), free_NE_e = true, free_W_e = false, latent_collision_e = true)`.
+  - Replace the original probabilistic facts (`0.4708127::u1`, `0.7399252::u2`) with new variables (e.g., `u1_post`, `u2_post`) whose probabilities will be computed and then used in both networks.
+
+**Modified Code for Abduction**:
+```problog
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Original Probabilistic facts (shared exogenous variables)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+0.4708127::u1_prior.
+0.7399252::u2_prior.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Factual Network (Evidence World, suffix _e)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_e :- u1_prior.
+free_W_e :- u2_prior.
+
+% Action rules for factual world
+0.4424237::action_e(change_to_left); 0.3467216::action_e(cruise); 0.2108547::action_e(keep) :- \+ free_NE_e, \+ free_W_e. 
+0.3348623::action_e(change_to_left); 0.664808::action_e(cruise); 0.00032963::action_e(keep) :- free_NE_e, \+ free_W_e. 
+0.1310856::action_e(change_to_left); 0.244416::action_e(cruise); 0.6244984::action_e(keep) :- \+ free_NE_e, free_W_e. 
+0.154987::action_e(change_to_left); 0.7755716::action_e(cruise); 0.0694414::action_e(keep) :- free_NE_e, free_W_e. 
+
+% Latent collision rules for factual world
+0.999001::latent_collision_e :- action_e(change_to_left), \+ free_NE_e, \+ free_W_e. 
+0.9990009::latent_collision_e :- action_e(cruise), \+ free_NE_e, \+ free_W_e. 
+0.000999001::latent_collision_e :- action_e(keep), \+ free_NE_e, \+ free_W_e. 
+0.999001::latent_collision_e :- action_e(change_to_left), free_NE_e, \+ free_W_e. 
+0.125151::latent_collision_e :- action_e(cruise), free_NE_e, \+ free_W_e. 
+0.000999001::latent_collision_e :- action_e(keep), free_NE_e, \+ free_W_e. 
+0.7749062::latent_collision_e :- action_e(change_to_left), \+ free_NE_e, free_W_e. 
+0.4147172::latent_collision_e :- action_e(cruise), \+ free_NE_e, free_W_e. 
+0.000999001::latent_collision_e :- action_e(keep), \+ free_NE_e, free_W_e. 
+0.7494795::latent_collision_e :- action_e(change_to_left), free_NE_e, free_W_e. 
+0.05867685::latent_collision_e :- action_e(cruise), free_NE_e, free_W_e. 
+0.000999001::latent_collision_e :- action_e(keep), free_NE_e, free_W_e. 
+
+% Evidence for abduction
+evidence(action_e(change_to_left), true).
+evidence(free_NE_e, true).
+evidence(free_W_e, false).
+evidence(latent_collision_e, true).
+
+% Query posterior probabilities of exogenous variables
+query(u1_prior).
+query(u2_prior).
+```
+
+- **Run This First**: In the ProbLog online editor, this computes `P(u1_prior = true)` and `P(u2_prior = true)` given the evidence.
+- **Example Output**: You might get something like:
+  ```
+  u1_prior: 0.9999  % Very high because free_NE_e = true is observed
+  u2_prior: 0.0001  % Very low because free_W_e = false is observed
+  ```
+- **Manual Calculation Insight**:
+  - `free_NE_e = true` forces `u1_prior = true` (probability adjusts upward).
+  - `free_W_e = false` forces `u2_prior = false` (probability adjusts downward).
+  - `action_e(change_to_left)` and `latent_collision_e = true` further refine these probabilities via the rules.
+
+#### Step 2: Action
+- **Goal**: Apply the counterfactual intervention `action_i(keep)` in the interventional world (`_i`).
+- **Why**: This represents the "what if" scenario, overriding the natural distribution of `action_i`.
+- **How in ProbLog**: Add a deterministic rule `action_i(keep).` to enforce the intervention, bypassing the probabilistic rules for `action_i`.
+
+#### Step 3: Prediction
+- **Goal**: Compute the probability of `latent_collision_i` using the abducted probabilities of `u1` and `u2` and the intervention.
+- **How in ProbLog**: Use the posterior probabilities from Step 1 as new probabilistic facts for `u1_post` and `u2_post`, then query `latent_collision_i`.
+
+**Full Modified Code for Steps 2 and 3**:
+```problog
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Posterior Probabilistic facts (from abduction)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Replace these with actual values from Step 1 output
+P_U1::u1_post.  % e.g., 0.9999::u1_post if computed above
+P_U2::u2_post.  % e.g., 0.0001::u2_post if computed above
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Counterfactual Network (Intervention World, suffix _i)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_i :- u1_post.
+free_W_i :- u2_post.
+
+% Action rules for counterfactual world (overridden by intervention)
+0.4424237::action_i(change_to_left); 0.3467216::action_i(cruise); 0.2108547::action_i(keep) :- \+ free_NE_i, \+ free_W_i. 
+0.3348623::action_i(change_to_left); 0.664808::action_i(cruise); 0.00032963::action_i(keep) :- free_NE_i, \+ free_W_i. 
+0.1310856::action_i(change_to_left); 0.244416::action_i(cruise); 0.6244984::action_i(keep) :- \+ free_NE_i, free_W_i. 
+0.154987::action_i(change_to_left); 0.7755716::action_i(cruise); 0.0694414::action_i(keep) :- free_NE_i, free_W_i. 
+
+% Latent collision rules for counterfactual world
+0.999001::latent_collision_i :- action_i(change_to_left), \+ free_NE_i, \+ free_W_i. 
+0.9990009::latent_collision_i :- action_i(cruise), \+ free_NE_i, \+ free_W_i. 
+0.000999001::latent_collision_i :- action_i(keep), \+ free_NE_i, \+ free_W_i. 
+0.999001::latent_collision_i :- action_i(change_to_left), free_NE_i, \+ free_W_i. 
+0.125151::latent_collision_i :- action_i(cruise), free_NE_i, \+ free_W_i. 
+0.000999001::latent_collision_i :- action_i(keep), free_NE_i, \+ free_W_i. 
+0.7749062::latent_collision_i :- action_i(change_to_left), \+ free_NE_i, free_W_i. 
+0.4147172::latent_collision_i :- action_i(cruise), \+ free_NE_i, free_W_i. 
+0.000999001::latent_collision_i :- action_i(keep), \+ free_NE_i, free_W_i. 
+0.7494795::latent_collision_i :- action_i(change_to_left), free_NE_i, free_W_i. 
+0.05867685::latent_collision_i :- action_i(cruise), free_NE_i, free_W_i. 
+0.000999001::latent_collision_i :- action_i(keep), free_NE_i, free_W_i. 
+
+% Intervention (Action step)
+action_i(keep).
+
+% Query (Prediction step)
+query(latent_collision_i).
+```
+
+- **Steps to Run**:
+  1. Run the abduction code to get `P(u1_prior)` and `P(u2_prior)`.
+  2. Replace `P_U1` and `P_U2` with the computed values (e.g., `0.9999::u1_post`, `0.0001::u2_post`).
+  3. Run this second code to get `P(latent_collision_i)`.
+
+#### Explanation of Changes
+1. **Abduction**:
+   - Split the process by first computing the posterior of `u1_prior` and `u2_prior` in the factual network.
+   - Used `_prior` to distinguish the initial probabilities, then renamed to `_post` for the next step.
+2. **Action**:
+   - Enforced `action_i(keep)` directly as a fact, which overrides the probabilistic rules for `action_i`.
+3. **Prediction**:
+   - Used the abducted probabilities (`u1_post`, `u2_post`) in the counterfactual network to compute `latent_collision_i`.
+
+#### Why Avoid Evidence Atoms?
+- In the original code, `evidence` implicitly performs abduction by conditioning the entire twin network. By separating the steps:
+  - You gain transparency into each phase (abduction, action, prediction).
+  - You avoid ProbLog’s automatic handling, which might obscure intermediate results.
+
+#### Example Output
+- **Abduction**: Suppose `P(u1_prior) ≈ 0.9999`, `P(u2_prior) ≈ 0.0001` (hypothetical, based on evidence).
+- **Prediction**: With `0.9999::u1_post`, `0.0001::u2_post`, and `action_i(keep)`:
+  - `free_NE_i = true`, `free_W_i = false` (almost certainly).
+  - Rule `0.000999001::latent_collision_i :- action_i(keep), free_NE_i, \+ free_W_i.` applies.
+  - Output: `latent_collision_i: 0.000999001`.
+
+Let me know if you need help running this or refining the process further!

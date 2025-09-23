@@ -1,0 +1,136 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\title{Tablas TPLP 2025}
+\author{havilesa}
+\date{July 2025}
+\begin{document}
+\maketitle
+
+\section{Crashes}
+
+\begin{table}[h]
+\centering
+\caption{Safe and Unsafe Outcomes by Data Training Percentage (Crash Scenarios)}
+\begin{tabular}{l|ccccc|c}
+\toprule
+\multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+Safe (True $\rightarrow$ False) & 511 & 584 & 624 & 624 & 604 & 2947 \\ 
+Unsafe (True $\rightarrow$ True) & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 511 & 584 & 624 & 624 & 604 & 2947 \\ 
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Number of Ties by Data Training Percentage (Crash Scenarios)}
+\begin{tabular}{c|ccccc|c}
+\toprule
+\multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+1 & 170 & 114 & 93 & 93 & 96 & 566 \\ 
+2 & 39 & 67 & 83 & 85 & 91 & 365 \\ 
+3 & 54 & 92 & 89 & 86 & 83 & 404 \\ 
+4 & 24 & 10 & 17 & 17 & 13 & 81 \\ 
+5 & 1 & 4 & 6 & 7 & 5 & 23 \\ 
+6 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 288 & 287 & 288 & 288 & 288 & 1439 \
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Number of Actions Selected by Data Training Percentage (Crash Scenarios)}
+\begin{tabular}{l|ccccc|c|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & & \\
+\midrule
+\texttt{cruise} & 56 & 94 & 98 & 97 & 96 & 441 & 441 \\ 
+\texttt{keep} & 214 & 215 & 220 & 225 & 219 & 1093 & 1093 \\ 
+\texttt{change\_to\_left} & 9 & 19 & 22 & 17 & 15 & 82 & 82 \\ 
+\texttt{change\_to\_right} & 0 & 24 & 24 & 24 & 22 & 94 & 94 \\ 
+\texttt{swerve\_left} & 121 & 126 & 156 & 151 & 146 & 700 & 700 \\ 
+\texttt{swerve\_right} & 111 & 106 & 104 & 110 & 106 & 537 & 537 \\ 
+\midrule
+\textbf{Total} & 511 & 584 & 624 & 624 & 604 & 2947 & 2947 \\ 
+\bottomrule
+\end{{tabular}}
+\end{{table}}
+
+\pagebreak
+\section{No Crashes}
+
+\begin{table}[h]
+\centering
+\caption{Safe and Unsafe Outcomes by Data Training Percentage (No Crash Scenarios)}
+\begin{tabular}{l|ccccc|c}
+\toprule
+\multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+Safe (False $\rightarrow$ False) & 735 & 921 & 944 & 979 & 981 & 4560 \\ 
+Unsafe (False $\rightarrow$ True) & 735 & 921 & 944 & 979 & 981 & 4560 \\ 
+\midrule
+Total & 1470 & 1842 & 1888 & 1958 & 1962 & 9120 \\ 
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Number of Ties by Data Training Percentage (No Crash Scenarios)}
+\begin{tabular}{c|ccccc|c}
+\toprule
+\multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+1 & 276 & 173 & 162 & 150 & 150 & 911 \\ 
+2 & 122 & 173 & 177 & 173 & 172 & 817 \\ 
+3 & 73 & 97 & 105 & 119 & 119 & 513 \\ 
+4 & 9 & 36 & 36 & 38 & 39 & 158 \\ 
+5 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+6 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 480 & 479 & 480 & 480 & 480 & 2399 \
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Number of Actions Selected by Data Training Percentage (No Crash Scenarios)}
+\begin{tabular}{l|ccccc|c|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & & \\
+\midrule
+\texttt{cruise} & 128 & 218 & 221 & 220 & 221 & 1008 & 950 \\ 
+\texttt{keep} & 291 & 278 & 285 & 291 & 291 & 1436 & 1345 \\ 
+\texttt{change\_to\_left} & 18 & 56 & 56 & 56 & 56 & 242 & 242 \\ 
+\texttt{change\_to\_right} & 0 & 59 & 58 & 57 & 57 & 231 & 224 \\ 
+\texttt{swerve\_left} & 178 & 194 & 200 & 223 & 221 & 1016 & 1016 \\ 
+\texttt{swerve\_right} & 160 & 149 & 155 & 158 & 161 & 783 & 783 \\ 
+\midrule
+\textbf{Total} & 775 & 954 & 975 & 1005 & 1007 & 4716 & 4560 \\ 
+\bottomrule
+\end{{tabular}}
+\end{{table}}
+
+\end{document}

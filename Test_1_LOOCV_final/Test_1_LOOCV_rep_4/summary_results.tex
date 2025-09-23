@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\title{Tablas TPLP 2025}
+\author{havilesa}
+\date{July 2025}
+\begin{document}
+\maketitle
+
+\begin{table}[h]
+\centering
+\caption{Accumulated Safe and Unsafe Outcomes Across All Percentages}
+\begin{tabular}{l|cc}
+\toprule
+Category & Crash Scenarios & No Crash Scenarios \\
+\midrule
+Safe Interventions & 2947 & 4560 \\ 
+Unsafe Interventions & 0 & 4560 \\ 
+\midrule
+Total & 2947 & 9120 \\ 
+\bottomrule
+\end{{tabular}}
+\end{{table}}
+
+\begin{table}[h]
+\centering
+\caption{Accumulated Number of Ties Across All Percentages}
+\begin{tabular}{c|cc}
+\toprule
+\multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{2}{c|}{Scenario} \\
+\cmidrule{2-3}
+ & Crash Scenarios & No Crash Scenarios \\
+\midrule
+1 & 566 & 911 \\ 
+2 & 365 & 817 \\ 
+3 & 404 & 513 \\ 
+4 & 81 & 158 \\ 
+5 & 23 & 0 \\ 
+6 & 0 & 0 \\ 
+\midrule
+Total & 1439 & 2399 \
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Accumulated Number of Actions Across All Percentages}
+\begin{tabular}{l|cc|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{2}{c|}{Scenario} & \multirow{2}{*}{Total} \\
+\cmidrule{2-3}
+ & Crash Scenarios & No Crash Scenarios \\
+\midrule
+\texttt{cruise} & 441 (441 safe) & 1008 (950 safe) & 1449 \\ 
+\texttt{keep} & 1093 (1093 safe) & 1436 (1345 safe) & 2529 \\ 
+\texttt{change\_to\_left} & 82 (82 safe) & 242 (242 safe) & 324 \\ 
+\texttt{change\_to\_right} & 94 (94 safe) & 231 (224 safe) & 325 \\ 
+\texttt{swerve\_left} & 700 (700 safe) & 1016 (1016 safe) & 1716 \\ 
+\texttt{swerve\_right} & 537 (537 safe) & 783 (783 safe) & 1320 \\ 
+\midrule
+\textbf{Total} & 2947 (2947 safe) & 4716 (4560 safe) & 7663 \\ 
+\bottomrule
+\end{{tabular}}
+\end{{table}}
+
+\section{Final Summary}
+
+\begin{table}[h]
+\centering
+\caption{Final Summary of Random Selection Outcomes}
+\begin{tabular}{lc}
+\toprule
+Outcome & Count \\
+\midrule
+Crash unsafe (True $\rightarrow$ True) & 0 \\ 
+Crash safe (True $\rightarrow$ False) & 1439 \\ 
+No crash safe (False $\rightarrow$ False) & 2243 \\ 
+No crash unsafe (False $\rightarrow$ True) & 156 \\ 
+\midrule
+Total & 3838 \\ 
+\bottomrule
+\end{{tabular}}
+\end{{table}}
+
+\end{document}

@@ -1,0 +1,18 @@
+# Ejecutar cada instrucción (una por una) en línea de comandos:
+ 
+#Rscript create_datasets_and_train.R ./data_split ../Shared_CSVs/ 25
+#killall R
+
+#python3 test_cBNs.py ./data_split/test_data ./cBNs 
+
+Rscript merge_files.R 
+
+python3 best_interventions.py ./cBNs ../Shared_CSVs/no_crashes.csv 
+
+# También se puede correr el script:
+# $ nohup ./script.sh > scripts.out 2> scripts.err < /dev/null &
+# Para parar el script:
+#        $ ps -u <usuario> 
+#        $ killall -9 sh R python3
+
+#find . -type f -name "merge_files.R" -exec cp ../../Test_1_LOOCV_final/Test_1_LOOCV_rep_1/25/merge_files.R {} \;

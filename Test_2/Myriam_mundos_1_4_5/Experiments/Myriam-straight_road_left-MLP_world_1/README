@@ -1,0 +1,7 @@
+Rscript db_integration.R
+
+python3 extract_all_sequences.py
+
+python3 draw_trajectories.py
+
+

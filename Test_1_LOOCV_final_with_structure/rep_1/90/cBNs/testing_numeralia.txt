@@ -1,0 +1,4 @@
+Testing numeralia summary for rep_1/90
+
+Average testing time: 16.1412 s
+Standard deviation:   0.0445 s

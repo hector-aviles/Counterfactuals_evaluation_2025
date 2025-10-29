@@ -5,14 +5,12 @@
 *.csv
 *.png
 .~lock.train_fold_*.*
-*.txt
-
-# LaTeX intermediates
-*.aux
-*.log
-*.out
 
 # Python bytecode and cache
 *.pyc
 __pycache__/
 
+
+!twin_networks_results.csv
+!data_sorted.csv
+!best_interventions.csv

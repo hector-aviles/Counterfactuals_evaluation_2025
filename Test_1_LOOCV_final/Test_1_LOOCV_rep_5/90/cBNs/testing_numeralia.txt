@@ -1,3 +1,0 @@
-
-Avg. testing time: 15.991330966042975
-Stdev. testing time: 0.09301278204671128

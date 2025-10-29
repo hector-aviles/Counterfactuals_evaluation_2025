@@ -1,0 +1,101 @@
+=== CRASH SECTION - ZERO OCCURRENCES ===
+(Data from rows where potential_crash_before_intervention is True and frequency = 0)
+
+Number of groups with exactly 1 best interventions: 0
+Number of groups with exactly 2 best interventions: 0
+Number of groups with exactly 3 best interventions: 0
+Number of groups with exactly 4 best interventions: 0
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 0
+
+Number of actions selected for each intervention type:
+(none)
+
+
+Total safe/unsafe actions:
+Total safe actions: 0
+Total unsafe actions: 0
+
+Transition matrix (before -> after):
+    (no data)
+
+
+=== CRASH SECTION - NON-ZERO OCCURRENCES (>=1) ===
+(Data from rows where potential_crash_before_intervention is True and frequency >= 1)
+
+Number of groups with exactly 1 best interventions: 70
+Number of groups with exactly 2 best interventions: 67
+Number of groups with exactly 3 best interventions: 98
+Number of groups with exactly 4 best interventions: 46
+Number of groups with exactly 5 best interventions: 7
+Number of groups with exactly 6 best interventions: 0
+
+Number of actions selected for each intervention type:
+change_to_left : Selected 24 times, Safe 24 times, Unsafe 0 times
+change_to_right : Selected 24 times, Safe 24 times, Unsafe 0 times
+cruise : Selected 112 times, Safe 112 times, Unsafe 0 times
+keep : Selected 246 times, Safe 246 times, Unsafe 0 times
+swerve_left : Selected 178 times, Safe 178 times, Unsafe 0 times
+swerve_right : Selected 133 times, Safe 133 times, Unsafe 0 times
+
+Total safe/unsafe actions:
+Total safe actions: 717
+Total unsafe actions: 0
+
+Transition matrix (before -> after):
+    True -> True: 0 (from 0 groups)
+    True -> False: 717 (from 288 groups)
+
+
+=== NO CRASH SECTION - ZERO OCCURRENCES ===
+(Data from rows where potential_crash_before_intervention is False and frequency = 0)
+
+Number of groups with exactly 1 best interventions: 86
+Number of groups with exactly 2 best interventions: 103
+Number of groups with exactly 3 best interventions: 72
+Number of groups with exactly 4 best interventions: 5
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 0
+
+Number of actions selected for each intervention type:
+change_to_left : Selected 20 times, Safe 20 times, Unsafe 0 times
+change_to_right : Selected 37 times, Safe 37 times, Unsafe 0 times
+cruise : Selected 134 times, Safe 134 times, Unsafe 0 times
+keep : Selected 159 times, Safe 159 times, Unsafe 0 times
+swerve_left : Selected 98 times, Safe 98 times, Unsafe 0 times
+swerve_right : Selected 80 times, Safe 80 times, Unsafe 0 times
+
+Total safe/unsafe actions:
+Total safe actions: 528
+Total unsafe actions: 0
+
+Transition matrix (before -> after):
+    False -> True: 0 (from 0 groups)
+    False -> False: 528 (from 266 groups)
+
+
+=== NO CRASH SECTION - NON-ZERO OCCURRENCES (>=1) ===
+(Data from rows where potential_crash_before_intervention is False and frequency >= 1)
+
+Number of groups with exactly 1 best interventions: 48
+Number of groups with exactly 2 best interventions: 76
+Number of groups with exactly 3 best interventions: 59
+Number of groups with exactly 4 best interventions: 31
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 0
+
+Number of actions selected for each intervention type:
+change_to_left : Selected 36 times, Safe 36 times, Unsafe 0 times
+change_to_right : Selected 19 times, Safe 19 times, Unsafe 0 times
+cruise : Selected 74 times, Safe 74 times, Unsafe 0 times
+keep : Selected 123 times, Safe 123 times, Unsafe 0 times
+swerve_left : Selected 141 times, Safe 141 times, Unsafe 0 times
+swerve_right : Selected 108 times, Safe 108 times, Unsafe 0 times
+
+Total safe/unsafe actions:
+Total safe actions: 501
+Total unsafe actions: 0
+
+Transition matrix (before -> after):
+    False -> True: 0 (from 0 groups)
+    False -> False: 501 (from 214 groups)

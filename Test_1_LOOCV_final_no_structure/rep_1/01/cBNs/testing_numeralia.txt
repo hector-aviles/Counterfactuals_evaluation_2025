@@ -1,4 +1,4 @@
 Testing numeralia summary for rep_1/01
 
-Average testing time: 14.0627 s
-Standard deviation:   0.2313 s
+Average testing time: 2.1071 s
+Standard deviation:   0.0112 s

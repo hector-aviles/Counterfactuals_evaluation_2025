@@ -1,0 +1,4 @@
+Testing numeralia summary for rep_3/75
+
+Average testing time: 2.6677 s
+Standard deviation:   0.1460 s

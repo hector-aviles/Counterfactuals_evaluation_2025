@@ -1,0 +1,4 @@
+Testing numeralia summary for rep_2/50
+
+Average testing time: 2.4890 s
+Standard deviation:   0.0926 s

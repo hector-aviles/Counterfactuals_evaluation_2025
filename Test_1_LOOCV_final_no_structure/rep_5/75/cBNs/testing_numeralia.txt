@@ -1,0 +1,4 @@
+Testing numeralia summary for rep_5/75
+
+Average testing time: 2.7197 s
+Standard deviation:   0.1614 s

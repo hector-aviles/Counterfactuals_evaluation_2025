@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\title{Cumulative Summary Results - TPLP 2025}
+\author{havilesa}
+\date{July 2025}
+\begin{document}
+\maketitle
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Overall Safe and Unsafe Outcomes}
+\begin{tabular}{lc}
+\toprule
+Category & Count \\
+\midrule
+Safe Interventions & 11730 \\ 
+Unsafe Interventions & 7470 \\ 
+\midrule
+Total & 19200 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Overall Number of Ties}
+\begin{tabular}{cc}
+\toprule
+\# of ties (1st Place) & Count \\
+\midrule
+1 & 19200 \\ 
+2 & 0 \\ 
+3 & 0 \\ 
+4 & 0 \\ 
+5 & 0 \\ 
+6 & 0 \\ 
+\midrule
+Total & 19200 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Overall Number of Actions}
+\begin{tabular}{l|c|c}
+\toprule
+Action & Count & Safe (\%) \\
+\midrule
+\texttt{cruise} & 0 & 0.0\% \\ 
+\texttt{keep} & 6139 & 47.9\% \\ 
+\texttt{change\_to\_left} & 0 & 0.0\% \\ 
+\texttt{change\_to\_right} & 0 & 0.0\% \\ 
+\texttt{swerve\_left} & 6123 & 66.2\% \\ 
+\texttt{swerve\_right} & 6938 & 68.3\% \\ 
+\midrule
+\textbf{Total} & 19200 & 61.1\% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Final Summary}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Final Summary of Random Selection Outcomes}
+\begin{tabular}{lc}
+\toprule
+Outcome & Count \\
+\midrule
+Crash unsafe (True $\rightarrow$ True) & 0 \\ 
+Crash safe (True $\rightarrow$ False) & 7200 \\ 
+No crash safe (False $\rightarrow$ False) & 4530 \\ 
+No crash unsafe (False $\rightarrow$ True) & 7470 \\ 
+\midrule
+Total & 19200 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+\end{document}

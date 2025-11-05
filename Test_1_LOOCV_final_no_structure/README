@@ -12,10 +12,10 @@ python3 test_cBNs.py both 5 01,25,50,75,90
 #python3 test_cBNs.py percentages 01,10
 
 # No frequency
-#python3 best_interventions_V2.R 5 01,25,50,75,90 
+#python3 best_interventions_V2.py 5 01,25,50,75,90 
 #python3 best_interventions_V2.py 1 01 
 
 # With frequency
-python3 best_interventions_with_frequency.R 5 01,25,50,75,90 
+python3 best_interventions_with_frequency.py 5 01,25,50,75,90 
 #python3 best_interventions_with_frequency.py 1 01 
 

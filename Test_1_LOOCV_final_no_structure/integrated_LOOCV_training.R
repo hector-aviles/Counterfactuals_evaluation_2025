@@ -234,12 +234,12 @@ for (r_idx in seq_along(reps)) {
       # Save training sample to rep_<r>/<percentage>/training_data/
       train_sample_to_save <- train_sample[, lapply(.SD, as.character), .SDcols = setdiff(names(train_sample), "state_id")]
       training_file <- file.path(training_dir, paste0("training_data_", percentage, "_fold_", i, ".csv"))
-      if (exists("train_sample") && nrow(train_sample) > 0) {
-        fwrite(train_sample_to_save, training_file)
-        report_progress(paste("Training data saved to:", training_file))
-      } else {
-        warning("Training data not saved: train_sample is missing or empty for fold ", i)
-      }
+      #if (exists("train_sample") && nrow(train_sample) > 0) {
+      #  fwrite(train_sample_to_save, training_file)
+      #  report_progress(paste("Training data saved to:", training_file))
+      #} else {
+      #  warning("Training data not saved: train_sample is missing or empty for fold ", i)
+      #}
 
       # --- Prepare for training: convert to factors
       df_factor <- as.data.frame(lapply(train_sample_to_save, factor))

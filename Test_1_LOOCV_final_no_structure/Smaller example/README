@@ -65,3 +65,89 @@ WhatIf -q latent_collision -e action\(cruise\),True -e free_NE,True -e latent_co
 
 
 
+###################################################
+### Using abduction -> action -> prediction
+###################################################
+
+###################################################
+1. Abduction
+###################################################
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Probabilistic facts (shared exogenous variables)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+0.4663543::u1_prior.
+free_NE_e :- u1_prior.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Factual Network (Evidence World, suffix _e)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Action rules for factual world
+0.331501::action_e(cruise); 0.668499::action_e(keep) :- \+ free_NE_e. 
+0.9394403::action_e(cruise); 0.060559::action_e(keep) :- free_NE_e. 
+
+% Latent collision rules for factual world
+0.5765706::latent_collision_e :- action_e(cruise), \+ free_NE_e. 
+0.000999001::latent_collision_e :- action_e(keep), \+ free_NE_e. 
+0.07739487::latent_collision_e :- action_e(cruise), free_NE_e. 
+0.000999001::latent_collision_e :- action_e(keep), free_NE_e. 
+
+evidence(action_e(cruise),true).
+evidence(free_NE_e,false). 
+evidence(latent_collision_e,true).  
+
+query(u1_prior). 
+
+Preliminary result: prob(u1_prior) = 0, but we will set u1_post = 0.00000001
+
+#####################################################
+2. Action 
+#####################################################
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Probabilistic facts (shared exogenous variables)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+0.00000001::u1_post.
+free_NE_e :- u1_post.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Factual Network (Evidence World, suffix _e)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Action rules for factual world
+0.331501::action_e(cruise); 0.668499::action_e(keep) :- \+ free_NE_e. 
+0.9394403::action_e(cruise); 0.060559::action_e(keep) :- free_NE_e. 
+
+% Latent collision rules for factual world
+0.5765706::latent_collision_e :- action_e(cruise), \+ free_NE_e. 
+0.000999001::latent_collision_e :- action_e(keep), \+ free_NE_e. 
+0.07739487::latent_collision_e :- action_e(cruise), free_NE_e. 
+0.000999001::latent_collision_e :- action_e(keep), free_NE_e. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Counterfactual Network (Intervention World, suffix _i)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_i :- u1.
+
+% Action rules becomes:
+action_i(keep).
+
+% Latent collision rules for factual world
+0.5765706::latent_collision_i :- action_i(cruise), \+ free_NE_i. 
+0.000999001::latent_collision_i :- action_i(keep), \+ free_NE_i. 
+0.07739487::latent_collision_i :- action_i(cruise), free_NE_i. 
+0.000999001::latent_collision_i :- action_i(keep), free_NE_i. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Queries (uncomment to use)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 3. Prediction 
+query(latent_collision_i). 
+
+Final result:  p(latent_collision_i) = 0.000999001
+

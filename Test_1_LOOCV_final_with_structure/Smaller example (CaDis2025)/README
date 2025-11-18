@@ -1,0 +1,69 @@
+
+
+Rscript ./integrated_LOOCV_training.R ./training_data_01_fold_1.csv ./cBN.pl
+
+
+WhatIf -q latent_collision -e action\(cruise\),True -e free_NE,False -e latent_collision,True  -i action\(cruise\),False -i action\(keep\),True  ./cBN.pl
+
+[WARNING] aspmc: Query for atom true was proven true during grounding.
+[WARNING] aspmc: Including it has a negative impact on performance.
+[INFO] aspmc: Tree Decomposition #bags: 36 unfolded treewidth: 5 #vertices: 40
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Compilation time:         0.0050160884857177734
+[INFO] aspmc: Counting time:            0.0006914138793945312
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] WhatIf:    Results
+[INFO] WhatIf: ------------------------------------------------------------
+[RESULT] WhatIf: latent_collision:     0.000999
+
+
+WhatIf -q latent_collision -e action\(cruise\),True -e free_NE,False -e latent_collision,True  -i action\(cruise\),True -i action\(keep\),False  ./cBN.pl
+
+[WARNING] aspmc: Query for atom true was proven true during grounding.
+[WARNING] aspmc: Including it has a negative impact on performance.
+[INFO] aspmc: Tree Decomposition #bags: 36 unfolded treewidth: 5 #vertices: 40
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Compilation time:         0.004864931106567383
+[INFO] aspmc: Counting time:            0.0006501674652099609
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] WhatIf:    Results
+[INFO] WhatIf: ------------------------------------------------------------
+[RESULT] WhatIf: latent_collision:     1.0
+
+
+WhatIf -q latent_collision -e action\(cruise\),True -e free_NE,True -e latent_collision,True  -i action\(cruise\),False -i action\(keep\),True  ./cBN.pl
+
+[WARNING] aspmc: Query for atom true was proven true during grounding.
+[WARNING] aspmc: Including it has a negative impact on performance.
+[INFO] aspmc: Tree Decomposition #bags: 36 unfolded treewidth: 5 #vertices: 40
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Compilation time:         0.005151510238647461
+[INFO] aspmc: Counting time:            0.0006868839263916016
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] WhatIf:    Results
+[INFO] WhatIf: ------------------------------------------------------------
+[RESULT] WhatIf: latent_collision:     0.000999
+
+
+WhatIf -q latent_collision -e action\(cruise\),True -e free_NE,True -e latent_collision,True  -i action\(cruise\),True -i action\(keep\),False ./cBN.pl
+
+[WARNING] aspmc: Query for atom true was proven true during grounding.
+[WARNING] aspmc: Including it has a negative impact on performance.
+[INFO] aspmc: Tree Decomposition #bags: 36 unfolded treewidth: 5 #vertices: 40
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Compilation time:         0.004469156265258789
+[INFO] aspmc: Counting time:            0.0006735324859619141
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] WhatIf:    Results
+[INFO] WhatIf: ------------------------------------------------------------
+[RESULT] WhatIf: latent_collision:     1.0
+
+

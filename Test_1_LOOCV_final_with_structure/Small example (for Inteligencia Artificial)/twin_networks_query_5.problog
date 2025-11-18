@@ -1,0 +1,398 @@
+**Original cBN code**:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Exogenous variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+0.4701183::u1.
+free_NE :- u1.
+
+0.7393943::u2.
+free_W :- u2.
+
+0.4628995::u3(change_to_left); 0.3253425::u3(cruise); 0.2117580::u3(keep).
+action(V) :- u3(V), \+ free_NE, \+ free_W.
+
+0.3477199::u4(change_to_left); 0.6518730::u4(cruise); 0.0004072::u4(keep).
+action(V) :- u4(V), free_NE, \+ free_W.
+
+0.1246326::u5(change_to_left); 0.2522046::u5(cruise); 0.6231628::u5(keep).
+action(V) :- u5(V), \+ free_NE, free_W.
+
+0.1592989::u6(change_to_left); 0.7684518::u6(cruise); 0.0722493::u6(keep).
+action(V) :- u6(V), free_NE, free_W.
+
+0.9990010::u7.
+latent_collision :- u7, action(change_to_left), \+ free_NE, \+ free_W.
+
+0.9990010::u8.
+latent_collision :- u8, action(cruise), \+ free_NE, \+ free_W.
+
+0.0009990::u9.
+latent_collision :- u9, action(keep), \+ free_NE, \+ free_W.
+
+0.9990010::u10.
+latent_collision :- u10, action(change_to_left), free_NE, \+ free_W.
+
+0.1267958::u11.
+latent_collision :- u11, action(cruise), free_NE, \+ free_W.
+
+0.0009990::u12.
+latent_collision :- u12, action(keep), free_NE, \+ free_W.
+
+0.7511792::u13.
+latent_collision :- u13, action(change_to_left), \+ free_NE, free_W.
+
+0.4358974::u14.
+latent_collision :- u14, action(cruise), \+ free_NE, free_W.
+
+0.0009990::u15.
+latent_collision :- u15, action(keep), \+ free_NE, free_W.
+
+0.7640587::u16.
+latent_collision :- u16, action(change_to_left), free_NE, free_W.
+
+0.0663964::u17.
+latent_collision :- u17, action(cruise), free_NE, free_W.
+
+0.0009990::u18.
+latent_collision :- u18, action(keep), free_NE, free_W.
+
+
+or:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Exogenous variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+0.4701183::u1.
+0.7393943::u2.
+0.4628995::u3(change_to_left); 0.3253425::u3(cruise); 0.2117580::u3(keep).
+0.3477199::u4(change_to_left); 0.6518730::u4(cruise); 0.0004072::u4(keep).
+0.1246326::u5(change_to_left); 0.2522046::u5(cruise); 0.6231628::u5(keep).
+0.1592989::u6(change_to_left); 0.7684518::u6(cruise); 0.0722493::u6(keep).
+0.9990010::u7.
+0.9990010::u8.
+0.0009990::u9.
+0.9990010::u10.
+0.1267958::u11.
+0.0009990::u12.
+0.7511792::u13.
+0.4358974::u14.
+0.0009990::u15.
+0.7640587::u16.
+0.0663964::u17.
+0.0009990::u18.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deterministic functions
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE :- u1.
+free_W :- u2.
+
+action(V) :- u3(V), \+ free_NE, \+ free_W.
+action(V) :- u4(V), free_NE, \+ free_W.
+action(V) :- u5(V), \+ free_NE, free_W.
+action(V) :- u6(V), free_NE, free_W.
+
+latent_collision :- u7, action(change_to_left), \+ free_NE, \+ free_W.
+latent_collision :- u8, action(cruise), \+ free_NE, \+ free_W.
+latent_collision :- u9, action(keep), \+ free_NE, \+ free_W.
+latent_collision :- u10, action(change_to_left), free_NE, \+ free_W.
+latent_collision :- u11, action(cruise), free_NE, \+ free_W.
+latent_collision :- u12, action(keep), free_NE, \+ free_W.
+latent_collision :- u13, action(change_to_left), \+ free_NE, free_W.
+latent_collision :- u14, action(cruise), \+ free_NE, free_W.
+latent_collision :- u15, action(keep), \+ free_NE, free_W.
+latent_collision :- u16, action(change_to_left), free_NE, free_W.
+latent_collision :- u17, action(cruise), free_NE, free_W.
+latent_collision :- u18, action(keep), free_NE, free_W.
+
+**Query 5**:
+
+WhatIf -q latent_collision -e action\(cruise\),True -e free_NE,False -e free_W,True -e latent_collision,True -i action\(cruise\),False -i action\(keep\),False -i action\(change_to_left\),True ./cBN.pl
+
+**Twin networks code**:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Shared exogenous variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+0.4701183::u1.
+0.7393943::u2.
+0.4628995::u3(change_to_left); 0.3253425::u3(cruise); 0.2117580::u3(keep).
+0.3477199::u4(change_to_left); 0.6518730::u4(cruise); 0.0004072::u4(keep).
+0.1246326::u5(change_to_left); 0.2522046::u5(cruise); 0.6231628::u5(keep).
+0.1592989::u6(change_to_left); 0.7684518::u6(cruise); 0.0722493::u6(keep).
+0.9990010::u7.
+0.9990010::u8.
+0.0009990::u9.
+0.9990010::u10.
+0.1267958::u11.
+0.0009990::u12.
+0.7511792::u13.
+0.4358974::u14.
+0.0009990::u15.
+0.7640587::u16.
+0.0663964::u17.
+0.0009990::u18.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Factual Network (Evidence World, suffix _e)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_e :- u1.
+free_W_e :- u2.
+
+action_e(V) :- u3(V), \+ free_NE_e, \+ free_W_e.
+action_e(V) :- u4(V), free_NE_e, \+ free_W_e.
+action_e(V) :- u5(V), \+ free_NE_e, free_W_e.
+action_e(V) :- u6(V), free_NE_e, free_W_e.
+
+latent_collision_e :- u7, action_e(change_to_left), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u8, action_e(cruise), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u9, action_e(keep), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u10, action_e(change_to_left), free_NE_e, \+ free_W_e.
+latent_collision_e :- u11, action_e(cruise), free_NE_e, \+ free_W_e.
+latent_collision_e :- u12, action_e(keep), free_NE_e, \+ free_W_e.
+latent_collision_e :- u13, action_e(change_to_left), \+ free_NE_e, free_W_e.
+latent_collision_e :- u14, action_e(cruise), \+ free_NE_e, free_W_e.
+latent_collision_e :- u15, action_e(keep), \+ free_NE_e, free_W_e.
+latent_collision_e :- u16, action_e(change_to_left), free_NE_e, free_W_e.
+latent_collision_e :- u17, action_e(cruise), free_NE_e, free_W_e.
+latent_collision_e :- u18, action_e(keep), free_NE_e, free_W_e.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Counterfactual Network (Intervention World, suffix _i)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_i :- u1.
+free_W_i :- u2.
+
+action_i(V) :- u3(V), \+ free_NE_i, \+ free_W_i.
+action_i(V) :- u4(V), free_NE_i, \+ free_W_i.
+action_i(V) :- u5(V), \+ free_NE_i, free_W_i.
+action_i(V) :- u6(V), free_NE_i, free_W_i.
+
+latent_collision_i :- u7, action_i(change_to_left), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u8, action_i(cruise), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u9, action_i(keep), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u10, action_i(change_to_left), free_NE_i, \+ free_W_i.
+latent_collision_i :- u11, action_i(cruise), free_NE_i, \+ free_W_i.
+latent_collision_i :- u12, action_i(keep), free_NE_i, \+ free_W_i.
+latent_collision_i :- u13, action_i(change_to_left), \+ free_NE_i, free_W_i.
+latent_collision_i :- u14, action_i(cruise), \+ free_NE_i, free_W_i.
+latent_collision_i :- u15, action_i(keep), \+ free_NE_i, free_W_i.
+latent_collision_i :- u16, action_i(change_to_left), free_NE_i, free_W_i.
+latent_collision_i :- u17, action_i(cruise), free_NE_i, free_W_i.
+latent_collision_i :- u18, action_i(keep), free_NE_i, free_W_i.
+
+**Step 1: Abduction**
+
+- **Goal**: Infer the posterior probabilities of the exogenous variables given the factual observations.
+- **Why**: Exogenous variables are shared between the factual and counterfactual worlds, so we need their updated probabilities based on the evidence. 
+- **How in ProbLog**:
+  - Use the factual network ("_e") to compute P(<exogenous variables> | action_e(cruise), free_NE_e = False, free_W_e = True, latent_collision_e = True).
+  - Replace the original probabilistic facts (0.4701183::u1, etc,...) with new variables (e.g., u1_post) whose probabilities will be computed and then used in both networks.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Shared exogenous variables (NOTE: Last two decimals in ADs values were adjusted further due to problems with ProbLog online)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Prior proabilities
+0.4701183::u1_post.
+0.7393943::u2_post.
+0.4628900::u3_post(change_to_left); 0.3253400::u3_post(cruise); 0.2117500::u3_post(keep).
+0.3477100::u4_post(change_to_left); 0.6518700::u4_post(cruise); 0.0004000::u4_post(keep).
+0.1246300::u5_post(change_to_left); 0.2522000::u5_post(cruise); 0.6231600::u5_post(keep).
+0.1592900::u6_post(change_to_left); 0.7684500::u6_post(cruise); 0.0722400::u6_post(keep).
+0.9990010::u7_post.
+0.9990010::u8_post.
+0.0009990::u9_post.
+0.9990010::u10_post.
+0.1267958::u11_post.
+0.0009990::u12_post.
+0.7511792::u13_post.
+0.4358974::u14_post.
+0.0009990::u15_post.
+0.7640587::u16_post.
+0.0663964::u17_post.
+0.0009990::u18_post.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Factual Network (Evidence World, suffix _e)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_e :- u1_post.
+free_W_e :- u2_post.
+
+action_e(V) :- u3_post(V), \+ free_NE_e, \+ free_W_e.
+action_e(V) :- u4_post(V), free_NE_e, \+ free_W_e.
+action_e(V) :- u5_post(V), \+ free_NE_e, free_W_e.
+action_e(V) :- u6_post(V), free_NE_e, free_W_e.
+
+latent_collision_e :- u7_post, action_e(change_to_left), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u8_post, action_e(cruise), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u9_post, action_e(keep), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u10_post, action_e(change_to_left), free_NE_e, \+ free_W_e.
+latent_collision_e :- u11_post, action_e(cruise), free_NE_e, \+ free_W_e.
+latent_collision_e :- u12_post, action_e(keep), free_NE_e, \+ free_W_e.
+latent_collision_e :- u13_post, action_e(change_to_left), \+ free_NE_e, free_W_e.
+latent_collision_e :- u14_post, action_e(cruise), \+ free_NE_e, free_W_e.
+latent_collision_e :- u15_post, action_e(keep), \+ free_NE_e, free_W_e.
+latent_collision_e :- u16_post, action_e(change_to_left), free_NE_e, free_W_e.
+latent_collision_e :- u17_post, action_e(cruise), free_NE_e, free_W_e.
+latent_collision_e :- u18_post, action_e(keep), free_NE_e, free_W_e.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Counterfactual Network (Intervention World, suffix _i)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_i :- u1_post.
+free_W_i :- u2_post.
+
+action_i(V) :- u3_post(V), \+ free_NE_i, \+ free_W_i.
+action_i(V) :- u4_post(V), free_NE_i, \+ free_W_i.
+action_i(V) :- u5_post(V), \+ free_NE_i, free_W_i.
+action_i(V) :- u6_post(V), free_NE_i, free_W_i.
+
+latent_collision_i :- u7_post, action_i(change_to_left), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u8_post, action_i(cruise), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u9_post, action_i(keep), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u10_post, action_i(change_to_left), free_NE_i, \+ free_W_i.
+latent_collision_i :- u11_post, action_i(cruise), free_NE_i, \+ free_W_i.
+latent_collision_i :- u12_post, action_i(keep), free_NE_i, \+ free_W_i.
+latent_collision_i :- u13_post, action_i(change_to_left), \+ free_NE_i, free_W_i.
+latent_collision_i :- u14_post, action_i(cruise), \+ free_NE_i, free_W_i.
+latent_collision_i :- u15_post, action_i(keep), \+ free_NE_i, free_W_i.
+latent_collision_i :- u16_post, action_i(change_to_left), free_NE_i, free_W_i.
+latent_collision_i :- u17_post, action_i(cruise), free_NE_i, free_W_i.
+latent_collision_i :- u18_post, action_i(keep), free_NE_i, free_W_i.
+
+% Evidence for abduction
+evidence(action_e(cruise), true).
+evidence(free_NE_e, false).
+evidence(free_W_e, true).
+evidence(latent_collision_e, true).
+
+% Query posterior probabilities of exogenous variables
+query(u1_post).
+query(u2_post).
+query(u3_post(change_to_left)).
+query(u3_post(cruise)).
+query(u3_post(keep)).
+query(u4_post(change_to_left)).
+query(u4_post(cruise)).
+query(u4_post(keep)).
+query(u5_post(change_to_left)).
+query(u5_post(cruise)).
+query(u5_post(keep)).
+query(u6_post(change_to_left)).
+query(u6_post(cruise)).
+query(u6_post(keep)).
+query(u7_post).
+query(u8_post).
+query(u9_post).
+query(u10_post).
+query(u11_post).
+query(u12_post).
+query(u13_post).
+query(u14_post).
+query(u15_post).
+query(u16_post).
+query(u17_post).
+query(u18_post).
+
+**Step 2: Action**
+- **Goal**: Apply the counterfactual intervention `action_i(keep)` in the interventional world (`_i`).
+- **Why**: This represents the "what if" scenario, overriding the natural distribution of `action_i`.
+- **How in ProbLog**: Add a deterministic rule `action_i(keep).` to enforce the intervention, bypassing the probabilistic rules for `action_i`.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Shared exogenous variables (posterior probabilities)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Posterior probabilities for error terms
+0.0000000::u1_post.
+1.0000000::u2_post.
+
+%%% Multi-valued error terms with annotated disjunctions
+0.4628900::u3_post(change_to_left); 0.3253400::u3_post(cruise); 0.2117500::u3_post(keep).
+0.3477100::u4_post(change_to_left); 0.6518700::u4_post(cruise); 0.0004000::u4_post(keep).
+0.0000000::u5_post(change_to_left); 1.0000000::u5_post(cruise); 0.0000000::u5_post(keep).
+0.1592900::u6_post(change_to_left); 0.7684500::u6_post(cruise); 0.0722400::u6_post(keep).
+
+0.9990010::u7_post.
+0.9990010::u8_post.
+0.0009990::u9_post.
+0.9990010::u10_post.
+0.1267958::u11_post.
+0.0009990::u12_post.
+0.7511792::u13_post.
+1.0000000::u14_post.
+0.0009990::u15_post.
+0.7640587::u16_post.
+0.0663964::u17_post.
+0.0009990::u18_post.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Factual Network (Evidence World, suffix _e)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_e :- u1_post.
+free_W_e :- u2_post.
+
+action_e(V) :- u3_post(V), \+ free_NE_e, \+ free_W_e.
+action_e(V) :- u4_post(V), free_NE_e, \+ free_W_e.
+action_e(V) :- u5_post(V), \+ free_NE_e, free_W_e.
+action_e(V) :- u6_post(V), free_NE_e, free_W_e.
+
+latent_collision_e :- u7_post, action_e(change_to_left), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u8_post, action_e(cruise), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u9_post, action_e(keep), \+ free_NE_e, \+ free_W_e.
+latent_collision_e :- u10_post, action_e(change_to_left), free_NE_e, \+ free_W_e.
+latent_collision_e :- u11_post, action_e(cruise), free_NE_e, \+ free_W_e.
+latent_collision_e :- u12_post, action_e(keep), free_NE_e, \+ free_W_e.
+latent_collision_e :- u13_post, action_e(change_to_left), \+ free_NE_e, free_W_e.
+latent_collision_e :- u14_post, action_e(cruise), \+ free_NE_e, free_W_e.
+latent_collision_e :- u15_post, action_e(keep), \+ free_NE_e, free_W_e.
+latent_collision_e :- u16_post, action_e(change_to_left), free_NE_e, free_W_e.
+latent_collision_e :- u17_post, action_e(cruise), free_NE_e, free_W_e.
+latent_collision_e :- u18_post, action_e(keep), free_NE_e, free_W_e.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Counterfactual Network (Intervention World, suffix _i)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+free_NE_i :- u1_post.
+free_W_i :- u2_post.
+
+% Intervention step
+0.0::action_i(cruise);1.0::action_i(change_to_left);0.0::action_i(keep).
+
+latent_collision_i :- u7_post, action_i(change_to_left), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u8_post, action_i(cruise), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u9_post, action_i(keep), \+ free_NE_i, \+ free_W_i.
+latent_collision_i :- u10_post, action_i(change_to_left), free_NE_i, \+ free_W_i.
+latent_collision_i :- u11_post, action_i(cruise), free_NE_i, \+ free_W_i.
+latent_collision_i :- u12_post, action_i(keep), free_NE_i, \+ free_W_i.
+latent_collision_i :- u13_post, action_i(change_to_left), \+ free_NE_i, free_W_i.
+latent_collision_i :- u14_post, action_i(cruise), \+ free_NE_i, free_W_i.
+latent_collision_i :- u15_post, action_i(keep), \+ free_NE_i, free_W_i.
+latent_collision_i :- u16_post, action_i(change_to_left), free_NE_i, free_W_i.
+latent_collision_i :- u17_post, action_i(cruise), free_NE_i, free_W_i.
+latent_collision_i :- u18_post, action_i(keep), free_NE_i, free_W_i.
+
+#### Step 3: Prediction
+- **Goal**: Compute the probability of 'latent_collision_i' using the abducted probabilities of exogenous variables and the intervention.
+- **How in ProbLog**: Use the posterior probabilities from Step 1 as new probabilistic facts for u*_post, then query 'latent_collision_i'.
+
+% Query (Prediction step)
+query(latent_collision_i).
+
+% Query	Location	Probability
+% latent_collision_i	78:7	
+% 0.7511792
+
+

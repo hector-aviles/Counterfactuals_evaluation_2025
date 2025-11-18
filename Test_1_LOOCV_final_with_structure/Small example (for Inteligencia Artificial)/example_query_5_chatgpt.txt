@@ -155,9 +155,9 @@ P(latent_collision= True | evidence, do(action=change_to_left)) = 0.7511792.
 * SCM functional form written above.
 * Abduction (from evidence `action=cruise, free_NE=False, free_W=True, latent_collision=True`) forces:
 
-  * U_1=0,\ U_2=1,\ U_5=cruise,\ U_14=1.)
-* Do-intervention: set (action}=change_to_left (breaks the original `action` equation).
-* Prediction: with ¬free_NE,free_W and action=change_to_left, latent collision equals U_13. (PU_13=1)=0.7511792). 
+  * U_1=0, U_2=1, U_5=cruise, U_14=1.
+* Do-intervention: set (action=change_to_left (breaks the original `action` equation).
+* Prediction: with ¬free_NE,free_W and action=change_to_left, latent collision equals U_13. (P(U_13=1)=0.7511792). 
 
 So predicted probability of collision = **0.7511792**.
 

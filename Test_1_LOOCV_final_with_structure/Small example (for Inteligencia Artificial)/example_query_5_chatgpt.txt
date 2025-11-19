@@ -4,16 +4,16 @@ Nice — let’s do this step by step in **structural causal model (SCM)** / fun
 
 # 1) SCM (functional) notation
 
-Treat the listed `u1..u18` as independent exogenous random variables with the given priors (I keep the same numbers you provided).
+Treat the listed "u1..u18" as independent exogenous random variables with the given priors (I keep the same numbers you provided).
 
 **Exogenous variables (priors)**
 
 * U_1 ≈ Bernoulli(0.4701183)
 * U_2 ≈ Bernoulli(0.7393943)
-* U_3 in {change_to_left, cruise, keep} with P given (0.4628995, 0.3253425, 0.2117580)
-* U_4 in {change_to_left, cruise, keep} with P (0.3477199,0.6518730,0.0004072)
-* U_5 in {change_to_left, cruise, keep} with P (0.1246326,0.2522046,0.6231628)
-* U_6 in {change_to_left, cruise, keep} with P (0.1592989,0.7684518,0.0722493)
+* P(U_3=change_to_left)=0.4628995; P(U_3=cruise)=0.3253425; P(U_3=keep)=0.2117580.
+* P(U_4=change_to_left)=0.3477199; P(U_4=cruise)=0.6518730; P(U_4=keep)=0.0004072.
+* P(U_5=change_to_left)=0.1246326; P(U_5=cruise)=0.2522046; P(U_5=keep)=0.6231628.
+* P(U_6=change_to_left)=0.1592989; P(U_6=cruise)=0.7684518; P(U_6=keep)=0.0722493.
 * U_7 ≈ Bernoulli(0.9990010)
 * U_8 ≈ Bernoulli(0.9990010)
 * U_9 ≈ Bernoulli(0.0009990)
@@ -33,26 +33,26 @@ Treat the listed `u1..u18` as independent exogenous random variables with the gi
 
 Write endogenous variables as functions of exogenous variables:
 
-* free_NE = f_NE(U_1) = U_1
+* free_NE := f_NE(U_1) = U_1
 
-* free_W = f_W(U_2) = U_2
+* free_W := f_W(U_2) = U_2
 
-* action = f_action (U_3,U_4,U_5,U_6,free_NE,free_W) defined by the 4 cases:
+* action := f_action (U_3,U_4,U_5,U_6,free_NE,free_W) defined by the 4 cases:
 
 
   f_action =
-             U_3 & if  ¬free_NE \land ¬free_W
-             U_4 & if  free_NE \land ¬free_W
-             U_5 & if  ¬free_NE \land free_W
-             U_6 & if  free_NE \land free_W
+             U_3 if  ¬free_NE ∧ ¬free_W
+             U_4 if  free_NE ∧ ¬free_W
+             U_5 if  ¬free_NE ∧ free_W
+             U_6 if  free_NE ∧ free_W
 
-* latent_collision = f_col(U_7,\dots,U_18,action,free_NE,free_W) is an OR of the matching exogenous indicator for each (action, free_NE, free_W) configuration:
+* latent_collision = f_col(U_7,...,U_18,action,free_NE,free_W) is an OR of the matching exogenous indicator for each (action, free_NE, free_W) configuration:
 
   Concretely, for each triple (a,ne,w):
 
-  * If ¬free_NE,¬free_W and (action}=change_to_left then latent collision iff U_7=1).
-  * If ¬free_NE,¬free_W and (action}=cruise then collision iff U_8=1).
-  * If ¬free_NE,¬free_W and (action}=keep then collision iff U_9=1).
+  * If ¬free_NE,¬free_W and action=change_to_left then latent collision iff U_7=1).
+  * If ¬free_NE,¬free_W and action=cruise then collision iff U_8=1.
+  * If ¬free_NE,¬free_W and action=keep then collision iff U_9=1.
   * If free_NE,¬free_W and action=change_to_left then use U_10.
   * If free_NE,¬free_W and action=cruise then use U_11.
   * If free_NE,¬free_W and action=keep then use U_12.
@@ -63,7 +63,7 @@ Write endogenous variables as functions of exogenous variables:
   * If free_NE,free_W and action=cruise then use U_17.
   * If free_NE,free_W and action=keep then use U_18.
 
-So ( latent_collision} = 1) iff the appropriate U_j) for the current configuration = 1.
+So  latent_collision = 1 iff the appropriate U_j for the current configuration = 1.
 
 ---
 
@@ -79,7 +79,7 @@ You gave evidence:
 Use the SCM equations to infer which exogenous variables must have particular values (logical constraints). Under the SCM:
 
 * free_NE=False --> U_1 = 0.
-* free_W}=True --> U_2 = 1.
+* free_W=True --> U_2 = 1.
 
 Given ¬free_NE and free_W, the structural equation for action uses U_5:
 
@@ -106,9 +106,9 @@ All other U_j remain unspecified by the observed evidence and keep their prior d
 
 You intervene: set do(action=change_to_left).
 
-In SCM language: replace the structural assignment for `action` by the constant function action <-- change_to_left. All other structural equations (for free_NE, free_W, latent_collision) remain the same, and the exogenous variables keep the values found by abduction (where fixed) or their priors (where not fixed).
+In SCM language: replace the structural assignment for "action" by the constant function action <-- change_to_left. All other structural equations (for free_NE, free_W, latent_collision) remain the same, and the exogenous variables keep the values found by abduction (where fixed) or their priors (where not fixed).
 
-Importantly: the intervention severs dependence of `action` on U_5 (and U_3,U_4,U_6); action is now the constant `change_to_left`.
+Importantly: the intervention severs dependence of "action" on U_5 (and U_3,U_4,U_6); action is now the constant "change_to_left".
 
 Note we keep the abduced values for U_1,U_2,U_14 etc. (i.e. we do not “re-abduce” after the do; abduction produced constraints on exogenous variables given the observational evidence).
 
@@ -150,13 +150,13 @@ P(latent_collision= True | evidence, do(action=change_to_left)) = 0.7511792.
 
 ---
 
-# 5) Short recap (concise)
+# 5) Short recaP(concise)
 
 * SCM functional form written above.
-* Abduction (from evidence `action=cruise, free_NE=False, free_W=True, latent_collision=True`) forces:
+* Abduction (from evidence "action=cruise, free_NE=False, free_W=True, latent_collision=True") forces:
 
   * U_1=0, U_2=1, U_5=cruise, U_14=1.
-* Do-intervention: set (action=change_to_left (breaks the original `action` equation).
+* Do-intervention: set (action=change_to_left (breaks the original "action" equation).
 * Prediction: with ¬free_NE,free_W and action=change_to_left, latent collision equals U_13. (P(U_13=1)=0.7511792). 
 
 So predicted probability of collision = **0.7511792**.

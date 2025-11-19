@@ -1,0 +1,109 @@
+Here's the conversion to Structural Causal Model (SCM) notation and the solution for the abduction, action, and prediction steps:
+
+## Structural Causal Model (SCM) Notation
+
+```prolog
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Structural Causal Model
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Exogenous variables (same as before)
+0.4701183::u1.
+0.7393943::u2.
+0.4628995::u3(change_to_left); 0.3253425::u3(cruise); 0.2117580::u3(keep).
+0.3477199::u4(change_to_left); 0.6518730::u4(cruise); 0.0004072::u4(keep).
+0.1246326::u5(change_to_left); 0.2522046::u5(cruise); 0.6231628::u5(keep).
+0.1592989::u6(change_to_left); 0.7684518::u6(cruise); 0.0722493::u6(keep).
+0.9990010::u7.
+0.9990010::u8.
+0.0009990::u9.
+0.9990010::u10.
+0.1267958::u11.
+0.0009990::u12.
+0.7511792::u13.
+0.4358974::u14.
+0.0009990::u15.
+0.7640587::u16.
+0.0663964::u17.
+0.0009990::u18.
+
+% Structural equations (functional notation)
+free_NE = f₁(u₁) ≔ u₁
+free_W = f₂(u₂) ≔ u₂
+
+action = f₃(u₃, u₄, u₅, u₆, free_NE, free_W) ≔ 
+    if ¬free_NE ∧ ¬free_W then u₃
+    else if free_NE ∧ ¬free_W then u₄
+    else if ¬free_NE ∧ free_W then u₅
+    else u₆
+
+latent_collision = f₄(u₇...u₁₈, action, free_NE, free_W) ≔
+    case (action, free_NE, free_W) of
+        (change_to_left, false, false): u₇
+        (cruise, false, false): u₈
+        (keep, false, false): u₉
+        (change_to_left, true, false): u₁₀
+        (cruise, true, false): u₁₁
+        (keep, true, false): u₁₂
+        (change_to_left, false, true): u₁₃
+        (cruise, false, true): u₁₄
+        (keep, false, true): u₁₅
+        (change_to_left, true, true): u₁₆
+        (cruise, true, true): u₁₇
+        (keep, true, true): u₁₈
+```
+
+## Solution Steps
+
+### Step 1: Abduction (Inferring Posterior Distributions of U)
+
+**Evidence:**
+- `action = cruise`
+- `free_NE = false` 
+- `free_W = true`
+- `latent_collision = true`
+
+**Functional constraints:**
+- From `free_NE = false`: u₁ = false (since free_NE = f₁(u₁) = u₁)
+- From `free_W = true`: u₂ = true (since free_W = f₂(u₂) = u₂)
+- From `action = cruise` and context `(¬free_NE ∧ free_W)`: u₅ = cruise (since action = f₃(_, _, u₅, _, false, true) = u₅)
+- From `latent_collision = true` and context `(cruise, false, true)`: u₁₄ = true (since latent_collision = f₄(_, u₁₄, cruise, false, true) = u₁₄)
+
+**Posterior distributions:**
+```
+u₁ = false (deterministic)
+u₂ = true (deterministic) 
+u₅(cruise) = 1.0, u₅(change_to_left) = 0.0, u₅(keep) = 0.0
+u₁₄ = true (deterministic)
+All other u's remain at prior distributions
+```
+
+### Step 2: Action (Intervention do(action = change_to_left))
+
+**Intervention:** `do(action = change_to_left)`
+
+This sets the action variable directly, breaking its functional dependence on parents:
+```
+action ← change_to_left  (by intervention)
+```
+
+### Step 3: Prediction (Compute P(latent_collision = true | evidence, intervention))
+
+**Current state after abduction and intervention:**
+- `free_NE = false` (from evidence)
+- `free_W = true` (from evidence) 
+- `action = change_to_left` (by intervention)
+- `u₁₄ = true` (from abduction)
+
+**Compute latent_collision:**
+Since we have `(action, free_NE, free_W) = (change_to_left, false, true)`, the structural equation is:
+```
+latent_collision = f₄(_, _, _, u₁₃, _, _, _, _, _, _, _, _, _, change_to_left, false, true) = u₁₃
+```
+
+**Result:**
+```
+P(latent_collision = true | evidence, intervention) = P(u₁₃ = true) = 0.7511792
+```
+
+**Final Answer:** The probability of latent collision after intervening to set action = change_to_left is **0.7511792** (75.12%).

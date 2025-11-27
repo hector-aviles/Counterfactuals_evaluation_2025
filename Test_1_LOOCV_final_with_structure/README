@@ -1,7 +1,7 @@
 # Ejecutar cada instrucción (una por una) en línea de comandos:
  
 # numeric arguments indicate the number of repetitions and percentages
-Rscript integrated_LOOCV_training.R ./Shared_CSVs 5 01,25,50,75,90 
+Rscript CBNs_LOOCV_training.R ./Shared_CSVs 5 01,25,50,75,90 
 #Rscript integrated_LOOCV_training.R ./Shared_CSVs 1 01,25,50,75,90
 
 # numeric arguments indicate the number of repetitions and percentages 
@@ -18,4 +18,7 @@ python3 test_cBNs.py both 5 01,25,50,75,90
 # With frequency
 python3 best_interventions_with_frequency.py 5 01,25,50,75,90 
 #python3 best_interventions_with_frequency.py 1 01 
+
+Rscript NB_LOOCV_training.R ./Shared_CSVs 5 01,25,50,75,90 
+
 

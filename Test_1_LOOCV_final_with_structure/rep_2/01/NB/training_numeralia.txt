@@ -1,0 +1,759 @@
+Fold 1: Training Time = 0.94 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 2: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 3: Training Time = 0.95 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 4: Training Time = 0.92 seconds, Samples Removed = 7993, Train Sample Size = 19509
+
+Fold 5: Training Time = 0.92 seconds, Samples Removed = 7993, Train Sample Size = 19509
+
+Fold 6: Training Time = 0.95 seconds, Samples Removed = 7993, Train Sample Size = 19509
+
+Fold 7: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 8: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 9: Training Time = 0.94 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 10: Training Time = 0.91 seconds, Samples Removed = 78375, Train Sample Size = 18805
+
+Fold 11: Training Time = 0.91 seconds, Samples Removed = 78375, Train Sample Size = 18805
+
+Fold 12: Training Time = 0.93 seconds, Samples Removed = 78375, Train Sample Size = 18805
+
+Fold 13: Training Time = 0.91 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 14: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 15: Training Time = 0.95 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 16: Training Time = 0.92 seconds, Samples Removed = 7916, Train Sample Size = 19510
+
+Fold 17: Training Time = 0.94 seconds, Samples Removed = 7916, Train Sample Size = 19510
+
+Fold 18: Training Time = 0.91 seconds, Samples Removed = 7916, Train Sample Size = 19510
+
+Fold 19: Training Time = 0.93 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 20: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 21: Training Time = 0.94 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 22: Training Time = 0.93 seconds, Samples Removed = 32957, Train Sample Size = 19259
+
+Fold 23: Training Time = 0.94 seconds, Samples Removed = 32957, Train Sample Size = 19259
+
+Fold 24: Training Time = 0.92 seconds, Samples Removed = 32957, Train Sample Size = 19259
+
+Fold 25: Training Time = 0.93 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 26: Training Time = 0.93 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 27: Training Time = 0.99 seconds, Samples Removed = 6745, Train Sample Size = 19521
+
+Fold 28: Training Time = 0.92 seconds, Samples Removed = 6745, Train Sample Size = 19521
+
+Fold 29: Training Time = 0.93 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 30: Training Time = 1.02 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 31: Training Time = 2.02 seconds, Samples Removed = 18695, Train Sample Size = 19402
+
+Fold 32: Training Time = 0.94 seconds, Samples Removed = 18695, Train Sample Size = 19402
+
+Fold 33: Training Time = 0.91 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 34: Training Time = 0.94 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 35: Training Time = 0.93 seconds, Samples Removed = 11589, Train Sample Size = 19473
+
+Fold 36: Training Time = 0.93 seconds, Samples Removed = 11589, Train Sample Size = 19473
+
+Fold 37: Training Time = 0.92 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 38: Training Time = 0.92 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 39: Training Time = 0.91 seconds, Samples Removed = 21001, Train Sample Size = 19379
+
+Fold 40: Training Time = 1.00 seconds, Samples Removed = 21001, Train Sample Size = 19379
+
+Fold 41: Training Time = 0.93 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 42: Training Time = 0.93 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 43: Training Time = 0.93 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 44: Training Time = 0.93 seconds, Samples Removed = 7586, Train Sample Size = 19513
+
+Fold 45: Training Time = 0.92 seconds, Samples Removed = 7586, Train Sample Size = 19513
+
+Fold 46: Training Time = 0.98 seconds, Samples Removed = 7586, Train Sample Size = 19513
+
+Fold 47: Training Time = 0.94 seconds, Samples Removed = 7505, Train Sample Size = 19514
+
+Fold 48: Training Time = 0.93 seconds, Samples Removed = 7505, Train Sample Size = 19514
+
+Fold 49: Training Time = 0.93 seconds, Samples Removed = 7505, Train Sample Size = 19514
+
+Fold 50: Training Time = 0.94 seconds, Samples Removed = 34057, Train Sample Size = 19248
+
+Fold 51: Training Time = 0.93 seconds, Samples Removed = 34057, Train Sample Size = 19248
+
+Fold 52: Training Time = 0.96 seconds, Samples Removed = 34057, Train Sample Size = 19248
+
+Fold 53: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 54: Training Time = 0.96 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 55: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 56: Training Time = 0.93 seconds, Samples Removed = 7502, Train Sample Size = 19514
+
+Fold 57: Training Time = 0.90 seconds, Samples Removed = 7502, Train Sample Size = 19514
+
+Fold 58: Training Time = 0.92 seconds, Samples Removed = 7502, Train Sample Size = 19514
+
+Fold 59: Training Time = 0.91 seconds, Samples Removed = 7511, Train Sample Size = 19514
+
+Fold 60: Training Time = 0.93 seconds, Samples Removed = 7511, Train Sample Size = 19514
+
+Fold 61: Training Time = 0.94 seconds, Samples Removed = 7511, Train Sample Size = 19514
+
+Fold 62: Training Time = 0.91 seconds, Samples Removed = 17399, Train Sample Size = 19415
+
+Fold 63: Training Time = 0.92 seconds, Samples Removed = 17399, Train Sample Size = 19415
+
+Fold 64: Training Time = 0.91 seconds, Samples Removed = 17399, Train Sample Size = 19415
+
+Fold 65: Training Time = 0.92 seconds, Samples Removed = 5004, Train Sample Size = 19539
+
+Fold 66: Training Time = 0.91 seconds, Samples Removed = 5004, Train Sample Size = 19539
+
+Fold 67: Training Time = 0.94 seconds, Samples Removed = 7180, Train Sample Size = 19517
+
+Fold 68: Training Time = 0.94 seconds, Samples Removed = 7180, Train Sample Size = 19517
+
+Fold 69: Training Time = 0.92 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 70: Training Time = 0.93 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 71: Training Time = 0.96 seconds, Samples Removed = 30512, Train Sample Size = 19284
+
+Fold 72: Training Time = 0.92 seconds, Samples Removed = 30512, Train Sample Size = 19284
+
+Fold 73: Training Time = 0.95 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 74: Training Time = 0.93 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 75: Training Time = 0.93 seconds, Samples Removed = 7071, Train Sample Size = 19518
+
+Fold 76: Training Time = 0.94 seconds, Samples Removed = 7071, Train Sample Size = 19518
+
+Fold 77: Training Time = 0.94 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 78: Training Time = 0.95 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 79: Training Time = 0.94 seconds, Samples Removed = 21572, Train Sample Size = 19373
+
+Fold 80: Training Time = 0.92 seconds, Samples Removed = 21572, Train Sample Size = 19373
+
+Fold 81: Training Time = 0.95 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 82: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 83: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 84: Training Time = 0.92 seconds, Samples Removed = 7522, Train Sample Size = 19513
+
+Fold 85: Training Time = 0.92 seconds, Samples Removed = 7522, Train Sample Size = 19513
+
+Fold 86: Training Time = 0.95 seconds, Samples Removed = 7522, Train Sample Size = 19513
+
+Fold 87: Training Time = 0.94 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 88: Training Time = 0.96 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 89: Training Time = 0.93 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 90: Training Time = 0.92 seconds, Samples Removed = 129894, Train Sample Size = 18290
+
+Fold 91: Training Time = 0.91 seconds, Samples Removed = 129894, Train Sample Size = 18290
+
+Fold 92: Training Time = 0.90 seconds, Samples Removed = 129894, Train Sample Size = 18290
+
+Fold 93: Training Time = 1.04 seconds, Samples Removed = 7502, Train Sample Size = 19514
+
+Fold 94: Training Time = 0.98 seconds, Samples Removed = 7502, Train Sample Size = 19514
+
+Fold 95: Training Time = 0.98 seconds, Samples Removed = 7502, Train Sample Size = 19514
+
+Fold 96: Training Time = 0.94 seconds, Samples Removed = 7849, Train Sample Size = 19510
+
+Fold 97: Training Time = 0.92 seconds, Samples Removed = 7849, Train Sample Size = 19510
+
+Fold 98: Training Time = 0.93 seconds, Samples Removed = 7849, Train Sample Size = 19510
+
+Fold 99: Training Time = 0.93 seconds, Samples Removed = 7524, Train Sample Size = 19513
+
+Fold 100: Training Time = 0.93 seconds, Samples Removed = 7524, Train Sample Size = 19513
+
+Fold 101: Training Time = 0.95 seconds, Samples Removed = 7524, Train Sample Size = 19513
+
+Fold 102: Training Time = 0.98 seconds, Samples Removed = 72632, Train Sample Size = 18862
+
+Fold 103: Training Time = 0.93 seconds, Samples Removed = 72632, Train Sample Size = 18862
+
+Fold 104: Training Time = 0.92 seconds, Samples Removed = 72632, Train Sample Size = 18862
+
+Fold 105: Training Time = 0.94 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 106: Training Time = 0.95 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 107: Training Time = 0.93 seconds, Samples Removed = 6811, Train Sample Size = 19521
+
+Fold 108: Training Time = 0.92 seconds, Samples Removed = 6811, Train Sample Size = 19521
+
+Fold 109: Training Time = 0.92 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 110: Training Time = 0.92 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 111: Training Time = 0.95 seconds, Samples Removed = 17134, Train Sample Size = 19417
+
+Fold 112: Training Time = 0.92 seconds, Samples Removed = 17134, Train Sample Size = 19417
+
+Fold 113: Training Time = 0.93 seconds, Samples Removed = 5009, Train Sample Size = 19539
+
+Fold 114: Training Time = 0.94 seconds, Samples Removed = 5009, Train Sample Size = 19539
+
+Fold 115: Training Time = 0.90 seconds, Samples Removed = 19441, Train Sample Size = 19394
+
+Fold 116: Training Time = 0.94 seconds, Samples Removed = 19441, Train Sample Size = 19394
+
+Fold 117: Training Time = 0.91 seconds, Samples Removed = 5007, Train Sample Size = 19539
+
+Fold 118: Training Time = 0.92 seconds, Samples Removed = 5007, Train Sample Size = 19539
+
+Fold 119: Training Time = 0.92 seconds, Samples Removed = 42022, Train Sample Size = 19168
+
+Fold 120: Training Time = 0.98 seconds, Samples Removed = 42022, Train Sample Size = 19168
+
+Fold 121: Training Time = 0.93 seconds, Samples Removed = 5002, Train Sample Size = 19539
+
+Fold 122: Training Time = 0.95 seconds, Samples Removed = 5002, Train Sample Size = 19539
+
+Fold 123: Training Time = 0.94 seconds, Samples Removed = 5004, Train Sample Size = 19539
+
+Fold 124: Training Time = 0.94 seconds, Samples Removed = 5004, Train Sample Size = 19539
+
+Fold 125: Training Time = 0.95 seconds, Samples Removed = 5040, Train Sample Size = 19538
+
+Fold 126: Training Time = 0.92 seconds, Samples Removed = 5040, Train Sample Size = 19538
+
+Fold 127: Training Time = 0.93 seconds, Samples Removed = 12135, Train Sample Size = 19467
+
+Fold 128: Training Time = 0.93 seconds, Samples Removed = 12135, Train Sample Size = 19467
+
+Fold 129: Training Time = 0.92 seconds, Samples Removed = 5048, Train Sample Size = 19538
+
+Fold 130: Training Time = 0.93 seconds, Samples Removed = 5048, Train Sample Size = 19538
+
+Fold 131: Training Time = 0.92 seconds, Samples Removed = 5774, Train Sample Size = 19531
+
+Fold 132: Training Time = 0.94 seconds, Samples Removed = 5774, Train Sample Size = 19531
+
+Fold 133: Training Time = 0.93 seconds, Samples Removed = 5080, Train Sample Size = 19538
+
+Fold 134: Training Time = 0.98 seconds, Samples Removed = 5080, Train Sample Size = 19538
+
+Fold 135: Training Time = 0.92 seconds, Samples Removed = 7029, Train Sample Size = 19518
+
+Fold 136: Training Time = 0.95 seconds, Samples Removed = 7029, Train Sample Size = 19518
+
+Fold 137: Training Time = 0.93 seconds, Samples Removed = 2501, Train Sample Size = 19564
+
+Fold 138: Training Time = 0.94 seconds, Samples Removed = 2549, Train Sample Size = 19563
+
+Fold 139: Training Time = 0.92 seconds, Samples Removed = 2552, Train Sample Size = 19563
+
+Fold 140: Training Time = 0.92 seconds, Samples Removed = 39102, Train Sample Size = 19198
+
+Fold 141: Training Time = 0.92 seconds, Samples Removed = 2513, Train Sample Size = 19564
+
+Fold 142: Training Time = 0.93 seconds, Samples Removed = 2694, Train Sample Size = 19562
+
+Fold 143: Training Time = 0.90 seconds, Samples Removed = 2517, Train Sample Size = 19564
+
+Fold 144: Training Time = 0.92 seconds, Samples Removed = 43120, Train Sample Size = 19157
+
+Fold 145: Training Time = 0.93 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 146: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 147: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 148: Training Time = 0.95 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 149: Training Time = 0.93 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 150: Training Time = 0.94 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 151: Training Time = 0.92 seconds, Samples Removed = 7523, Train Sample Size = 19513
+
+Fold 152: Training Time = 0.92 seconds, Samples Removed = 7523, Train Sample Size = 19513
+
+Fold 153: Training Time = 0.93 seconds, Samples Removed = 7523, Train Sample Size = 19513
+
+Fold 154: Training Time = 0.93 seconds, Samples Removed = 7598, Train Sample Size = 19513
+
+Fold 155: Training Time = 0.93 seconds, Samples Removed = 7598, Train Sample Size = 19513
+
+Fold 156: Training Time = 0.94 seconds, Samples Removed = 7598, Train Sample Size = 19513
+
+Fold 157: Training Time = 0.94 seconds, Samples Removed = 7538, Train Sample Size = 19513
+
+Fold 158: Training Time = 0.94 seconds, Samples Removed = 7538, Train Sample Size = 19513
+
+Fold 159: Training Time = 0.93 seconds, Samples Removed = 7538, Train Sample Size = 19513
+
+Fold 160: Training Time = 0.93 seconds, Samples Removed = 7504, Train Sample Size = 19514
+
+Fold 161: Training Time = 1.00 seconds, Samples Removed = 7504, Train Sample Size = 19514
+
+Fold 162: Training Time = 1.13 seconds, Samples Removed = 7504, Train Sample Size = 19514
+
+Fold 163: Training Time = 1.07 seconds, Samples Removed = 9195, Train Sample Size = 19497
+
+Fold 164: Training Time = 1.15 seconds, Samples Removed = 9195, Train Sample Size = 19497
+
+Fold 165: Training Time = 1.12 seconds, Samples Removed = 9195, Train Sample Size = 19497
+
+Fold 166: Training Time = 1.05 seconds, Samples Removed = 23473, Train Sample Size = 19354
+
+Fold 167: Training Time = 1.07 seconds, Samples Removed = 23473, Train Sample Size = 19354
+
+Fold 168: Training Time = 1.03 seconds, Samples Removed = 23473, Train Sample Size = 19354
+
+Fold 169: Training Time = 1.19 seconds, Samples Removed = 7509, Train Sample Size = 19514
+
+Fold 170: Training Time = 0.96 seconds, Samples Removed = 7509, Train Sample Size = 19514
+
+Fold 171: Training Time = 0.93 seconds, Samples Removed = 7509, Train Sample Size = 19514
+
+Fold 172: Training Time = 0.91 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 173: Training Time = 0.93 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 174: Training Time = 1.04 seconds, Samples Removed = 7528, Train Sample Size = 19513
+
+Fold 175: Training Time = 0.99 seconds, Samples Removed = 7528, Train Sample Size = 19513
+
+Fold 176: Training Time = 0.98 seconds, Samples Removed = 7528, Train Sample Size = 19513
+
+Fold 177: Training Time = 1.03 seconds, Samples Removed = 5007, Train Sample Size = 19539
+
+Fold 178: Training Time = 0.95 seconds, Samples Removed = 5007, Train Sample Size = 19539
+
+Fold 179: Training Time = 0.98 seconds, Samples Removed = 7517, Train Sample Size = 19514
+
+Fold 180: Training Time = 0.92 seconds, Samples Removed = 7517, Train Sample Size = 19514
+
+Fold 181: Training Time = 0.93 seconds, Samples Removed = 7517, Train Sample Size = 19514
+
+Fold 182: Training Time = 0.94 seconds, Samples Removed = 5124, Train Sample Size = 19537
+
+Fold 183: Training Time = 1.07 seconds, Samples Removed = 5124, Train Sample Size = 19537
+
+Fold 184: Training Time = 0.98 seconds, Samples Removed = 7631, Train Sample Size = 19512
+
+Fold 185: Training Time = 0.95 seconds, Samples Removed = 7631, Train Sample Size = 19512
+
+Fold 186: Training Time = 1.00 seconds, Samples Removed = 7631, Train Sample Size = 19512
+
+Fold 187: Training Time = 1.07 seconds, Samples Removed = 11446, Train Sample Size = 19474
+
+Fold 188: Training Time = 0.94 seconds, Samples Removed = 11446, Train Sample Size = 19474
+
+Fold 189: Training Time = 0.95 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 190: Training Time = 0.94 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 191: Training Time = 0.96 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 192: Training Time = 1.08 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 193: Training Time = 0.97 seconds, Samples Removed = 5015, Train Sample Size = 19539
+
+Fold 194: Training Time = 0.94 seconds, Samples Removed = 5015, Train Sample Size = 19539
+
+Fold 195: Training Time = 0.94 seconds, Samples Removed = 5114, Train Sample Size = 19538
+
+Fold 196: Training Time = 0.95 seconds, Samples Removed = 5114, Train Sample Size = 19538
+
+Fold 197: Training Time = 0.93 seconds, Samples Removed = 5157, Train Sample Size = 19537
+
+Fold 198: Training Time = 0.93 seconds, Samples Removed = 5157, Train Sample Size = 19537
+
+Fold 199: Training Time = 0.92 seconds, Samples Removed = 5019, Train Sample Size = 19538
+
+Fold 200: Training Time = 0.96 seconds, Samples Removed = 5019, Train Sample Size = 19538
+
+Fold 201: Training Time = 0.95 seconds, Samples Removed = 6749, Train Sample Size = 19521
+
+Fold 202: Training Time = 0.94 seconds, Samples Removed = 6749, Train Sample Size = 19521
+
+Fold 203: Training Time = 0.96 seconds, Samples Removed = 9511, Train Sample Size = 19494
+
+Fold 204: Training Time = 0.94 seconds, Samples Removed = 9511, Train Sample Size = 19494
+
+Fold 205: Training Time = 0.96 seconds, Samples Removed = 5009, Train Sample Size = 19539
+
+Fold 206: Training Time = 0.94 seconds, Samples Removed = 5009, Train Sample Size = 19539
+
+Fold 207: Training Time = 0.93 seconds, Samples Removed = 2510, Train Sample Size = 19564
+
+Fold 208: Training Time = 0.92 seconds, Samples Removed = 5061, Train Sample Size = 19538
+
+Fold 209: Training Time = 0.93 seconds, Samples Removed = 5061, Train Sample Size = 19538
+
+Fold 210: Training Time = 0.93 seconds, Samples Removed = 3100, Train Sample Size = 19558
+
+Fold 211: Training Time = 0.95 seconds, Samples Removed = 6146, Train Sample Size = 19527
+
+Fold 212: Training Time = 0.92 seconds, Samples Removed = 6146, Train Sample Size = 19527
+
+Fold 213: Training Time = 0.93 seconds, Samples Removed = 3935, Train Sample Size = 19549
+
+Fold 214: Training Time = 0.94 seconds, Samples Removed = 6886, Train Sample Size = 19520
+
+Fold 215: Training Time = 0.95 seconds, Samples Removed = 6886, Train Sample Size = 19520
+
+Fold 216: Training Time = 0.93 seconds, Samples Removed = 9142, Train Sample Size = 19497
+
+Fold 217: Training Time = 0.93 seconds, Samples Removed = 7507, Train Sample Size = 19514
+
+Fold 218: Training Time = 0.94 seconds, Samples Removed = 7507, Train Sample Size = 19514
+
+Fold 219: Training Time = 0.93 seconds, Samples Removed = 7507, Train Sample Size = 19514
+
+Fold 220: Training Time = 0.93 seconds, Samples Removed = 7506, Train Sample Size = 19514
+
+Fold 221: Training Time = 0.92 seconds, Samples Removed = 7506, Train Sample Size = 19514
+
+Fold 222: Training Time = 0.92 seconds, Samples Removed = 7506, Train Sample Size = 19514
+
+Fold 223: Training Time = 0.93 seconds, Samples Removed = 15967, Train Sample Size = 19429
+
+Fold 224: Training Time = 0.94 seconds, Samples Removed = 15967, Train Sample Size = 19429
+
+Fold 225: Training Time = 0.91 seconds, Samples Removed = 15967, Train Sample Size = 19429
+
+Fold 226: Training Time = 0.93 seconds, Samples Removed = 30668, Train Sample Size = 19282
+
+Fold 227: Training Time = 0.93 seconds, Samples Removed = 30668, Train Sample Size = 19282
+
+Fold 228: Training Time = 0.95 seconds, Samples Removed = 30668, Train Sample Size = 19282
+
+Fold 229: Training Time = 0.93 seconds, Samples Removed = 10803, Train Sample Size = 19481
+
+Fold 230: Training Time = 0.92 seconds, Samples Removed = 10803, Train Sample Size = 19481
+
+Fold 231: Training Time = 0.93 seconds, Samples Removed = 10803, Train Sample Size = 19481
+
+Fold 232: Training Time = 0.94 seconds, Samples Removed = 11188, Train Sample Size = 19477
+
+Fold 233: Training Time = 0.93 seconds, Samples Removed = 11188, Train Sample Size = 19477
+
+Fold 234: Training Time = 0.94 seconds, Samples Removed = 11188, Train Sample Size = 19477
+
+Fold 235: Training Time = 0.93 seconds, Samples Removed = 25577, Train Sample Size = 19333
+
+Fold 236: Training Time = 0.93 seconds, Samples Removed = 25577, Train Sample Size = 19333
+
+Fold 237: Training Time = 0.92 seconds, Samples Removed = 25577, Train Sample Size = 19333
+
+Fold 238: Training Time = 1.00 seconds, Samples Removed = 106959, Train Sample Size = 18519
+
+Fold 239: Training Time = 0.92 seconds, Samples Removed = 106959, Train Sample Size = 18519
+
+Fold 240: Training Time = 0.91 seconds, Samples Removed = 106959, Train Sample Size = 18519
+
+Fold 241: Training Time = 0.93 seconds, Samples Removed = 7509, Train Sample Size = 19514
+
+Fold 242: Training Time = 0.92 seconds, Samples Removed = 7509, Train Sample Size = 19514
+
+Fold 243: Training Time = 0.95 seconds, Samples Removed = 7509, Train Sample Size = 19514
+
+Fold 244: Training Time = 0.96 seconds, Samples Removed = 5013, Train Sample Size = 19539
+
+Fold 245: Training Time = 0.91 seconds, Samples Removed = 5013, Train Sample Size = 19539
+
+Fold 246: Training Time = 0.94 seconds, Samples Removed = 10467, Train Sample Size = 19484
+
+Fold 247: Training Time = 0.92 seconds, Samples Removed = 10467, Train Sample Size = 19484
+
+Fold 248: Training Time = 0.94 seconds, Samples Removed = 10467, Train Sample Size = 19484
+
+Fold 249: Training Time = 0.97 seconds, Samples Removed = 5870, Train Sample Size = 19530
+
+Fold 250: Training Time = 0.93 seconds, Samples Removed = 5870, Train Sample Size = 19530
+
+Fold 251: Training Time = 0.93 seconds, Samples Removed = 9715, Train Sample Size = 19492
+
+Fold 252: Training Time = 0.91 seconds, Samples Removed = 9715, Train Sample Size = 19492
+
+Fold 253: Training Time = 0.92 seconds, Samples Removed = 9715, Train Sample Size = 19492
+
+Fold 254: Training Time = 0.92 seconds, Samples Removed = 17262, Train Sample Size = 19416
+
+Fold 255: Training Time = 0.92 seconds, Samples Removed = 17262, Train Sample Size = 19416
+
+Fold 256: Training Time = 0.92 seconds, Samples Removed = 12692, Train Sample Size = 19462
+
+Fold 257: Training Time = 0.95 seconds, Samples Removed = 12692, Train Sample Size = 19462
+
+Fold 258: Training Time = 0.92 seconds, Samples Removed = 12692, Train Sample Size = 19462
+
+Fold 259: Training Time = 0.93 seconds, Samples Removed = 11928, Train Sample Size = 19469
+
+Fold 260: Training Time = 0.93 seconds, Samples Removed = 11928, Train Sample Size = 19469
+
+Fold 261: Training Time = 0.95 seconds, Samples Removed = 5225, Train Sample Size = 19536
+
+Fold 262: Training Time = 0.92 seconds, Samples Removed = 5225, Train Sample Size = 19536
+
+Fold 263: Training Time = 0.95 seconds, Samples Removed = 6057, Train Sample Size = 19528
+
+Fold 264: Training Time = 0.91 seconds, Samples Removed = 6057, Train Sample Size = 19528
+
+Fold 265: Training Time = 0.94 seconds, Samples Removed = 7139, Train Sample Size = 19517
+
+Fold 266: Training Time = 1.01 seconds, Samples Removed = 7139, Train Sample Size = 19517
+
+Fold 267: Training Time = 1.00 seconds, Samples Removed = 40588, Train Sample Size = 19183
+
+Fold 268: Training Time = 0.97 seconds, Samples Removed = 40588, Train Sample Size = 19183
+
+Fold 269: Training Time = 0.93 seconds, Samples Removed = 31391, Train Sample Size = 19275
+
+Fold 270: Training Time = 0.95 seconds, Samples Removed = 31391, Train Sample Size = 19275
+
+Fold 271: Training Time = 0.93 seconds, Samples Removed = 91843, Train Sample Size = 18670
+
+Fold 272: Training Time = 0.96 seconds, Samples Removed = 91843, Train Sample Size = 18670
+
+Fold 273: Training Time = 0.94 seconds, Samples Removed = 37879, Train Sample Size = 19210
+
+Fold 274: Training Time = 1.06 seconds, Samples Removed = 37879, Train Sample Size = 19210
+
+Fold 275: Training Time = 1.04 seconds, Samples Removed = 57558, Train Sample Size = 19013
+
+Fold 276: Training Time = 0.98 seconds, Samples Removed = 57558, Train Sample Size = 19013
+
+Fold 277: Training Time = 0.96 seconds, Samples Removed = 7204, Train Sample Size = 19517
+
+Fold 278: Training Time = 1.01 seconds, Samples Removed = 7204, Train Sample Size = 19517
+
+Fold 279: Training Time = 0.95 seconds, Samples Removed = 5934, Train Sample Size = 19529
+
+Fold 280: Training Time = 0.95 seconds, Samples Removed = 6093, Train Sample Size = 19528
+
+Fold 281: Training Time = 0.94 seconds, Samples Removed = 6093, Train Sample Size = 19528
+
+Fold 282: Training Time = 1.05 seconds, Samples Removed = 27403, Train Sample Size = 19315
+
+Fold 283: Training Time = 0.98 seconds, Samples Removed = 40644, Train Sample Size = 19182
+
+Fold 284: Training Time = 0.93 seconds, Samples Removed = 40644, Train Sample Size = 19182
+
+Fold 285: Training Time = 0.99 seconds, Samples Removed = 58135, Train Sample Size = 19007
+
+Fold 286: Training Time = 0.92 seconds, Samples Removed = 39083, Train Sample Size = 19198
+
+Fold 287: Training Time = 0.92 seconds, Samples Removed = 39083, Train Sample Size = 19198
+
+Fold 288: Training Time = 0.91 seconds, Samples Removed = 57935, Train Sample Size = 19009
+
+Fold 289: Training Time = 0.97 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 290: Training Time = 1.05 seconds, Samples Removed = 7993, Train Sample Size = 19509
+
+Fold 291: Training Time = 1.07 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 292: Training Time = 0.97 seconds, Samples Removed = 78375, Train Sample Size = 18805
+
+Fold 293: Training Time = 1.10 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 294: Training Time = 0.97 seconds, Samples Removed = 7916, Train Sample Size = 19510
+
+Fold 295: Training Time = 0.95 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 296: Training Time = 0.96 seconds, Samples Removed = 32957, Train Sample Size = 19259
+
+Fold 297: Training Time = 0.94 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 298: Training Time = 0.95 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 299: Training Time = 0.98 seconds, Samples Removed = 6745, Train Sample Size = 19521
+
+Fold 300: Training Time = 0.98 seconds, Samples Removed = 6745, Train Sample Size = 19521
+
+Fold 301: Training Time = 0.92 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 302: Training Time = 0.99 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 303: Training Time = 1.04 seconds, Samples Removed = 18695, Train Sample Size = 19402
+
+Fold 304: Training Time = 1.03 seconds, Samples Removed = 18695, Train Sample Size = 19402
+
+Fold 305: Training Time = 0.93 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 306: Training Time = 0.97 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 307: Training Time = 1.05 seconds, Samples Removed = 11589, Train Sample Size = 19473
+
+Fold 308: Training Time = 1.05 seconds, Samples Removed = 11589, Train Sample Size = 19473
+
+Fold 309: Training Time = 1.03 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 310: Training Time = 0.95 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 311: Training Time = 0.96 seconds, Samples Removed = 21001, Train Sample Size = 19379
+
+Fold 312: Training Time = 0.99 seconds, Samples Removed = 21001, Train Sample Size = 19379
+
+Fold 313: Training Time = 1.05 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 314: Training Time = 0.97 seconds, Samples Removed = 7586, Train Sample Size = 19513
+
+Fold 315: Training Time = 0.93 seconds, Samples Removed = 7505, Train Sample Size = 19514
+
+Fold 316: Training Time = 0.98 seconds, Samples Removed = 34057, Train Sample Size = 19248
+
+Fold 317: Training Time = 0.94 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 318: Training Time = 0.98 seconds, Samples Removed = 7502, Train Sample Size = 19514
+
+Fold 319: Training Time = 1.01 seconds, Samples Removed = 7511, Train Sample Size = 19514
+
+Fold 320: Training Time = 0.94 seconds, Samples Removed = 17399, Train Sample Size = 19415
+
+Fold 321: Training Time = 1.16 seconds, Samples Removed = 5004, Train Sample Size = 19539
+
+Fold 322: Training Time = 1.17 seconds, Samples Removed = 5004, Train Sample Size = 19539
+
+Fold 323: Training Time = 1.16 seconds, Samples Removed = 7180, Train Sample Size = 19517
+
+Fold 324: Training Time = 1.07 seconds, Samples Removed = 7180, Train Sample Size = 19517
+
+Fold 325: Training Time = 1.04 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 326: Training Time = 1.11 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 327: Training Time = 1.22 seconds, Samples Removed = 30512, Train Sample Size = 19284
+
+Fold 328: Training Time = 1.12 seconds, Samples Removed = 30512, Train Sample Size = 19284
+
+Fold 329: Training Time = 1.18 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 330: Training Time = 1.11 seconds, Samples Removed = 5001, Train Sample Size = 19539
+
+Fold 331: Training Time = 1.06 seconds, Samples Removed = 7071, Train Sample Size = 19518
+
+Fold 332: Training Time = 1.13 seconds, Samples Removed = 7071, Train Sample Size = 19518
+
+Fold 333: Training Time = 1.14 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 334: Training Time = 1.17 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 335: Training Time = 1.15 seconds, Samples Removed = 21572, Train Sample Size = 19373
+
+Fold 336: Training Time = 1.04 seconds, Samples Removed = 21572, Train Sample Size = 19373
+
+Fold 337: Training Time = 1.22 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 338: Training Time = 1.25 seconds, Samples Removed = 7522, Train Sample Size = 19513
+
+Fold 339: Training Time = 1.09 seconds, Samples Removed = 7500, Train Sample Size = 19514
+
+Fold 340: Training Time = 1.07 seconds, Samples Removed = 129894, Train Sample Size = 18290
+
+Fold 341: Training Time = 1.04 seconds, Samples Removed = 7502, Train Sample Size = 19514
+
+Fold 342: Training Time = 0.97 seconds, Samples Removed = 7849, Train Sample Size = 19510
+
+Fold 343: Training Time = 1.00 seconds, Samples Removed = 7524, Train Sample Size = 19513
+
+Fold 344: Training Time = 1.02 seconds, Samples Removed = 72632, Train Sample Size = 18862
+
+Fold 345: Training Time = 0.98 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 346: Training Time = 0.95 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 347: Training Time = 0.96 seconds, Samples Removed = 6811, Train Sample Size = 19521
+
+Fold 348: Training Time = 0.99 seconds, Samples Removed = 6811, Train Sample Size = 19521
+
+Fold 349: Training Time = 1.05 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 350: Training Time = 0.95 seconds, Samples Removed = 5000, Train Sample Size = 19539
+
+Fold 351: Training Time = 0.93 seconds, Samples Removed = 17134, Train Sample Size = 19417
+
+Fold 352: Training Time = 1.07 seconds, Samples Removed = 17134, Train Sample Size = 19417
+
+Fold 353: Training Time = 0.97 seconds, Samples Removed = 5009, Train Sample Size = 19539
+
+Fold 354: Training Time = 1.00 seconds, Samples Removed = 5009, Train Sample Size = 19539
+
+Fold 355: Training Time = 0.95 seconds, Samples Removed = 19441, Train Sample Size = 19394
+
+Fold 356: Training Time = 0.93 seconds, Samples Removed = 19441, Train Sample Size = 19394
+
+Fold 357: Training Time = 0.95 seconds, Samples Removed = 5007, Train Sample Size = 19539
+
+Fold 358: Training Time = 0.93 seconds, Samples Removed = 5007, Train Sample Size = 19539
+
+Fold 359: Training Time = 0.93 seconds, Samples Removed = 42022, Train Sample Size = 19168
+
+Fold 360: Training Time = 0.95 seconds, Samples Removed = 42022, Train Sample Size = 19168
+
+Fold 361: Training Time = 0.94 seconds, Samples Removed = 5002, Train Sample Size = 19539
+
+Fold 362: Training Time = 0.93 seconds, Samples Removed = 5002, Train Sample Size = 19539
+
+Fold 363: Training Time = 1.09 seconds, Samples Removed = 5004, Train Sample Size = 19539
+
+Fold 364: Training Time = 0.96 seconds, Samples Removed = 5004, Train Sample Size = 19539
+
+Fold 365: Training Time = 0.94 seconds, Samples Removed = 5040, Train Sample Size = 19538
+
+Fold 366: Training Time = 0.96 seconds, Samples Removed = 5040, Train Sample Size = 19538
+
+Fold 367: Training Time = 0.99 seconds, Samples Removed = 12135, Train Sample Size = 19467
+
+Fold 368: Training Time = 0.96 seconds, Samples Removed = 12135, Train Sample Size = 19467
+
+Fold 369: Training Time = 0.95 seconds, Samples Removed = 5048, Train Sample Size = 19538
+
+Fold 370: Training Time = 0.94 seconds, Samples Removed = 5048, Train Sample Size = 19538
+
+Fold 371: Training Time = 0.95 seconds, Samples Removed = 5774, Train Sample Size = 19531
+
+Fold 372: Training Time = 1.00 seconds, Samples Removed = 5774, Train Sample Size = 19531
+
+Fold 373: Training Time = 0.98 seconds, Samples Removed = 5080, Train Sample Size = 19538
+
+Fold 374: Training Time = 0.93 seconds, Samples Removed = 5080, Train Sample Size = 19538
+
+Fold 375: Training Time = 1.00 seconds, Samples Removed = 7029, Train Sample Size = 19518
+
+Fold 376: Training Time = 0.97 seconds, Samples Removed = 7029, Train Sample Size = 19518
+
+Fold 377: Training Time = 0.98 seconds, Samples Removed = 2501, Train Sample Size = 19564
+
+Fold 378: Training Time = 0.96 seconds, Samples Removed = 2501, Train Sample Size = 19564
+
+Fold 379: Training Time = 0.98 seconds, Samples Removed = 2501, Train Sample Size = 19564
+
+Fold 380: Training Time = 0.97 seconds, Samples Removed = 2549, Train Sample Size = 19563

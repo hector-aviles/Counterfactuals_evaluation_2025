@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn.naive_bayes import ComplementNB
-from sklearn.metrics import f1_score
 import pickle
 import time
 import statistics
@@ -12,28 +11,19 @@ from sklearn.model_selection import cross_val_score
 def create_nb_model_from_data(train_df, percentage, rep_num, fold_num, model_path):
     """
     Create and save a Naive Bayes model from training data directly passed as DataFrame
-    
-    Parameters:
-    train_df: pandas DataFrame with training data
-    percentage: percentage string (e.g., "01", "25")
-    rep_num: repetition number
-    fold_num: fold number
-    model_path: path where to save the trained model
-    
-    Returns:
-    dict: Training results and metrics
     """
     print(f"Training NB model for rep {rep_num}, percentage {percentage}, fold {fold_num}", flush=True)
     
     # Create directory if it doesn't exist
     os.makedirs(os.path.dirname(model_path), exist_ok=True)
     
-    # Initialize encoder
+    # Initialize encoder for the target variable (action)
     encoder = LabelEncoder()
     encoder.classes_ = np.array(['change_to_left', 'change_to_right', 'cruise', 'keep', 'swerve_left', 'swerve_right'])
     
-    # Select relevant features
-    required_columns = ["action", "curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_SW", "free_W"]
+    # Select ONLY the numerical features
+    numerical_features = ["curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_SW", "free_W", "latent_collision"]
+    required_columns = ["action"] + numerical_features
     
     # Check if all required columns are present
     missing_columns = [col for col in required_columns if col not in train_df.columns]
@@ -42,9 +32,42 @@ def create_nb_model_from_data(train_df, percentage, rep_num, fold_num, model_pat
     
     train_data = train_df[required_columns].copy()
     
+    # DEBUG: Check data types and sample values
+    print("Data types:", flush=True)
+    for col in train_data.columns:
+        print(f"  {col}: {train_data[col].dtype}, sample: {train_data[col].iloc[0] if len(train_data) > 0 else 'N/A'}", flush=True)
+    
+    # Convert boolean-like strings to numerical values
+    for col in numerical_features:
+        if train_data[col].dtype == 'object':
+            print(f"Converting column '{col}' from string to numerical", flush=True)
+            # Convert 'True'/'False' to 1/0
+            train_data[col] = train_data[col].map({'True': 1, 'False': 0, 'true': 1, 'false': 0})
+            # If there are any non-boolean values, try to convert to float
+            try:
+                train_data[col] = pd.to_numeric(train_data[col], errors='coerce')
+            except:
+                pass
+    
+    # Check for any remaining non-numerical values
+    for col in numerical_features:
+        if train_data[col].dtype == 'object':
+            print(f"WARNING: Column '{col}' still contains non-numerical values after conversion", flush=True)
+            print(f"Unique values in {col}: {train_data[col].unique()}", flush=True)
+    
     # Prepare features and target
     X_train = train_data.drop(['action'], axis=1)
-    y_train = encoder.transform(train_data['action'])
+    y_train = encoder.fit_transform(train_data['action'])
+    
+    print(f"Feature matrix shape: {X_train.shape}", flush=True)
+    print(f"Feature dtypes: {X_train.dtypes.to_dict()}", flush=True)
+    print(f"Target distribution: {np.bincount(y_train)}", flush=True)
+    print(f"Target classes: {encoder.classes_}", flush=True)
+    
+    # Check for any NaN values after conversion
+    if X_train.isnull().any().any():
+        print(f"WARNING: NaN values found in features after conversion. Filling with 0.", flush=True)
+        X_train = X_train.fillna(0)
     
     # Define the hyperparameter grid for ComplementNB
     param_grid = {

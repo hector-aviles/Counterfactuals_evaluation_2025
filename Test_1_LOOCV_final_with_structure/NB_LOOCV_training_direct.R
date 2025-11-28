@@ -3,7 +3,6 @@
 # ls -l /usr/lib/python3.8/config-3.8-x86_64-linux-gnu/libpython3.8.so
 # echo "RETICULATE_PYTHON=/usr/bin/python3" >> ~/.Renviron
 
-
 suppressMessages({
   if (!requireNamespace("data.table", quietly = TRUE)) install.packages("data.table", repos = "https://cloud.r-project.org")
   if (!requireNamespace("conflicted", quietly = TRUE)) install.packages("conflicted", repos = "https://cloud.r-project.org")
@@ -23,17 +22,19 @@ library(tidyr)
 library(tidyverse)
 library(arules)
 library(reticulate)
-#use_python("/usr/bin/python3", required = TRUE) 
-py_config()
 
+# Configure Python - use the same path that was detected
+#use_python("/usr/bin/python3", required = TRUE)
+
+py_config()
 
 # Check if Python is available and set up reticulate
 if (!py_available()) {
   stop("Python is not available. Please ensure Python is installed and configured.")
 }
 
-# Source the Python script as a module
-source_python("create_NB.py")
+# Source the Python script as a module - make sure it's the correct file
+source_python("create_NB_direct.py")
 
 percentage <- 100
 fraction <- percentage / 100
@@ -96,8 +97,10 @@ report_progress <- function(step_msg, progress_file = NULL) {
 
 # Function to create and train NB model using Python
 train_nb_model <- function(train_sample, rep_num, percentage, fold_num, nb_dir) {
-  # Convert to data frame with only required columns
-  train_df <- as.data.frame(train_sample)[, c("action", "curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_SW", "free_W")]
+  # Convert to data frame with ONLY numerical features (same as original working code)
+  # Use only free_* columns which are numerical
+  numerical_features <- c("curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_SW", "free_W", "latent_collision")
+  train_df <- as.data.frame(train_sample)[, c("action", numerical_features)]
   
   # Create model path
   model_path <- file.path(nb_dir, paste0("NB_fold_", fold_num, ".pkl"))
@@ -135,16 +138,14 @@ dt <- fread(file.path(input_subdir1, "complete_DB_discrete.csv"), colClasses = "
 dt <- dt[complete.cases(dt)]
 
 dt_crashes <- fread(file.path(input_subdir1, "crashes.csv"), colClasses = "character")
-dt_crashes[, orig_label_lc := "True"]
 dt_no_crashes <- fread(file.path(input_subdir1, "no_crashes.csv"), colClasses = "character")
-dt_no_crashes[, orig_label_lc := "False"]
 
 # Combine crashes and no-crashes into unique examples (LOOCV set)
 dt_unique <- rbindlist(list(dt_crashes, dt_no_crashes))
 dt_unique[, latent_collision := "True"]
 
 # Add state_id for filtering
-state_cols <- c("curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_SW", "free_W")
+state_cols <- c("curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_SW", "free_W", "latent_collision")
 dt[, state_id := do.call(paste, c(.SD, sep = "_")), .SDcols = state_cols]
 dt_unique[, state_id := do.call(paste, c(.SD, sep = "_")), .SDcols = state_cols]
 

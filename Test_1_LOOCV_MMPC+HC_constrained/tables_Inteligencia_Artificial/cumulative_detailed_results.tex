@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\title{Cumulative Results - TPLP 2025}
+\author{havilesa}
+\date{July 2025}
+\begin{document}
+\maketitle
+
+\section{Crashes}
+\begin{table}[h]
+\centering
+\caption{Cumulative Safe and Unsafe Outcomes by Data Training Percentage (Crash Scenarios)}
+\begin{tabular}{l|ccccc|c}
+\toprule
+\multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+Safe (True $\rightarrow$ False) & 1440 & 1440 & 1440 & 1440 & 1440 & 7200 \\ 
+Unsafe (True $\rightarrow$ True) & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 1440 & 1440 & 1440 & 1440 & 1440 & 7200 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Ties by Data Training Percentage (Crash Scenarios)}
+\begin{tabular}{c|ccccc|c}
+\toprule
+\multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+1 & 1440 & 1440 & 1440 & 1440 & 1440 & 7200 \\ 
+2 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+3 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+4 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+5 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+6 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 1440 & 1440 & 1440 & 1440 & 1440 & 7200 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Actions Selected by Data Training Percentage (Crash Scenarios)}
+\begin{tabular}{l|ccccc|c|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & & \\
+\midrule
+\texttt{cruise} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{keep} & 368 & 269 & 213 & 156 & 145 & 1151 & 100.0\% \\ 
+\texttt{change\_to\_left} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{change\_to\_right} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{swerve\_left} & 751 & 302 & 505 & 607 & 651 & 2816 & 100.0\% \\ 
+\texttt{swerve\_right} & 321 & 869 & 722 & 677 & 644 & 3233 & 100.0\% \\ 
+\midrule
+\textbf{Total} & 1440 & 1440 & 1440 & 1440 & 1440 & 7200 & 100.0\% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\pagebreak
+\section{No Crashes}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Safe and Unsafe Outcomes by Data Training Percentage (No Crash Scenarios)}
+\begin{tabular}{l|ccccc|c}
+\toprule
+\multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+Safe (False $\rightarrow$ False) & 1264 & 1125 & 921 & 631 & 589 & 4530 \\ 
+Unsafe (False $\rightarrow$ True) & 1136 & 1275 & 1479 & 1769 & 1811 & 7470 \\ 
+\midrule
+Total & 2400 & 2400 & 2400 & 2400 & 2400 & 12000 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Ties by Data Training Percentage (No Crash Scenarios)}
+\begin{tabular}{c|ccccc|c}
+\toprule
+\multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+1 & 2400 & 2400 & 2400 & 2400 & 2400 & 12000 \\ 
+2 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+3 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+4 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+5 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+6 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 2400 & 2400 & 2400 & 2400 & 2400 & 12000 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Actions Selected by Data Training Percentage (No Crash Scenarios)}
+\begin{tabular}{l|ccccc|c|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & & \\
+\midrule
+\texttt{cruise} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{keep} & 1380 & 1075 & 941 & 805 & 787 & 4988 & 35.8\% \\ 
+\texttt{change\_to\_left} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{change\_to\_right} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{swerve\_left} & 789 & 397 & 564 & 738 & 819 & 3307 & 37.4\% \\ 
+\texttt{swerve\_right} & 231 & 928 & 895 & 857 & 794 & 3705 & 40.6\% \\ 
+\midrule
+\textbf{Total} & 2400 & 2400 & 2400 & 2400 & 2400 & 12000 & 37.8\% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

@@ -1,8 +1,0 @@
-=== NAIVE BAYES RESULTS (ATOMIZED) ===
-Rep: 1, Percentage: 01
-
-Best intervention action distribution:
-change_to_right: 422
-change_to_left: 280
-cruise: 38
-keep: 28

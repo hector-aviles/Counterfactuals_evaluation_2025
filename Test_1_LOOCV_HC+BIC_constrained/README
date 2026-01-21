@@ -1,0 +1,25 @@
+
+# Ejecutar cada instrucción (una por una) en línea de comandos:
+
+# Se requiere para encontrar algunas librerías
+source ~/source_code/venv/bin/activate
+
+# Probabilistic logic twin networks 
+# numeric arguments indicate the number of repetitions and percentages
+Rscript CBNs_LOOCV_training.R ./Shared_CSVs 5 01,25,50,75,90 
+
+# numeric arguments indicate the number of repetitions and percentages 
+python3 test_cBNs.py both 5 01,25,50,75,90
+#python3 test_cBNs.py both 1 01
+#Alternatives:
+#python3 test_cBNs.py reps 5
+#python3 test_cBNs.py percentages 01,10
+
+# With frequency
+python3 best_interventions_with_frequency.py 5 01,25,50,75,90 
+
+# Naive Bayes
+Rscript NB_LOOCV_training_direct.R ./Shared_CSVs 5 01,25,50,75,90 
+python3 best_interventions_NB.py 5 01,25,50,75,90 
+
+

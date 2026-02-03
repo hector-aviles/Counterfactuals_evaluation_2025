@@ -26,29 +26,50 @@ fraction <- percentage / 100
 # Set the decimal rounding
 dec_round <- 7
 
+# -----------------------
+# Argument parsing — more flexible
+# -----------------------
 args <- commandArgs(trailingOnly = TRUE)
-if (length(args) < 1) stop("Usage: Rscript script.R <shared_csv_path> [reps]")
-input_subdir1 <- args[1]
-reps_arg <- ifelse(length(args) >= 2, as.numeric(args[2]), 5)
-reps <- 1:reps_arg
-# -----------------------
-# Parse percentages argument (optional third CLI argument)
-# -----------------------
-if (length(args) >= 3) {
-  # Expecting a comma-separated string, e.g., "01,25,50,75,90" or "10,20,30"
-  percentages_str <- args[3]
-  percentages <- strsplit(percentages_str, ",")[[1]]
-  percentages <- trimws(percentages)  # remove any accidental whitespace
-  message("Percentages provided via CLI: ", paste(percentages, collapse = ", "))
-} else {
-  # default percentages if not provided
-  percentages <- c("01", "25", "50", "75", "90")
-  message("No percentages argument provided; using default: ", paste(percentages, collapse = ", "))
+
+if (length(args) < 1) {
+  stop("Usage:\n  Rscript script.R <input_dir> [reps] [percentages]\nExamples:\n  Rscript script.R ./data\n  Rscript script.R ./data 3\n  Rscript script.R ./data 2,4\n  Rscript script.R ./data 3 01,25,75\n  Rscript script.R ./data 2,5 50")
 }
 
-message("Input directory: ", input_subdir1)
-message("Number of repetitions: ", reps)
+input_subdir1 <- args[1]
 
+# Default
+reps_str <- "1-5"
+percentages_str <- "01,25,50,75,90"
+
+if (length(args) >= 2) {
+  if (grepl(",", args[2]) || grepl("-", args[2])) {
+    # looks like reps
+    reps_str <- args[2]
+    if (length(args) >= 3) percentages_str <- args[3]
+  } else {
+    # numeric → number of reps (old style)
+    reps_str <- paste0("1-", args[2])
+    if (length(args) >= 3) percentages_str <- args[3]
+  }
+} 
+
+# Parse reps
+if (grepl("-", reps_str)) {
+  bounds <- as.integer(strsplit(reps_str, "-")[[1]])
+  reps <- seq(bounds[1], bounds[2])
+} else if (grepl(",", reps_str)) {
+  reps <- as.integer(strsplit(reps_str, ",")[[1]])
+} else {
+  reps <- as.integer(reps_str)
+}
+
+# Parse percentages
+percentages <- strsplit(percentages_str, ",")[[1]] |> trimws()
+percentages <- sprintf("%02d", as.integer(percentages))  # ensure 01, 02, ...
+
+message("Input directory: ", input_subdir1)
+message("Repetitions: ", paste(reps, collapse=", "))
+message("Percentages: ", paste(percentages, collapse=", "))
 
 # -----------------------
 # Configuration
@@ -243,18 +264,6 @@ for (r_idx in seq_along(reps)) {
 
       # --- Prepare for training: convert to factors
       df_factor <- as.data.frame(lapply(train_sample_to_save, factor))
-
-      # --- Blacklist construction (kept as original)
-      bl_a <- data.frame(from = c("action", "action", "action", "action", "action", "action", "action"), to = c("curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_SW", "free_W"))
-      bl_cl <- data.frame(from = rep("curr_lane", 6), to = c("free_E", "free_NE", "free_NW", "free_SE", "free_SW", "free_W"))
-      bl_e <- data.frame(from = rep("free_E", 6), to = c("curr_lane", "free_NE", "free_NW", "free_SE", "free_SW", "free_W"))
-      bl_ne <- data.frame(from = rep("free_NE", 6), to = c("curr_lane", "free_E", "free_NW", "free_SE", "free_SW", "free_W"))
-      bl_nw <- data.frame(from = rep("free_NW", 6), to = c("curr_lane", "free_E", "free_NE", "free_SE", "free_SW", "free_W"))
-      bl_se <- data.frame(from = rep("free_SE", 6), to = c("curr_lane", "free_E", "free_NE", "free_NW", "free_SW", "free_W"))
-      bl_sw <- data.frame(from = rep("free_SW", 6), to = c("curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_W"))
-      bl_w <- data.frame(from = rep("free_W", 6), to = c("curr_lane", "free_E", "free_NE", "free_NW", "free_SE", "free_SW"))
-      bl_lcol <- data.frame(from = rep("latent_collision", 8), to = c("action", "curr_lane", "free_E", "free_NE", "free_NW", "free_SE","free_SW", "free_W"))
-      bl <- rbind(bl_a, bl_cl, bl_e, bl_ne, bl_nw, bl_se, bl_sw, bl_w, bl_lcol)
 
       # --- Structural learning (hc) timing
       start_time_struct <- Sys.time()
@@ -505,5 +514,3 @@ summary_file <- file.path(getwd(),"global_training_summary.csv")
 fwrite(global_summary, summary_file)
 message("\nGlobal summary written to: ", summary_file)
 message("Script finished successfully.")
-
-

@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\title{Cumulative Summary Results - TPLP 2025}
+\author{havilesa}
+\date{July 2025}
+\begin{document}
+\maketitle
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Accumulated Safe and Unsafe Outcomes Across All Percentages}
+\begin{tabular}{l|cc}
+\toprule
+Category & Crash Scenarios & No Crash Scenarios \\
+\midrule
+Safe Interventions & 2086 & 3090 \\ 
+Unsafe Interventions & 0 & 0 \\ 
+\midrule
+Total & 2086 & 3090 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Accumulated Number of Ties Across All Percentages}
+\begin{tabular}{c|cc}
+\toprule
+\multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{2}{c|}{Scenario} \\
+\cmidrule{2-3}
+ & Crash Scenarios & No Crash Scenarios \\
+\midrule
+1 & 243 & 395 \\ 
+2 & 187 & 557 \\ 
+3 & 288 & 371 \\ 
+4 & 125 & 117 \\ 
+5 & 21 & 0 \\ 
+6 & 0 & 0 \\ 
+\midrule
+Total & 864 & 1440 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Accumulated Number of Actions Across All Percentages}
+\begin{tabular}{l|cc|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{2}{c|}{Scenario} & \multirow{2}{*}{Total} \\
+\cmidrule{2-3}
+ & Crash Scenarios & No Crash Scenarios \\
+\midrule
+\texttt{cruise} & 336 (100.0\% safe) & 624 (100.0\% safe) & 960 \\ 
+\texttt{keep} & 746 (100.0\% safe) & 880 (100.0\% safe) & 1626 \\ 
+\texttt{change\_to\_left} & 72 (100.0\% safe) & 168 (100.0\% safe) & 240 \\ 
+\texttt{change\_to\_right} & 48 (100.0\% safe) & 112 (100.0\% safe) & 160 \\ 
+\texttt{swerve\_left} & 485 (100.0\% safe) & 713 (100.0\% safe) & 1198 \\ 
+\texttt{swerve\_right} & 399 (100.0\% safe) & 593 (100.0\% safe) & 992 \\ 
+\midrule
+\textbf{Total} & 2086 (100.0\% safe) & 3090 (100.0\% safe) & 5176 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Final Summary}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Final Summary of Random Selection Outcomes}
+\begin{tabular}{lc}
+\toprule
+Outcome & Count \\
+\midrule
+Crash unsafe (True $\rightarrow$ True) & 0 \\ 
+Crash safe (True $\rightarrow$ False) & 864 \\ 
+No crash safe (False $\rightarrow$ False) & 1440 \\ 
+No crash unsafe (False $\rightarrow$ True) & 0 \\ 
+\midrule
+Total & 2304 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+\end{document}

@@ -635,7 +635,7 @@ def process_rep_perc(rep_num, perc, no_crashes_df):
 def main():
     if len(sys.argv) != 3:
         print("Usage: python3 summarize_twin_networks.py <num_reps> <percentages_comma_separated>")
-        print("Example: python3 summarize_twin_networks.py 5 01,25,50,75,90")
+        print("Example: python3 summarize_twin_networks.py 5 01,25,50,75,90,100")
         sys.exit(1)
 
     num_reps = int(sys.argv[1])

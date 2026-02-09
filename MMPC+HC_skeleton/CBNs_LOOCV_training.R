@@ -278,6 +278,11 @@ for (r_idx in seq_along(reps)) {
         max.sx = 2       # max conditioning set size
       )
       
+      mmpc_png <- file.path(cbns_dir, paste0("MMPC_skeleton_fold_", i, ".png"))
+      png(mmpc_png, width = 1200, height = 1200, res = 300)
+      plot(net_mmpc, main = paste("MMPC Skeleton – Fold", i))
+      dev.off()
+      
       # Extract arc constraints from MMPC
       wl <- arcs(net_mmpc)   # edges allowed (skeleton)
       

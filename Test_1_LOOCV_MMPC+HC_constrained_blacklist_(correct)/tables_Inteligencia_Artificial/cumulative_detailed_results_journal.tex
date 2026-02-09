@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\title{Cumulative Results - TPLP 2025}
+\author{havilesa}
+\date{July 2025}
+\begin{document}
+\maketitle
+
+\section{Overall Results}
+\begin{table}[h]
+\centering
+\caption{Cumulative Safe and Unsafe Outcomes by Data Training Percentage (All Scenarios)}
+\begin{tabular}{l|ccccc|c}
+\toprule
+\multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+Safe Interventions & 2704 & 2565 & 2361 & 2071 & 2029 & 11730 \\ 
+Unsafe Interventions & 1136 & 1275 & 1479 & 1769 & 1811 & 7470 \\ 
+\midrule
+Total & 3840 & 3840 & 3840 & 3840 & 3840 & 19200 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Ties by Data Training Percentage (All Scenarios)}
+\begin{tabular}{c|ccccc|c}
+\toprule
+\multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & \\
+\midrule
+1 & 3840 & 3840 & 3840 & 3840 & 3840 & 19200 \\ 
+2 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+3 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+4 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+5 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+6 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 3840 & 3840 & 3840 & 3840 & 3840 & 19200 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Actions Selected by Data Training Percentage (All Scenarios)}
+\begin{tabular}{l|ccccc|c|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
+\cmidrule{2-6}
+ & 01 & 25 & 50 & 75 & 90 & & \\
+\midrule
+\texttt{cruise} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{keep} & 1748 & 1344 & 1154 & 961 & 932 & 6139 & 47.9\% \\ 
+\texttt{change\_to\_left} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{change\_to\_right} & 0 & 0 & 0 & 0 & 0 & 0 & 0.0\% \\ 
+\texttt{swerve\_left} & 1540 & 699 & 1069 & 1345 & 1470 & 6123 & 66.2\% \\ 
+\texttt{swerve\_right} & 552 & 1797 & 1617 & 1534 & 1438 & 6938 & 68.3\% \\ 
+\midrule
+\textbf{Total} & 3840 & 3840 & 3840 & 3840 & 3840 & 19200 & 61.1\% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

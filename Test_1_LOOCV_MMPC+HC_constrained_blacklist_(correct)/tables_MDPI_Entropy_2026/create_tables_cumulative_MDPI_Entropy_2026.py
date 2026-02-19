@@ -6,7 +6,7 @@ from collections import defaultdict
 import statistics
 
 # Configuration
-percentages = ['01', '50', '90']
+percentages = ['01', '50', '100']
 base_dirs = [
     '../rep_1'
 ]
@@ -219,7 +219,7 @@ def generate_cumulative_latex():
 \toprule
 \multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
 \cmidrule{2-4}
- & 01 & 50 & 90 & \\
+ & 01 & 50 & 100 & \\
 \midrule
 """)
             # Safe row
@@ -245,7 +245,7 @@ def generate_cumulative_latex():
 \toprule
 \multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
 \cmidrule{2-4}
- & 01 & 50  & 90 & \\
+ & 01 & 50  & 100 & \\
 \midrule
 """)
             for i in range(6):
@@ -267,7 +267,7 @@ def generate_cumulative_latex():
 \toprule
 \multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
 \cmidrule{2-4}
- & 01 & 50 & 90 & & \\
+ & 01 & 50 & 100 & & \\
 \midrule
 """)
             for action in valid_actions:
@@ -300,7 +300,7 @@ def generate_cumulative_latex():
 \toprule
 \multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
 \cmidrule{2-4}
- & 01 & 50  & 90 & \\
+ & 01 & 50  & 100 & \\
 \midrule
 """)
             no_crash_safe = [str(cumulative_no_crash_transitions[p]['False_False']) for p in percentages]
@@ -320,7 +320,7 @@ def generate_cumulative_latex():
 \toprule
 \multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
 \cmidrule{2-4}
- & 01 & 50 & 90 & \\
+ & 01 & 50 & 100 & \\
 \midrule
 """)
             for i in range(6):
@@ -341,7 +341,7 @@ def generate_cumulative_latex():
 \toprule
 \multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
 \cmidrule{2-4}
- & 01 & 50  & 90 & & \\
+ & 01 & 50  & 100 & & \\
 \midrule
 """)
             for action in valid_actions:

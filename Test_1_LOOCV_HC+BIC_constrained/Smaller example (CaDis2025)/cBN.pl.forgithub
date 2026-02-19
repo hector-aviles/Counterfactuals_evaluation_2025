@@ -1,0 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Exogenous variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+0.4618446::u1.
+free_NE :- u1.
+
+0.3314485::u2(cruise); 0.6685515::u2(keep).
+action(V) :- u2(V), \+ free_NE.
+
+0.9371515::u3(cruise); 0.0628485::u3(keep).
+action(V) :- u3(V), free_NE.
+
+0.5765529::u4.
+latent_collision :- u4, action(cruise), \+ free_NE.
+
+0.0009990::u5.
+latent_collision :- u5, action(keep), \+ free_NE.
+
+0.0838291::u6.
+latent_collision :- u6, action(cruise), free_NE.
+
+0.0009990::u7.
+latent_collision :- u7, action(keep), free_NE.
+

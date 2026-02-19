@@ -16,12 +16,12 @@
 \toprule
 \multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
 \cmidrule{2-4}
- & 01 & 50 & 90 & \\
+ & 01 & 50 & 100 & \\
 \midrule
-Safe (True $\rightarrow$ False) & 254 & 1024 & 0 & 1278 \\ 
-Unsafe (True $\rightarrow$ True) & 95 & 704 & 0 & 799 \\ 
+Safe (True $\rightarrow$ False) & 254 & 1024 & 1024 & 2302 \\ 
+Unsafe (True $\rightarrow$ True) & 95 & 704 & 704 & 1503 \\ 
 \midrule
-Total & 349 & 1728 & 0 & 2077 \\ 
+Total & 349 & 1728 & 1728 & 3805 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -33,16 +33,16 @@ Total & 349 & 1728 & 0 & 2077 \\
 \toprule
 \multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
 \cmidrule{2-4}
- & 01 & 50  & 90 & \\
+ & 01 & 50  & 100 & \\
 \midrule
 1 & 256 & 0 & 0 & 256 \\ 
 2 & 15 & 0 & 0 & 15 \\ 
 3 & 13 & 0 & 0 & 13 \\ 
 4 & 0 & 0 & 0 & 0 \\ 
 5 & 0 & 0 & 0 & 0 \\ 
-6 & 4 & 288 & 0 & 292 \\ 
+6 & 4 & 288 & 288 & 580 \\ 
 \midrule
-Total & 288 & 288 & 0 & 576 \\ 
+Total & 288 & 288 & 288 & 864 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -54,16 +54,16 @@ Total & 288 & 288 & 0 & 576 \\
 \toprule
 \multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
 \cmidrule{2-4}
- & 01 & 50 & 90 & & \\
+ & 01 & 50 & 100 & & \\
 \midrule
-\texttt{cruise} & 4 & 288 & 0 & 292 & 39.0\% \\ 
-\texttt{keep} & 32 & 288 & 0 & 320 & 100.0\% \\ 
-\texttt{change\_to\_left} & 81 & 288 & 0 & 369 & 12.7\% \\ 
-\texttt{change\_to\_right} & 42 & 288 & 0 & 330 & 9.4\% \\ 
-\texttt{swerve\_left} & 146 & 288 & 0 & 434 & 100.0\% \\ 
-\texttt{swerve\_right} & 44 & 288 & 0 & 332 & 100.0\% \\ 
+\texttt{cruise} & 4 & 288 & 288 & 580 & 39.0\% \\ 
+\texttt{keep} & 32 & 288 & 288 & 608 & 100.0\% \\ 
+\texttt{change\_to\_left} & 81 & 288 & 288 & 657 & 10.8\% \\ 
+\texttt{change\_to\_right} & 42 & 288 & 288 & 618 & 8.9\% \\ 
+\texttt{swerve\_left} & 146 & 288 & 288 & 722 & 100.0\% \\ 
+\texttt{swerve\_right} & 44 & 288 & 288 & 620 & 100.0\% \\ 
 \midrule
-\textbf{Total} & 349 & 1728 & 0 & 2077 & 61.5\% \\ 
+\textbf{Total} & 349 & 1728 & 1728 & 3805 & 60.5\% \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -78,12 +78,12 @@ Total & 288 & 288 & 0 & 576 \\
 \toprule
 \multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
 \cmidrule{2-4}
- & 01 & 50  & 90 & \\
+ & 01 & 50  & 100 & \\
 \midrule
-Safe (False $\rightarrow$ False) & 349 & 1376 & 0 & 1725 \\ 
-Unsafe (False $\rightarrow$ True) & 185 & 1504 & 0 & 1689 \\ 
+Safe (False $\rightarrow$ False) & 349 & 1376 & 1376 & 3101 \\ 
+Unsafe (False $\rightarrow$ True) & 185 & 1504 & 1504 & 3193 \\ 
 \midrule
-Total & 534 & 2880 & 0 & 3414 \\ 
+Total & 534 & 2880 & 2880 & 6294 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -95,16 +95,16 @@ Total & 534 & 2880 & 0 & 3414 \\
 \toprule
 \multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
 \cmidrule{2-4}
- & 01 & 50 & 90 & \\
+ & 01 & 50 & 100 & \\
 \midrule
 1 & 446 & 0 & 0 & 446 \\ 
 2 & 26 & 0 & 0 & 26 \\ 
 3 & 4 & 0 & 0 & 4 \\ 
 4 & 0 & 0 & 0 & 0 \\ 
 5 & 0 & 0 & 0 & 0 \\ 
-6 & 4 & 480 & 0 & 484 \\ 
+6 & 4 & 480 & 480 & 964 \\ 
 \midrule
-Total & 480 & 480 & 0 & 960 \\ 
+Total & 480 & 480 & 480 & 1440 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -116,16 +116,16 @@ Total & 480 & 480 & 0 & 960 \\
 \toprule
 \multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
 \cmidrule{2-4}
- & 01 & 50  & 90 & & \\
+ & 01 & 50  & 100 & & \\
 \midrule
-\texttt{cruise} & 5 & 480 & 0 & 485 & 43.5\% \\ 
-\texttt{keep} & 60 & 480 & 0 & 540 & 76.1\% \\ 
-\texttt{change\_to\_left} & 202 & 480 & 0 & 682 & 15.2\% \\ 
-\texttt{change\_to\_right} & 25 & 480 & 0 & 505 & 11.1\% \\ 
-\texttt{swerve\_left} & 173 & 480 & 0 & 653 & 80.2\% \\ 
-\texttt{swerve\_right} & 69 & 480 & 0 & 549 & 76.3\% \\ 
+\texttt{cruise} & 5 & 480 & 480 & 965 & 43.4\% \\ 
+\texttt{keep} & 60 & 480 & 480 & 1020 & 74.8\% \\ 
+\texttt{change\_to\_left} & 202 & 480 & 480 & 1162 & 13.8\% \\ 
+\texttt{change\_to\_right} & 25 & 480 & 480 & 985 & 11.4\% \\ 
+\texttt{swerve\_left} & 173 & 480 & 480 & 1133 & 77.3\% \\ 
+\texttt{swerve\_right} & 69 & 480 & 480 & 1029 & 74.9\% \\ 
 \midrule
-\textbf{Total} & 534 & 2880 & 0 & 3414 & 50.5\% \\ 
+\textbf{Total} & 534 & 2880 & 2880 & 6294 & 49.3\% \\ 
 \bottomrule
 \end{tabular}
 \end{table}

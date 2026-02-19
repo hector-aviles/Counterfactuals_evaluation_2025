@@ -1,4 +1,4 @@
-
+source ~/source_code/venv/bin/activate
 
 Rscript ./integrated_LOOCV_training.R ./training_data_01_fold_1.csv ./cBN.pl
 

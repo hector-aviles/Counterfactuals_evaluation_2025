@@ -1697,7 +1697,7 @@ Fold 77: Training Time = 0.92 seconds, Samples Removed = 5000, Train Sample Size
 Fold 78: Training Time = 0.92 seconds, Samples Removed = 5000, Train Sample Size = 976934
 
 Fold 79: Training Time = 0.92 seconds, Samples Removed = 21572, Train Sample Size = 968648
-
+find . -type f -name "training_numeralia.txt" -exec gedit {} +
 Fold 80: Training Time = 1.10 seconds, Samples Removed = 21572, Train Sample Size = 968648
 
 Fold 81: Training Time = 0.92 seconds, Samples Removed = 7500, Train Sample Size = 975684

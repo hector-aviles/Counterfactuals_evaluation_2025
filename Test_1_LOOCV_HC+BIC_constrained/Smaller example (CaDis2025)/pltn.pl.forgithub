@@ -1,0 +1,35 @@
+%%% Error terms
+
+0.4618446::u1.
+0.3314485::u2(cruise); 0.6685515::u2(keep).
+0.9371515::u3(cruise); 0.0628485::u3(keep).
+0.5765529::u4.
+0.0009990::u5.
+0.0838291::u6.
+0.0009990::u7.
+
+%%% Evidence world
+
+free_NE_e :- u1.
+
+action_e(V) :- u2(V), \+ free_NE_e.
+action_e(V) :- u3(V), free_NE_e.
+
+latent_collision_e :- u4, action_e(cruise), \+ free_NE_e.
+latent_collision_e :- u5, action_e(keep), \+ free_NE_e.
+latent_collision_e :- u6, action_e(cruise), free_NE_e.
+latent_collision_e :- u7, action_e(keep), free_NE_e.
+
+%%% Intervention world
+
+free_NE_i :- u1.
+
+action_i(V) :- u2(V), \+ free_NE_i.
+action_i(V) :- u3(V), free_NE_i.
+
+latent_collision_i :- u4, action_i(cruise), \+ free_NE_i.
+latent_collision_i :- u5, action_i(keep), \+ free_NE_i.
+latent_collision_i :- u6, action_i(cruise), free_NE_i.
+latent_collision_i :- u7, action_i(keep), free_NE_i.
+
+

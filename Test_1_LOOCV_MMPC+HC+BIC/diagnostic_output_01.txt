@@ -1,0 +1,192 @@
+[conflicted] Will prefer base::setdiff over any other package.
+── Attaching core tidyverse packages ─────────────────────────────────────────────────────── tidyverse 2.0.0 ──
+✔ forcats   1.0.1     ✔ purrr     1.2.0
+✔ ggplot2   4.0.1     ✔ readr     2.1.6
+✔ lubridate 1.9.4     ✔ tibble    3.3.0
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+Input directory: ./Shared_CSVs
+Repetitions: 1
+Percentages: 01
+Working directory: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected
+
+==============================
+Starting repetition: 1
+==============================
+
+LOOCV folds (unique examples): 768
+
+--- Repetition 1 | Percentage 01 ---
+
+Processing fold 1 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_1.csv
+Train sample size: 19514
+Action distribution for fold 1:
+            action     N
+            <char> <int>
+1:          cruise  7833
+2:    swerve_right    17
+3:     swerve_left    38
+4: change_to_right  3312
+5:  change_to_left  3331
+6:            keep  4983
+MMPC neighbors of latent_collision: free_E, free_SE, free_W
+Adjacency row for latent_collision:
+MMPC skeleton – Fold 1: 24 undirected edges | Connected: TRUE | 1 components
+Blacklisted directed arcs: 48
+Final network arcs after HC: 12
+Writing probabilistic logic program to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/01/cBNs/cBN_1.pl
+Processing fold 2 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_2.csv
+Train sample size: 19514
+Action distribution for fold 2:
+            action     N
+            <char> <int>
+1:          cruise  7975
+2:    swerve_right    17
+3:     swerve_left    30
+4: change_to_right  3279
+5:  change_to_left  3294
+6:            keep  4919
+MMPC neighbors of latent_collision: free_E, free_SE, free_W
+Adjacency row for latent_collision:
+MMPC skeleton – Fold 2: 24 undirected edges | Connected: TRUE | 1 components
+Blacklisted directed arcs: 48
+Final network arcs after HC: 12
+Writing probabilistic logic program to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/01/cBNs/cBN_2.pl
+Processing fold 3 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_3.csv
+Train sample size: 19514
+Action distribution for fold 3:
+            action     N
+            <char> <int>
+1:          cruise  7929
+2:    swerve_right    12
+3:     swerve_left    32
+4: change_to_right  3293
+5:  change_to_left  3238
+6:            keep  5010
+MMPC neighbors of latent_collision: free_E, free_SE, free_W
+Adjacency row for latent_collision:
+MMPC skeleton – Fold 3: 24 undirected edges | Connected: TRUE | 1 components
+Blacklisted directed arcs: 48
+Final network arcs after HC: 12
+Writing probabilistic logic program to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/01/cBNs/cBN_3.pl
+Processing fold 4 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_4.csv
+Train sample size: 19509
+Action distribution for fold 4:
+            action     N
+            <char> <int>
+1:          cruise  7943
+2:    swerve_right    22
+3:     swerve_left    19
+4: change_to_right  3215
+5:  change_to_left  3293
+6:            keep  5017
+MMPC neighbors of latent_collision: free_E, free_SE, free_W
+Adjacency row for latent_collision:
+MMPC skeleton – Fold 4: 22 undirected edges | Connected: TRUE | 1 components
+Blacklisted directed arcs: 50
+Final network arcs after HC: 11
+Writing probabilistic logic program to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/01/cBNs/cBN_4.pl
+Processing fold 5 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_5.csv
+Train sample size: 19509
+Action distribution for fold 5:
+            action     N
+            <char> <int>
+1:          cruise  7881
+2:    swerve_right    13
+3:     swerve_left    42
+4: change_to_right  3369
+5:  change_to_left  3283
+6:            keep  4921
+MMPC neighbors of latent_collision: free_E, free_SE, free_W
+Adjacency row for latent_collision:
+MMPC skeleton – Fold 5: 24 undirected edges | Connected: TRUE | 1 components
+Blacklisted directed arcs: 48
+Final network arcs after HC: 12
+Writing probabilistic logic program to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/01/cBNs/cBN_5.pl
+Processing fold 6 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_6.csv
+Train sample size: 19509
+Action distribution for fold 6:
+            action     N
+            <char> <int>
+1:          cruise  7927
+2:    swerve_right    21
+3:     swerve_left    26
+4: change_to_right  3312
+5:  change_to_left  3226
+6:            keep  4997
+MMPC neighbors of latent_collision: free_E, free_SE, free_W
+Adjacency row for latent_collision:
+MMPC skeleton – Fold 6: 24 undirected edges | Connected: TRUE | 1 components
+Blacklisted directed arcs: 48
+Final network arcs after HC: 12
+Writing probabilistic logic program to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/01/cBNs/cBN_6.pl
+Processing fold 7 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_7.csv
+Train sample size: 19514
+Action distribution for fold 7:
+            action     N
+            <char> <int>
+1:          cruise  7885
+2:    swerve_right    18
+3:     swerve_left    24
+4: change_to_right  3374
+5:  change_to_left  3169
+6:            keep  5044
+MMPC neighbors of latent_collision: free_E, free_SE, free_W
+Adjacency row for latent_collision:
+MMPC skeleton – Fold 7: 24 undirected edges | Connected: TRUE | 1 components
+Blacklisted directed arcs: 48
+Final network arcs after HC: 12
+Writing probabilistic logic program to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/01/cBNs/cBN_7.pl
+Processing fold 8 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_8.csv
+Train sample size: 19514
+Action distribution for fold 8:
+            action     N
+            <char> <int>
+1:          cruise  7905
+2:    swerve_right    10
+3:     swerve_left    35
+4: change_to_right  3298
+5:  change_to_left  3312
+6:            keep  4954
+MMPC neighbors of latent_collision: free_E, free_SE, free_W
+Adjacency row for latent_collision:
+MMPC skeleton – Fold 8: 24 undirected edges | Connected: TRUE | 1 components
+Blacklisted directed arcs: 48
+Final network arcs after HC: 12
+Writing probabilistic logic program to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/01/cBNs/cBN_8.pl
+Processing fold 9 of 768
+Creating test dataset...
+Done. dt_test dims: 6 x 12
+Test data saved to: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_corrected/rep_1/test_data/test_fold_9.csv
+
+Execution halted

@@ -1,0 +1,150 @@
+Fold 64 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.14s
+
+Fold 65 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.13s
+
+Fold 85 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 95 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 147 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=26  connected=TRUE  comps=1
+final_arcs=13  time=0.13s
+
+Fold 163 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 185 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 190 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SW, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 207 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 217 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=26  connected=TRUE  comps=1
+final_arcs=13  time=0.13s
+
+Fold 218 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 256 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SW, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 270 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 316 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 324 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 427 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 473 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 474 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 480 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 496 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 515 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=26  connected=TRUE  comps=1
+final_arcs=13  time=0.13s
+
+Fold 539 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 548 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.13s
+
+Fold 553 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 581 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.12s
+
+Fold 665 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.13s
+
+Fold 724 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=24  connected=TRUE  comps=1
+final_arcs=12  time=0.13s
+
+Fold 735 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=26  connected=TRUE  comps=1
+final_arcs=13  time=0.13s
+
+Fold 741 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+
+Fold 749 (mi-sh|alpha=0.05|max.sx=3)
+LC=free_E, free_SE, free_W  action_in_LC=FALSE
+edges=22  connected=TRUE  comps=1
+final_arcs=11  time=0.12s
+

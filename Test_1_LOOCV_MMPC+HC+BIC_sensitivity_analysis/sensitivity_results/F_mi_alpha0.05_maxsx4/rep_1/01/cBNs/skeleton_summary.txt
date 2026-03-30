@@ -1,0 +1,150 @@
+Fold 64 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.29s
+
+Fold 65 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.29s
+
+Fold 85 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.29s
+
+Fold 95 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.28s
+
+Fold 147 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.33s
+
+Fold 163 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.58s
+
+Fold 185 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.25s
+
+Fold 190 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.25s
+
+Fold 207 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.26s
+
+Fold 217 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.26s
+
+Fold 218 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.26s
+
+Fold 256 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.26s
+
+Fold 270 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.25s
+
+Fold 316 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.26s
+
+Fold 324 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.25s
+
+Fold 427 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.25s
+
+Fold 473 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.27s
+
+Fold 474 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=34  connected=TRUE  comps=1
+final_arcs=17  time=0.25s
+
+Fold 480 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.27s
+
+Fold 496 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.28s
+
+Fold 515 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.26s
+
+Fold 539 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.27s
+
+Fold 548 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.28s
+
+Fold 553 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.29s
+
+Fold 581 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.27s
+
+Fold 665 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.27s
+
+Fold 724 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.3s
+
+Fold 735 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.27s
+
+Fold 741 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.26s
+
+Fold 749 (mi|alpha=0.05|max.sx=4)
+LC=action, free_E, free_SE, free_SW, free_W  action_in_LC=TRUE
+edges=36  connected=TRUE  comps=1
+final_arcs=18  time=0.26s
+

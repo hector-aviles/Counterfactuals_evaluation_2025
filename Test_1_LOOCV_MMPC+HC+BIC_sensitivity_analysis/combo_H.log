@@ -1,0 +1,30 @@
+==============================================================
+ Combination H: mi | alpha=0.05 | max.sx=1
+ Purpose    : Smaller conditioning set — near-marginal testing
+ Script     : CBNs_LOOCV_training_MMPC_sensitivity.R
+ Started    : Fri Mar 27 02:47:27 PM CST 2026
+==============================================================
+Shared fold IDs loaded: 30 folds
+Fold IDs: 64,65,85,95,147,163,185,190,207,217,218,256,270,316,324,427,473,474,480,496,515,539,548,553,581,665,724,735,741,749
+
+--------------------------------------------------------------
+Combination : H_mi_alpha0.05_maxsx1
+Parameters  : test=mi  alpha=0.05  max.sx=1
+Folds       : same shared IDs as A-G
+Started     : Fri Mar 27 02:47:27 PM CST 2026
+--------------------------------------------------------------
+  COMPLETED : Fri Mar 27 02:52:19 PM CST 2026
+    [Pct=01] action_in_LC=0/30(0.0%) | connected=0/30(0.0%) | avg_comps=4.53 | avg_time=0.0s
+    [Pct=50] action_in_LC=0/30(0.0%) | connected=0/30(0.0%) | avg_comps=7.00 | avg_time=1.1s
+    [Pct=100] action_in_LC=0/30(0.0%) | connected=0/30(0.0%) | avg_comps=7.00 | avg_time=2.0s
+
+Appending combination H to sensitivity_results/all_combinations_summary.csv...
+Appended 90 rows from sensitivity_results/H_mi_alpha0.05_maxsx1/global_summary.csv
+Total lines in all_combinations_summary.csv now: 721 (including header)
+
+==============================================================
+ DONE: Fri Mar 27 02:52:19 PM CST 2026
+ Combination H results : sensitivity_results/H_mi_alpha0.05_maxsx1/global_summary.csv
+ Merged CSV            : sensitivity_results/all_combinations_summary.csv
+ Full log              : sensitivity_results/H_mi_alpha0.05_maxsx1.log
+==============================================================

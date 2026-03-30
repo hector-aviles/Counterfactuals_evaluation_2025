@@ -1,0 +1,1593 @@
+Fold 1: Time=99.29s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 2: Time=100.00s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 3: Time=99.43s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 4: Time=98.55s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 5: Time=99.69s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 6: Time=99.70s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 7: Time=99.77s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 8: Time=99.48s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 9: Time=100.27s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 10: Time=95.83s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 11: Time=92.89s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 12: Time=94.18s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 13: Time=100.87s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 14: Time=99.93s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 15: Time=100.13s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 16: Time=101.06s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 17: Time=99.58s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 18: Time=100.31s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 19: Time=100.18s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 20: Time=100.02s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 21: Time=101.24s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 22: Time=98.12s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 23: Time=99.01s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 24: Time=98.66s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 1: Time=90.87s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 2: Time=91.04s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 3: Time=91.23s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 4: Time=90.19s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 5: Time=91.61s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 6: Time=90.79s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 7: Time=90.85s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 8: Time=90.52s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 9: Time=95.95s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 10: Time=95.45s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 11: Time=96.29s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 12: Time=97.40s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 13: Time=101.63s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 14: Time=99.38s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 15: Time=99.92s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 16: Time=99.51s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 17: Time=91.50s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 18: Time=91.80s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 19: Time=93.76s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 20: Time=91.12s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 21: Time=90.66s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 22: Time=89.54s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 23: Time=95.05s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 24: Time=99.06s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 25: Time=98.39s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 26: Time=98.35s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 27: Time=98.65s | Removed=6745 | TrainSize=1952124 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 28: Time=99.37s | Removed=6745 | TrainSize=1952124 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 29: Time=99.69s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 30: Time=98.84s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 31: Time=98.63s | Removed=18695 | TrainSize=1940174 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 32: Time=99.14s | Removed=18695 | TrainSize=1940174 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 33: Time=100.10s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 34: Time=98.20s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 35: Time=112.73s | Removed=11589 | TrainSize=1947280 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 36: Time=111.61s | Removed=11589 | TrainSize=1947280 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 37: Time=98.60s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 38: Time=99.54s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 39: Time=99.03s | Removed=21001 | TrainSize=1937868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 40: Time=98.98s | Removed=21001 | TrainSize=1937868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 41: Time=98.25s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 42: Time=99.56s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 43: Time=97.79s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 44: Time=98.38s | Removed=7586 | TrainSize=1951283 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 45: Time=98.70s | Removed=7586 | TrainSize=1951283 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 46: Time=98.56s | Removed=7586 | TrainSize=1951283 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 47: Time=98.29s | Removed=7505 | TrainSize=1951364 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 48: Time=98.35s | Removed=7505 | TrainSize=1951364 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 49: Time=100.08s | Removed=7505 | TrainSize=1951364 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 50: Time=98.18s | Removed=34057 | TrainSize=1924812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 51: Time=98.08s | Removed=34057 | TrainSize=1924812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 52: Time=98.77s | Removed=34057 | TrainSize=1924812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 53: Time=98.57s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 54: Time=99.18s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 55: Time=91.31s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 56: Time=90.98s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 57: Time=91.16s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 58: Time=91.33s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 59: Time=91.37s | Removed=7511 | TrainSize=1951358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 60: Time=90.66s | Removed=7511 | TrainSize=1951358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 61: Time=96.29s | Removed=7511 | TrainSize=1951358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 62: Time=98.25s | Removed=17399 | TrainSize=1941470 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 63: Time=97.38s | Removed=17399 | TrainSize=1941470 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 64: Time=99.48s | Removed=17399 | TrainSize=1941470 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 65: Time=99.15s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 66: Time=98.62s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 67: Time=98.89s | Removed=7180 | TrainSize=1951689 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 68: Time=100.55s | Removed=7180 | TrainSize=1951689 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 69: Time=97.72s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 70: Time=90.85s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 71: Time=89.75s | Removed=30512 | TrainSize=1928357 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 72: Time=89.98s | Removed=30512 | TrainSize=1928357 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 73: Time=90.55s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 74: Time=90.58s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 75: Time=90.97s | Removed=7071 | TrainSize=1951798 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 76: Time=97.04s | Removed=7071 | TrainSize=1951798 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 77: Time=100.11s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 78: Time=98.94s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 79: Time=97.11s | Removed=21572 | TrainSize=1937297 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 80: Time=98.16s | Removed=21572 | TrainSize=1937297 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 81: Time=100.43s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 82: Time=99.31s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 83: Time=99.20s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 84: Time=98.27s | Removed=7522 | TrainSize=1951347 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 85: Time=99.14s | Removed=7522 | TrainSize=1951347 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 86: Time=99.36s | Removed=7522 | TrainSize=1951347 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 87: Time=113.28s | Removed=7500 | TrainSize=1951369 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 88: Time=111.98s | Removed=7500 | TrainSize=1951369 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 89: Time=104.34s | Removed=7500 | TrainSize=1951369 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 90: Time=85.36s | Removed=129894 | TrainSize=1828975 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 91: Time=85.87s | Removed=129894 | TrainSize=1828975 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 92: Time=85.23s | Removed=129894 | TrainSize=1828975 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 93: Time=91.19s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 94: Time=90.41s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 95: Time=95.82s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 96: Time=98.32s | Removed=7849 | TrainSize=1951020 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 97: Time=98.97s | Removed=7849 | TrainSize=1951020 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 98: Time=99.13s | Removed=7849 | TrainSize=1951020 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 99: Time=112.87s | Removed=7524 | TrainSize=1951345 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 100: Time=113.23s | Removed=7524 | TrainSize=1951345 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 101: Time=112.70s | Removed=7524 | TrainSize=1951345 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 102: Time=95.14s | Removed=72632 | TrainSize=1886237 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 103: Time=95.81s | Removed=72632 | TrainSize=1886237 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 104: Time=96.73s | Removed=72632 | TrainSize=1886237 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 105: Time=99.16s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 106: Time=98.95s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 107: Time=99.19s | Removed=6811 | TrainSize=1952058 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 108: Time=99.12s | Removed=6811 | TrainSize=1952058 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 109: Time=113.06s | Removed=5000 | TrainSize=1953869 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 110: Time=112.73s | Removed=5000 | TrainSize=1953869 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 111: Time=115.40s | Removed=17134 | TrainSize=1941735 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 112: Time=114.96s | Removed=17134 | TrainSize=1941735 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 113: Time=98.40s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 114: Time=99.11s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 115: Time=97.75s | Removed=19441 | TrainSize=1939428 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 116: Time=97.51s | Removed=19441 | TrainSize=1939428 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 117: Time=113.43s | Removed=5007 | TrainSize=1953862 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 118: Time=108.40s | Removed=5007 | TrainSize=1953862 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 119: Time=90.29s | Removed=42022 | TrainSize=1916847 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 120: Time=90.85s | Removed=42022 | TrainSize=1916847 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 121: Time=91.66s | Removed=5002 | TrainSize=1953867 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 122: Time=92.45s | Removed=5002 | TrainSize=1953867 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 123: Time=91.21s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 124: Time=95.15s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 125: Time=104.19s | Removed=5040 | TrainSize=1953829 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 126: Time=104.53s | Removed=5040 | TrainSize=1953829 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 127: Time=106.92s | Removed=12135 | TrainSize=1946734 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 128: Time=106.97s | Removed=12135 | TrainSize=1946734 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 129: Time=91.08s | Removed=5048 | TrainSize=1953821 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 130: Time=91.32s | Removed=5048 | TrainSize=1953821 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 131: Time=91.07s | Removed=5774 | TrainSize=1953095 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 132: Time=94.01s | Removed=5774 | TrainSize=1953095 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 133: Time=112.91s | Removed=5080 | TrainSize=1953789 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 134: Time=113.50s | Removed=5080 | TrainSize=1953789 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 135: Time=113.37s | Removed=7029 | TrainSize=1951840 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 136: Time=112.32s | Removed=7029 | TrainSize=1951840 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 137: Time=100.44s | Removed=2501 | TrainSize=1956368 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 138: Time=91.75s | Removed=2549 | TrainSize=1956320 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 139: Time=91.78s | Removed=2552 | TrainSize=1956317 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 140: Time=89.33s | Removed=39102 | TrainSize=1919767 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 141: Time=93.13s | Removed=2513 | TrainSize=1956356 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 142: Time=91.15s | Removed=2694 | TrainSize=1956175 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 143: Time=91.68s | Removed=2517 | TrainSize=1956352 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 144: Time=95.48s | Removed=43120 | TrainSize=1915749 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 145: Time=99.90s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 146: Time=99.65s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 147: Time=99.57s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 148: Time=91.06s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 149: Time=91.17s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 150: Time=91.44s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 151: Time=91.90s | Removed=7523 | TrainSize=1951346 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 152: Time=91.16s | Removed=7523 | TrainSize=1951346 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 153: Time=90.67s | Removed=7523 | TrainSize=1951346 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 154: Time=99.45s | Removed=7598 | TrainSize=1951271 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 155: Time=98.82s | Removed=7598 | TrainSize=1951271 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 156: Time=99.67s | Removed=7598 | TrainSize=1951271 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 157: Time=99.60s | Removed=7538 | TrainSize=1951331 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 158: Time=99.02s | Removed=7538 | TrainSize=1951331 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 159: Time=100.11s | Removed=7538 | TrainSize=1951331 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 160: Time=99.43s | Removed=7504 | TrainSize=1951365 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 161: Time=98.95s | Removed=7504 | TrainSize=1951365 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 162: Time=97.89s | Removed=7504 | TrainSize=1951365 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 163: Time=91.76s | Removed=9195 | TrainSize=1949674 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 164: Time=90.61s | Removed=9195 | TrainSize=1949674 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 165: Time=91.44s | Removed=9195 | TrainSize=1949674 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 166: Time=102.47s | Removed=23473 | TrainSize=1935396 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 167: Time=103.64s | Removed=23473 | TrainSize=1935396 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 168: Time=104.06s | Removed=23473 | TrainSize=1935396 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 169: Time=115.01s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 170: Time=114.69s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 171: Time=114.52s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 172: Time=91.49s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 173: Time=91.60s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 174: Time=103.07s | Removed=7528 | TrainSize=1951341 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 175: Time=104.53s | Removed=7528 | TrainSize=1951341 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 176: Time=104.23s | Removed=7528 | TrainSize=1951341 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 177: Time=90.40s | Removed=5007 | TrainSize=1953862 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 178: Time=100.56s | Removed=5007 | TrainSize=1953862 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 179: Time=113.32s | Removed=7517 | TrainSize=1951352 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 180: Time=112.87s | Removed=7517 | TrainSize=1951352 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 181: Time=113.07s | Removed=7517 | TrainSize=1951352 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 182: Time=98.87s | Removed=5124 | TrainSize=1953745 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 183: Time=100.28s | Removed=5124 | TrainSize=1953745 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 184: Time=112.81s | Removed=7631 | TrainSize=1951238 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 185: Time=113.38s | Removed=7631 | TrainSize=1951238 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 186: Time=112.23s | Removed=7631 | TrainSize=1951238 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 187: Time=109.17s | Removed=11446 | TrainSize=1947423 | SkelEdges=32 | OrientedArcs=18 | Method=cextend
+
+Fold 188: Time=107.81s | Removed=11446 | TrainSize=1947423 | SkelEdges=32 | OrientedArcs=18 | Method=cextend
+
+Fold 189: Time=97.82s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 190: Time=98.55s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 191: Time=98.42s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 192: Time=98.84s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 193: Time=98.26s | Removed=5015 | TrainSize=1953854 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 194: Time=99.31s | Removed=5015 | TrainSize=1953854 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 195: Time=99.96s | Removed=5114 | TrainSize=1953755 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 196: Time=100.23s | Removed=5114 | TrainSize=1953755 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 197: Time=99.52s | Removed=5157 | TrainSize=1953712 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 198: Time=100.53s | Removed=5157 | TrainSize=1953712 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 199: Time=100.34s | Removed=5019 | TrainSize=1953850 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 200: Time=98.38s | Removed=5019 | TrainSize=1953850 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 201: Time=97.72s | Removed=6749 | TrainSize=1952120 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 202: Time=98.16s | Removed=6749 | TrainSize=1952120 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 203: Time=97.88s | Removed=9511 | TrainSize=1949358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 204: Time=97.52s | Removed=9511 | TrainSize=1949358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 205: Time=98.44s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 206: Time=99.24s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 207: Time=116.69s | Removed=2510 | TrainSize=1956359 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 208: Time=98.61s | Removed=5061 | TrainSize=1953808 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 209: Time=99.55s | Removed=5061 | TrainSize=1953808 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 210: Time=99.10s | Removed=3100 | TrainSize=1955769 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 211: Time=99.91s | Removed=6146 | TrainSize=1952723 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 212: Time=99.68s | Removed=6146 | TrainSize=1952723 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 213: Time=114.33s | Removed=3935 | TrainSize=1954934 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 214: Time=112.62s | Removed=6886 | TrainSize=1951983 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 215: Time=112.71s | Removed=6886 | TrainSize=1951983 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 216: Time=112.59s | Removed=9142 | TrainSize=1949727 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 217: Time=98.80s | Removed=7507 | TrainSize=1951362 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 218: Time=99.38s | Removed=7507 | TrainSize=1951362 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 219: Time=98.57s | Removed=7507 | TrainSize=1951362 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 220: Time=97.41s | Removed=7506 | TrainSize=1951363 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 221: Time=98.24s | Removed=7506 | TrainSize=1951363 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 222: Time=99.08s | Removed=7506 | TrainSize=1951363 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 223: Time=114.36s | Removed=15967 | TrainSize=1942902 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 224: Time=113.12s | Removed=15967 | TrainSize=1942902 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 225: Time=113.38s | Removed=15967 | TrainSize=1942902 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 226: Time=112.99s | Removed=30668 | TrainSize=1928201 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 227: Time=112.53s | Removed=30668 | TrainSize=1928201 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 228: Time=111.61s | Removed=30668 | TrainSize=1928201 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 229: Time=98.85s | Removed=10803 | TrainSize=1948066 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 230: Time=97.63s | Removed=10803 | TrainSize=1948066 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 231: Time=99.19s | Removed=10803 | TrainSize=1948066 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 232: Time=99.13s | Removed=11188 | TrainSize=1947681 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 233: Time=99.47s | Removed=11188 | TrainSize=1947681 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 234: Time=99.44s | Removed=11188 | TrainSize=1947681 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 235: Time=111.22s | Removed=25577 | TrainSize=1933292 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 236: Time=113.04s | Removed=25577 | TrainSize=1933292 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 237: Time=111.29s | Removed=25577 | TrainSize=1933292 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 238: Time=107.51s | Removed=106959 | TrainSize=1851910 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 239: Time=107.80s | Removed=106959 | TrainSize=1851910 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 240: Time=108.44s | Removed=106959 | TrainSize=1851910 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 241: Time=113.98s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 242: Time=113.83s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 243: Time=114.28s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 244: Time=99.81s | Removed=5013 | TrainSize=1953856 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 245: Time=98.47s | Removed=5013 | TrainSize=1953856 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 246: Time=115.55s | Removed=10467 | TrainSize=1948402 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 247: Time=115.99s | Removed=10467 | TrainSize=1948402 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 248: Time=115.64s | Removed=10467 | TrainSize=1948402 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 249: Time=112.28s | Removed=5870 | TrainSize=1952999 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 250: Time=112.38s | Removed=5870 | TrainSize=1952999 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 251: Time=115.01s | Removed=9715 | TrainSize=1949154 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 252: Time=111.57s | Removed=9715 | TrainSize=1949154 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 253: Time=112.48s | Removed=9715 | TrainSize=1949154 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 254: Time=97.87s | Removed=17262 | TrainSize=1941607 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 255: Time=97.49s | Removed=17262 | TrainSize=1941607 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 256: Time=115.27s | Removed=12692 | TrainSize=1946177 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 257: Time=114.65s | Removed=12692 | TrainSize=1946177 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 258: Time=116.51s | Removed=12692 | TrainSize=1946177 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 259: Time=115.40s | Removed=11928 | TrainSize=1946941 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 260: Time=116.28s | Removed=11928 | TrainSize=1946941 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 261: Time=98.24s | Removed=5225 | TrainSize=1953644 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 262: Time=100.37s | Removed=5225 | TrainSize=1953644 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 263: Time=99.65s | Removed=6057 | TrainSize=1952812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 264: Time=100.29s | Removed=6057 | TrainSize=1952812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 265: Time=112.00s | Removed=7139 | TrainSize=1951730 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 266: Time=114.12s | Removed=7139 | TrainSize=1951730 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 267: Time=110.83s | Removed=40588 | TrainSize=1918281 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 268: Time=111.61s | Removed=40588 | TrainSize=1918281 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 269: Time=112.40s | Removed=31391 | TrainSize=1927478 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 270: Time=111.72s | Removed=31391 | TrainSize=1927478 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 271: Time=108.03s | Removed=91843 | TrainSize=1867026 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 272: Time=107.48s | Removed=91843 | TrainSize=1867026 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 273: Time=111.19s | Removed=37879 | TrainSize=1920990 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 274: Time=110.43s | Removed=37879 | TrainSize=1920990 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 275: Time=96.03s | Removed=57558 | TrainSize=1901311 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 276: Time=96.89s | Removed=57558 | TrainSize=1901311 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 277: Time=113.43s | Removed=7204 | TrainSize=1951665 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 278: Time=113.88s | Removed=7204 | TrainSize=1951665 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 279: Time=100.35s | Removed=5934 | TrainSize=1952935 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 280: Time=113.46s | Removed=6093 | TrainSize=1952776 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 281: Time=113.28s | Removed=6093 | TrainSize=1952776 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 282: Time=97.99s | Removed=27403 | TrainSize=1931466 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 283: Time=95.84s | Removed=40644 | TrainSize=1918225 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 284: Time=97.07s | Removed=40644 | TrainSize=1918225 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 285: Time=95.19s | Removed=58135 | TrainSize=1900734 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 286: Time=97.15s | Removed=39083 | TrainSize=1919786 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 287: Time=96.43s | Removed=39083 | TrainSize=1919786 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 288: Time=97.65s | Removed=57935 | TrainSize=1900934 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 289: Time=99.58s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 290: Time=99.32s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 291: Time=100.10s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 292: Time=95.92s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 293: Time=99.20s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 294: Time=99.12s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 295: Time=99.36s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 296: Time=98.43s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 297: Time=99.57s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 298: Time=97.80s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 299: Time=98.36s | Removed=6745 | TrainSize=1952124 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 300: Time=98.63s | Removed=6745 | TrainSize=1952124 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 301: Time=98.57s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 302: Time=99.84s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 303: Time=98.21s | Removed=18695 | TrainSize=1940174 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 304: Time=98.47s | Removed=18695 | TrainSize=1940174 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 305: Time=99.51s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 306: Time=99.65s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 307: Time=111.86s | Removed=11589 | TrainSize=1947280 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 308: Time=111.72s | Removed=11589 | TrainSize=1947280 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 309: Time=99.59s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 310: Time=98.65s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 311: Time=97.03s | Removed=21001 | TrainSize=1937868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 312: Time=99.63s | Removed=21001 | TrainSize=1937868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 313: Time=98.64s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 314: Time=99.63s | Removed=7586 | TrainSize=1951283 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 315: Time=98.74s | Removed=7505 | TrainSize=1951364 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 316: Time=97.41s | Removed=34057 | TrainSize=1924812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 317: Time=99.28s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 318: Time=99.47s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 319: Time=99.43s | Removed=7511 | TrainSize=1951358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 320: Time=98.85s | Removed=17399 | TrainSize=1941470 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 321: Time=100.60s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 322: Time=100.29s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 323: Time=99.56s | Removed=7180 | TrainSize=1951689 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 324: Time=99.05s | Removed=7180 | TrainSize=1951689 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 325: Time=98.99s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 326: Time=99.63s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 327: Time=98.47s | Removed=30512 | TrainSize=1928357 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 328: Time=99.03s | Removed=30512 | TrainSize=1928357 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 329: Time=99.14s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 330: Time=98.58s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 331: Time=99.00s | Removed=7071 | TrainSize=1951798 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 332: Time=99.50s | Removed=7071 | TrainSize=1951798 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 333: Time=98.52s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 334: Time=99.95s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 335: Time=99.86s | Removed=21572 | TrainSize=1937297 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 336: Time=98.77s | Removed=21572 | TrainSize=1937297 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 337: Time=98.65s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 338: Time=99.35s | Removed=7522 | TrainSize=1951347 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 339: Time=113.55s | Removed=7500 | TrainSize=1951369 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 340: Time=92.18s | Removed=129894 | TrainSize=1828975 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 341: Time=98.80s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 342: Time=98.42s | Removed=7849 | TrainSize=1951020 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 343: Time=111.84s | Removed=7524 | TrainSize=1951345 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 344: Time=94.88s | Removed=72632 | TrainSize=1886237 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 345: Time=98.49s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 346: Time=99.05s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 347: Time=98.55s | Removed=6811 | TrainSize=1952058 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 348: Time=98.70s | Removed=6811 | TrainSize=1952058 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 349: Time=112.95s | Removed=5000 | TrainSize=1953869 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 350: Time=113.02s | Removed=5000 | TrainSize=1953869 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 351: Time=115.25s | Removed=17134 | TrainSize=1941735 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 352: Time=116.91s | Removed=17134 | TrainSize=1941735 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 353: Time=100.37s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 354: Time=100.85s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 355: Time=98.49s | Removed=19441 | TrainSize=1939428 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 356: Time=97.51s | Removed=19441 | TrainSize=1939428 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 357: Time=115.25s | Removed=5007 | TrainSize=1953862 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 358: Time=114.05s | Removed=5007 | TrainSize=1953862 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 359: Time=96.37s | Removed=42022 | TrainSize=1916847 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 360: Time=97.39s | Removed=42022 | TrainSize=1916847 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 361: Time=99.45s | Removed=5002 | TrainSize=1953867 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 362: Time=99.89s | Removed=5002 | TrainSize=1953867 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 363: Time=98.69s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 364: Time=98.85s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 365: Time=113.30s | Removed=5040 | TrainSize=1953829 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 366: Time=112.64s | Removed=5040 | TrainSize=1953829 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 367: Time=115.44s | Removed=12135 | TrainSize=1946734 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 368: Time=116.03s | Removed=12135 | TrainSize=1946734 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 369: Time=98.73s | Removed=5048 | TrainSize=1953821 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 370: Time=101.93s | Removed=5048 | TrainSize=1953821 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 371: Time=99.90s | Removed=5774 | TrainSize=1953095 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 372: Time=99.68s | Removed=5774 | TrainSize=1953095 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 373: Time=114.46s | Removed=5080 | TrainSize=1953789 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 374: Time=113.75s | Removed=5080 | TrainSize=1953789 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 375: Time=114.32s | Removed=7029 | TrainSize=1951840 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 376: Time=112.88s | Removed=7029 | TrainSize=1951840 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 377: Time=99.30s | Removed=2501 | TrainSize=1956368 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 378: Time=98.97s | Removed=2501 | TrainSize=1956368 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 379: Time=99.18s | Removed=2501 | TrainSize=1956368 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 380: Time=99.38s | Removed=2549 | TrainSize=1956320 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 381: Time=99.04s | Removed=2549 | TrainSize=1956320 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 382: Time=98.85s | Removed=2549 | TrainSize=1956320 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 383: Time=98.52s | Removed=2552 | TrainSize=1956317 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 384: Time=100.58s | Removed=2552 | TrainSize=1956317 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 385: Time=99.30s | Removed=2552 | TrainSize=1956317 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 386: Time=97.60s | Removed=39102 | TrainSize=1919767 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 387: Time=97.71s | Removed=39102 | TrainSize=1919767 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 388: Time=98.63s | Removed=39102 | TrainSize=1919767 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 389: Time=99.40s | Removed=2513 | TrainSize=1956356 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 390: Time=99.87s | Removed=2513 | TrainSize=1956356 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 391: Time=99.36s | Removed=2513 | TrainSize=1956356 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 392: Time=100.21s | Removed=2694 | TrainSize=1956175 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 393: Time=99.49s | Removed=2694 | TrainSize=1956175 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 394: Time=99.84s | Removed=2694 | TrainSize=1956175 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 395: Time=99.58s | Removed=2517 | TrainSize=1956352 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 396: Time=100.14s | Removed=2517 | TrainSize=1956352 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 397: Time=100.37s | Removed=2517 | TrainSize=1956352 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 398: Time=97.63s | Removed=43120 | TrainSize=1915749 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 399: Time=98.45s | Removed=43120 | TrainSize=1915749 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 400: Time=97.32s | Removed=43120 | TrainSize=1915749 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 401: Time=99.12s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 402: Time=99.40s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 403: Time=98.67s | Removed=7523 | TrainSize=1951346 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 404: Time=97.45s | Removed=7598 | TrainSize=1951271 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 405: Time=99.36s | Removed=7538 | TrainSize=1951331 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 406: Time=100.19s | Removed=7504 | TrainSize=1951365 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 407: Time=98.54s | Removed=9195 | TrainSize=1949674 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 408: Time=113.56s | Removed=23473 | TrainSize=1935396 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 409: Time=112.23s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 410: Time=99.54s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 411: Time=99.60s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 412: Time=114.23s | Removed=7528 | TrainSize=1951341 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 413: Time=100.10s | Removed=5007 | TrainSize=1953862 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 414: Time=98.82s | Removed=5007 | TrainSize=1953862 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 415: Time=113.45s | Removed=7517 | TrainSize=1951352 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 416: Time=98.93s | Removed=5124 | TrainSize=1953745 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 417: Time=98.97s | Removed=5124 | TrainSize=1953745 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 418: Time=113.12s | Removed=7631 | TrainSize=1951238 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 419: Time=111.10s | Removed=11446 | TrainSize=1947423 | SkelEdges=32 | OrientedArcs=18 | Method=cextend
+
+Fold 420: Time=109.98s | Removed=11446 | TrainSize=1947423 | SkelEdges=32 | OrientedArcs=18 | Method=cextend
+
+Fold 421: Time=99.16s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 422: Time=100.77s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 423: Time=100.42s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 424: Time=100.90s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 425: Time=97.98s | Removed=5015 | TrainSize=1953854 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 426: Time=99.63s | Removed=5015 | TrainSize=1953854 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 427: Time=99.30s | Removed=5114 | TrainSize=1953755 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 428: Time=99.36s | Removed=5114 | TrainSize=1953755 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 429: Time=100.68s | Removed=5157 | TrainSize=1953712 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 430: Time=99.82s | Removed=5157 | TrainSize=1953712 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 431: Time=98.68s | Removed=5019 | TrainSize=1953850 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 432: Time=99.47s | Removed=5019 | TrainSize=1953850 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 433: Time=98.83s | Removed=6749 | TrainSize=1952120 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 434: Time=98.41s | Removed=6749 | TrainSize=1952120 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 435: Time=97.98s | Removed=9511 | TrainSize=1949358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 436: Time=98.88s | Removed=9511 | TrainSize=1949358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 437: Time=98.50s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 438: Time=99.06s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 439: Time=112.66s | Removed=2510 | TrainSize=1956359 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 440: Time=113.97s | Removed=2510 | TrainSize=1956359 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 441: Time=112.30s | Removed=2510 | TrainSize=1956359 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 442: Time=99.00s | Removed=5061 | TrainSize=1953808 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 443: Time=99.38s | Removed=5061 | TrainSize=1953808 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 444: Time=99.67s | Removed=3100 | TrainSize=1955769 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 445: Time=99.67s | Removed=3100 | TrainSize=1955769 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 446: Time=99.40s | Removed=3100 | TrainSize=1955769 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 447: Time=98.55s | Removed=6146 | TrainSize=1952723 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 448: Time=99.64s | Removed=6146 | TrainSize=1952723 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 449: Time=112.85s | Removed=3935 | TrainSize=1954934 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 450: Time=112.34s | Removed=3935 | TrainSize=1954934 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 451: Time=114.80s | Removed=3935 | TrainSize=1954934 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 452: Time=113.75s | Removed=6886 | TrainSize=1951983 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 453: Time=113.85s | Removed=6886 | TrainSize=1951983 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 454: Time=112.64s | Removed=9142 | TrainSize=1949727 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 455: Time=114.49s | Removed=9142 | TrainSize=1949727 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 456: Time=111.38s | Removed=9142 | TrainSize=1949727 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 457: Time=99.65s | Removed=7507 | TrainSize=1951362 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 458: Time=99.75s | Removed=7506 | TrainSize=1951363 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 459: Time=113.05s | Removed=15967 | TrainSize=1942902 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 460: Time=111.80s | Removed=30668 | TrainSize=1928201 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 461: Time=91.60s | Removed=10803 | TrainSize=1948066 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 462: Time=90.70s | Removed=11188 | TrainSize=1947681 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 463: Time=102.30s | Removed=25577 | TrainSize=1933292 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 464: Time=98.50s | Removed=106959 | TrainSize=1851910 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 465: Time=103.20s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 466: Time=93.06s | Removed=5013 | TrainSize=1953856 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 467: Time=99.82s | Removed=5013 | TrainSize=1953856 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 468: Time=115.82s | Removed=10467 | TrainSize=1948402 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 469: Time=114.63s | Removed=5870 | TrainSize=1952999 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 470: Time=114.58s | Removed=5870 | TrainSize=1952999 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 471: Time=112.89s | Removed=9715 | TrainSize=1949154 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 472: Time=97.63s | Removed=17262 | TrainSize=1941607 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 473: Time=97.96s | Removed=17262 | TrainSize=1941607 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 474: Time=116.07s | Removed=12692 | TrainSize=1946177 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 475: Time=115.02s | Removed=11928 | TrainSize=1946941 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 476: Time=115.39s | Removed=11928 | TrainSize=1946941 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 477: Time=98.63s | Removed=5225 | TrainSize=1953644 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 478: Time=98.54s | Removed=5225 | TrainSize=1953644 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 479: Time=99.20s | Removed=6057 | TrainSize=1952812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 480: Time=90.82s | Removed=6057 | TrainSize=1952812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 481: Time=103.91s | Removed=7139 | TrainSize=1951730 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 482: Time=103.72s | Removed=7139 | TrainSize=1951730 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 483: Time=101.90s | Removed=40588 | TrainSize=1918281 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 484: Time=101.91s | Removed=40588 | TrainSize=1918281 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 485: Time=105.08s | Removed=31391 | TrainSize=1927478 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 486: Time=111.83s | Removed=31391 | TrainSize=1927478 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 487: Time=102.54s | Removed=91843 | TrainSize=1867026 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 488: Time=98.95s | Removed=91843 | TrainSize=1867026 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 489: Time=101.71s | Removed=37879 | TrainSize=1920990 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 490: Time=102.26s | Removed=37879 | TrainSize=1920990 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 491: Time=88.45s | Removed=57558 | TrainSize=1901311 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 492: Time=89.57s | Removed=57558 | TrainSize=1901311 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 493: Time=110.37s | Removed=7204 | TrainSize=1951665 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 494: Time=113.04s | Removed=7204 | TrainSize=1951665 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 495: Time=98.67s | Removed=5934 | TrainSize=1952935 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 496: Time=99.22s | Removed=5934 | TrainSize=1952935 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 497: Time=99.20s | Removed=5934 | TrainSize=1952935 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 498: Time=113.59s | Removed=6093 | TrainSize=1952776 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 499: Time=113.08s | Removed=6093 | TrainSize=1952776 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 500: Time=98.33s | Removed=27403 | TrainSize=1931466 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 501: Time=97.26s | Removed=27403 | TrainSize=1931466 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 502: Time=97.88s | Removed=27403 | TrainSize=1931466 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 503: Time=96.98s | Removed=40644 | TrainSize=1918225 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 504: Time=97.71s | Removed=40644 | TrainSize=1918225 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 505: Time=96.24s | Removed=58135 | TrainSize=1900734 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 506: Time=95.73s | Removed=58135 | TrainSize=1900734 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 507: Time=96.74s | Removed=58135 | TrainSize=1900734 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 508: Time=97.51s | Removed=39083 | TrainSize=1919786 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 509: Time=98.79s | Removed=39083 | TrainSize=1919786 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 510: Time=96.05s | Removed=57935 | TrainSize=1900934 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 511: Time=98.03s | Removed=57935 | TrainSize=1900934 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 512: Time=97.22s | Removed=57935 | TrainSize=1900934 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 513: Time=98.43s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 514: Time=98.64s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 515: Time=98.74s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 516: Time=99.51s | Removed=5002 | TrainSize=1953867 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 517: Time=98.73s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 518: Time=98.29s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 519: Time=98.95s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 520: Time=99.27s | Removed=2501 | TrainSize=1956368 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 521: Time=99.56s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 522: Time=99.50s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 523: Time=98.34s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 524: Time=97.99s | Removed=5048 | TrainSize=1953821 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 525: Time=99.20s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 526: Time=99.05s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 527: Time=98.58s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 528: Time=100.34s | Removed=2513 | TrainSize=1956356 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 529: Time=99.34s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 530: Time=113.49s | Removed=7500 | TrainSize=1951369 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 531: Time=99.62s | Removed=7505 | TrainSize=1951364 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 532: Time=114.60s | Removed=5040 | TrainSize=1953829 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 533: Time=100.26s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 534: Time=115.40s | Removed=5000 | TrainSize=1953869 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 535: Time=100.02s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 536: Time=99.87s | Removed=2552 | TrainSize=1956317 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 537: Time=99.65s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 538: Time=115.30s | Removed=7524 | TrainSize=1951345 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 539: Time=100.02s | Removed=7511 | TrainSize=1951358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 540: Time=112.62s | Removed=5080 | TrainSize=1953789 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 541: Time=98.77s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 542: Time=112.32s | Removed=5007 | TrainSize=1953862 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 543: Time=98.59s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 544: Time=99.80s | Removed=2517 | TrainSize=1956352 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 545: Time=98.96s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 546: Time=99.79s | Removed=7522 | TrainSize=1951347 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 547: Time=100.33s | Removed=7586 | TrainSize=1951283 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 548: Time=100.50s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 549: Time=98.91s | Removed=6745 | TrainSize=1952124 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 550: Time=98.29s | Removed=6811 | TrainSize=1952058 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 551: Time=98.78s | Removed=7180 | TrainSize=1951689 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 552: Time=98.97s | Removed=2549 | TrainSize=1956320 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 553: Time=96.37s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 554: Time=90.96s | Removed=7849 | TrainSize=1951020 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 555: Time=90.92s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 556: Time=90.95s | Removed=5774 | TrainSize=1953095 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 557: Time=104.42s | Removed=11589 | TrainSize=1947280 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 558: Time=91.45s | Removed=19441 | TrainSize=1939428 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 559: Time=90.25s | Removed=7071 | TrainSize=1951798 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 560: Time=98.59s | Removed=2694 | TrainSize=1956175 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 561: Time=94.71s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 562: Time=93.52s | Removed=129894 | TrainSize=1828975 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 563: Time=98.35s | Removed=34057 | TrainSize=1924812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 564: Time=116.79s | Removed=12135 | TrainSize=1946734 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 565: Time=99.10s | Removed=18695 | TrainSize=1940174 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 566: Time=114.76s | Removed=17134 | TrainSize=1941735 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 567: Time=97.39s | Removed=30512 | TrainSize=1928357 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 568: Time=96.92s | Removed=39102 | TrainSize=1919767 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 569: Time=98.08s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 570: Time=95.89s | Removed=72632 | TrainSize=1886237 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 571: Time=97.64s | Removed=17399 | TrainSize=1941470 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 572: Time=111.90s | Removed=7029 | TrainSize=1951840 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 573: Time=90.75s | Removed=21001 | TrainSize=1937868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 574: Time=89.19s | Removed=42022 | TrainSize=1916847 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 575: Time=90.03s | Removed=21572 | TrainSize=1937297 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 576: Time=88.72s | Removed=43120 | TrainSize=1915749 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 577: Time=91.53s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 578: Time=91.27s | Removed=7507 | TrainSize=1951362 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 579: Time=98.30s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 580: Time=98.13s | Removed=5225 | TrainSize=1953644 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 581: Time=111.91s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 582: Time=112.43s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 583: Time=98.45s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 584: Time=113.45s | Removed=7204 | TrainSize=1951665 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 585: Time=99.14s | Removed=7538 | TrainSize=1951331 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 586: Time=99.06s | Removed=10803 | TrainSize=1948066 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 587: Time=99.19s | Removed=5157 | TrainSize=1953712 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 588: Time=112.66s | Removed=31391 | TrainSize=1927478 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 589: Time=112.85s | Removed=7517 | TrainSize=1951352 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 590: Time=111.31s | Removed=9715 | TrainSize=1949154 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 591: Time=98.45s | Removed=6146 | TrainSize=1952723 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 592: Time=98.08s | Removed=40644 | TrainSize=1918225 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 593: Time=98.39s | Removed=7523 | TrainSize=1951346 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 594: Time=111.88s | Removed=15967 | TrainSize=1942902 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 595: Time=99.76s | Removed=5015 | TrainSize=1953854 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 596: Time=114.42s | Removed=7139 | TrainSize=1951730 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 597: Time=112.95s | Removed=7528 | TrainSize=1951341 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 598: Time=116.83s | Removed=10467 | TrainSize=1948402 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 599: Time=99.73s | Removed=5061 | TrainSize=1953808 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 600: Time=114.81s | Removed=6093 | TrainSize=1952776 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 601: Time=99.10s | Removed=9195 | TrainSize=1949674 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 602: Time=112.69s | Removed=25577 | TrainSize=1933292 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 603: Time=99.17s | Removed=6749 | TrainSize=1952120 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 604: Time=109.88s | Removed=37879 | TrainSize=1920990 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 605: Time=112.23s | Removed=7631 | TrainSize=1951238 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 606: Time=116.29s | Removed=12692 | TrainSize=1946177 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 607: Time=112.97s | Removed=6886 | TrainSize=1951983 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 608: Time=97.17s | Removed=39083 | TrainSize=1919786 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 609: Time=99.72s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 610: Time=98.77s | Removed=7506 | TrainSize=1951363 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 611: Time=98.45s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 612: Time=99.65s | Removed=6057 | TrainSize=1952812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 613: Time=101.06s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 614: Time=99.91s | Removed=5013 | TrainSize=1953856 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 615: Time=114.06s | Removed=2510 | TrainSize=1956359 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 616: Time=93.90s | Removed=5934 | TrainSize=1952935 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 617: Time=91.39s | Removed=7504 | TrainSize=1951365 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 618: Time=90.78s | Removed=11188 | TrainSize=1947681 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 619: Time=91.38s | Removed=5019 | TrainSize=1953850 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 620: Time=99.60s | Removed=91843 | TrainSize=1867026 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 621: Time=90.64s | Removed=5124 | TrainSize=1953745 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 622: Time=93.29s | Removed=17262 | TrainSize=1941607 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 623: Time=110.62s | Removed=3935 | TrainSize=1954934 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 624: Time=96.63s | Removed=58135 | TrainSize=1900734 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 625: Time=98.55s | Removed=7598 | TrainSize=1951271 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 626: Time=111.52s | Removed=30668 | TrainSize=1928201 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 627: Time=99.70s | Removed=5114 | TrainSize=1953755 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 628: Time=110.95s | Removed=40588 | TrainSize=1918281 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 629: Time=99.78s | Removed=5007 | TrainSize=1953862 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 630: Time=107.89s | Removed=5870 | TrainSize=1952999 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 631: Time=91.00s | Removed=3100 | TrainSize=1955769 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 632: Time=90.10s | Removed=27403 | TrainSize=1931466 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 633: Time=103.07s | Removed=23473 | TrainSize=1935396 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 634: Time=98.71s | Removed=106959 | TrainSize=1851910 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 635: Time=91.22s | Removed=9511 | TrainSize=1949358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 636: Time=93.56s | Removed=57558 | TrainSize=1901311 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 637: Time=108.40s | Removed=11446 | TrainSize=1947423 | SkelEdges=32 | OrientedArcs=18 | Method=cextend
+
+Fold 638: Time=116.79s | Removed=11928 | TrainSize=1946941 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 639: Time=112.91s | Removed=9142 | TrainSize=1949727 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 640: Time=91.10s | Removed=57935 | TrainSize=1900934 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 641: Time=90.49s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 642: Time=90.82s | Removed=7507 | TrainSize=1951362 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 643: Time=91.16s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 644: Time=91.89s | Removed=5225 | TrainSize=1953644 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 645: Time=103.63s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 646: Time=106.47s | Removed=7509 | TrainSize=1951360 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 647: Time=90.68s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 648: Time=104.04s | Removed=7204 | TrainSize=1951665 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 649: Time=91.21s | Removed=7538 | TrainSize=1951331 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 650: Time=90.69s | Removed=10803 | TrainSize=1948066 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 651: Time=91.43s | Removed=5157 | TrainSize=1953712 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 652: Time=104.33s | Removed=31391 | TrainSize=1927478 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 653: Time=112.89s | Removed=7517 | TrainSize=1951352 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 654: Time=112.66s | Removed=9715 | TrainSize=1949154 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 655: Time=98.86s | Removed=6146 | TrainSize=1952723 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 656: Time=96.87s | Removed=40644 | TrainSize=1918225 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 657: Time=98.88s | Removed=7523 | TrainSize=1951346 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 658: Time=112.38s | Removed=15967 | TrainSize=1942902 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 659: Time=99.90s | Removed=5015 | TrainSize=1953854 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 660: Time=114.25s | Removed=7139 | TrainSize=1951730 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 661: Time=113.90s | Removed=7528 | TrainSize=1951341 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 662: Time=115.71s | Removed=10467 | TrainSize=1948402 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 663: Time=99.78s | Removed=5061 | TrainSize=1953808 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 664: Time=103.65s | Removed=6093 | TrainSize=1952776 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 665: Time=91.34s | Removed=9195 | TrainSize=1949674 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 666: Time=102.93s | Removed=25577 | TrainSize=1933292 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 667: Time=90.94s | Removed=6749 | TrainSize=1952120 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 668: Time=102.48s | Removed=37879 | TrainSize=1920990 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 669: Time=105.13s | Removed=7631 | TrainSize=1951238 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 670: Time=112.63s | Removed=12692 | TrainSize=1946177 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 671: Time=110.98s | Removed=6886 | TrainSize=1951983 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 672: Time=94.90s | Removed=39083 | TrainSize=1919786 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 673: Time=97.17s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 674: Time=99.17s | Removed=7506 | TrainSize=1951363 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 675: Time=98.38s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 676: Time=98.25s | Removed=6057 | TrainSize=1952812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 677: Time=98.44s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 678: Time=98.49s | Removed=5013 | TrainSize=1953856 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 679: Time=112.90s | Removed=2510 | TrainSize=1956359 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 680: Time=99.06s | Removed=5934 | TrainSize=1952935 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 681: Time=93.35s | Removed=7504 | TrainSize=1951365 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 682: Time=90.94s | Removed=11188 | TrainSize=1947681 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 683: Time=90.68s | Removed=5019 | TrainSize=1953850 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 684: Time=100.30s | Removed=91843 | TrainSize=1867026 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 685: Time=90.90s | Removed=5124 | TrainSize=1953745 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 686: Time=90.09s | Removed=17262 | TrainSize=1941607 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 687: Time=103.92s | Removed=3935 | TrainSize=1954934 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 688: Time=88.23s | Removed=58135 | TrainSize=1900734 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 689: Time=92.19s | Removed=7598 | TrainSize=1951271 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 690: Time=108.23s | Removed=30668 | TrainSize=1928201 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 691: Time=99.05s | Removed=5114 | TrainSize=1953755 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 692: Time=104.61s | Removed=40588 | TrainSize=1918281 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 693: Time=91.73s | Removed=5007 | TrainSize=1953862 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 694: Time=103.96s | Removed=5870 | TrainSize=1952999 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 695: Time=92.09s | Removed=3100 | TrainSize=1955769 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 696: Time=91.05s | Removed=27403 | TrainSize=1931466 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 697: Time=103.16s | Removed=23473 | TrainSize=1935396 | SkelEdges=33 | OrientedArcs=21 | Method=cextend
+
+Fold 698: Time=105.99s | Removed=106959 | TrainSize=1851910 | SkelEdges=33 | OrientedArcs=22 | Method=cextend
+
+Fold 699: Time=99.09s | Removed=9511 | TrainSize=1949358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 700: Time=96.25s | Removed=57558 | TrainSize=1901311 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 701: Time=109.70s | Removed=11446 | TrainSize=1947423 | SkelEdges=32 | OrientedArcs=18 | Method=cextend
+
+Fold 702: Time=115.50s | Removed=11928 | TrainSize=1946941 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 703: Time=112.52s | Removed=9142 | TrainSize=1949727 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 704: Time=97.73s | Removed=57935 | TrainSize=1900934 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 705: Time=98.58s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 706: Time=99.69s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 707: Time=98.99s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 708: Time=100.67s | Removed=5002 | TrainSize=1953867 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 709: Time=99.95s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 710: Time=100.37s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 711: Time=100.72s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 712: Time=99.78s | Removed=2501 | TrainSize=1956368 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 713: Time=100.12s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 714: Time=98.89s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 715: Time=96.05s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 716: Time=92.50s | Removed=5048 | TrainSize=1953821 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 717: Time=90.77s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 718: Time=91.68s | Removed=5009 | TrainSize=1953860 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 719: Time=90.81s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 720: Time=91.47s | Removed=2513 | TrainSize=1956356 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 721: Time=91.82s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 722: Time=112.90s | Removed=7500 | TrainSize=1951369 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 723: Time=100.35s | Removed=7505 | TrainSize=1951364 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 724: Time=113.18s | Removed=5040 | TrainSize=1953829 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 725: Time=100.00s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 726: Time=114.25s | Removed=5000 | TrainSize=1953869 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 727: Time=99.68s | Removed=5001 | TrainSize=1953868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 728: Time=100.13s | Removed=2552 | TrainSize=1956317 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 729: Time=98.21s | Removed=7500 | TrainSize=1951369 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 730: Time=113.99s | Removed=7524 | TrainSize=1951345 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 731: Time=98.56s | Removed=7511 | TrainSize=1951358 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 732: Time=106.27s | Removed=5080 | TrainSize=1953789 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 733: Time=90.95s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 734: Time=104.47s | Removed=5007 | TrainSize=1953862 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 735: Time=90.85s | Removed=5000 | TrainSize=1953869 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 736: Time=92.02s | Removed=2517 | TrainSize=1956352 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 737: Time=90.76s | Removed=7993 | TrainSize=1950876 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 738: Time=97.36s | Removed=7522 | TrainSize=1951347 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 739: Time=99.28s | Removed=7586 | TrainSize=1951283 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 740: Time=99.46s | Removed=5004 | TrainSize=1953865 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 741: Time=98.63s | Removed=6745 | TrainSize=1952124 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 742: Time=99.61s | Removed=6811 | TrainSize=1952058 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 743: Time=98.72s | Removed=7180 | TrainSize=1951689 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 744: Time=99.97s | Removed=2549 | TrainSize=1956320 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 745: Time=99.87s | Removed=7916 | TrainSize=1950953 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 746: Time=99.58s | Removed=7849 | TrainSize=1951020 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 747: Time=96.30s | Removed=7502 | TrainSize=1951367 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 748: Time=91.04s | Removed=5774 | TrainSize=1953095 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 749: Time=104.15s | Removed=11589 | TrainSize=1947280 | SkelEdges=33 | OrientedArcs=14 | Method=cextend
+
+Fold 750: Time=90.50s | Removed=19441 | TrainSize=1939428 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 751: Time=91.41s | Removed=7071 | TrainSize=1951798 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 752: Time=91.02s | Removed=2694 | TrainSize=1956175 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 753: Time=88.89s | Removed=78375 | TrainSize=1880494 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 754: Time=93.23s | Removed=129894 | TrainSize=1828975 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 755: Time=98.55s | Removed=34057 | TrainSize=1924812 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 756: Time=116.77s | Removed=12135 | TrainSize=1946734 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 757: Time=91.71s | Removed=18695 | TrainSize=1940174 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 758: Time=106.95s | Removed=17134 | TrainSize=1941735 | SkelEdges=32 | OrientedArcs=26 | Method=cextend
+
+Fold 759: Time=89.43s | Removed=30512 | TrainSize=1928357 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 760: Time=90.10s | Removed=39102 | TrainSize=1919767 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 761: Time=89.39s | Removed=32957 | TrainSize=1925912 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 762: Time=87.28s | Removed=72632 | TrainSize=1886237 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 763: Time=95.45s | Removed=17399 | TrainSize=1941470 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 764: Time=104.92s | Removed=7029 | TrainSize=1951840 | SkelEdges=33 | OrientedArcs=18 | Method=cextend
+
+Fold 765: Time=89.55s | Removed=21001 | TrainSize=1937868 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 766: Time=89.77s | Removed=42022 | TrainSize=1916847 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 767: Time=90.33s | Removed=21572 | TrainSize=1937297 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Fold 768: Time=88.99s | Removed=43120 | TrainSize=1915749 | SkelEdges=34 | OrientedArcs=0 | Method=cextend
+
+Summary (test=mi, alpha=0.010, max.sx=NULL):
+  Avg Training Time  = 100.97 s (SD=7.50)
+  Avg Removed        = 15303.7 (SD=20585.2)
+  Avg Train Size     = 1943565.3 (SD=20585.2)
+  Avg Skeleton Edges = 33.7 (SD=0.6)
+  Avg Oriented Arcs  = 5.2 (SD=8.4)
+  Orientation method = cextend:768
+  Skeleton connected = 768/768 folds
+

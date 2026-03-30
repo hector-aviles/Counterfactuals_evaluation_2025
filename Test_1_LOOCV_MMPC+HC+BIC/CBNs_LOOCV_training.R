@@ -9,6 +9,7 @@ suppressMessages({
   if (!requireNamespace("tidyr", quietly = TRUE)) install.packages("tidyr", repos = "https://cloud.r-project.org")
   if (!requireNamespace("tidyverse", quietly = TRUE)) install.packages("tidyverse", repos = "https://cloud.r-project.org")
   if (!requireNamespace("arules", quietly = TRUE)) install.packages("arules", repos = "https://cloud.r-project.org")
+  if (!requireNamespace("entropy", quietly = TRUE)) install.packages("entropy", repos = "https://cloud.r-project.org")  
 })
 
 library(data.table)
@@ -20,6 +21,7 @@ library(stringr)
 library(tidyr)
 library(tidyverse)
 library(arules)
+library(entropy)
 
 percentage <- 100
 fraction <- percentage / 100
@@ -277,6 +279,16 @@ for (r_idx in seq_along(reps)) {
         alpha = 0.05,
         max.sx = 3
       )
+      
+      # Diagnostic: check neighbors of latent_collision in MMPC skeleton
+      lc_neighbors <- bnlearn::nbr(net_mmpc, "latent_collision")
+      message("MMPC neighbors of latent_collision: ", 
+          ifelse(length(lc_neighbors) == 0, "NONE", 
+                 paste(lc_neighbors, collapse=", ")))
+
+      # Also check its adjacency row directly
+      message("Adjacency row for latent_collision:")
+      print(amat(net_mmpc)["latent_collision", ])      
     
       # Save MMPC skeleton plot
       mmpc_png <- file.path(cbns_dir, paste0("MMPC_skeleton_fold_", i, ".png"))
@@ -576,6 +588,18 @@ for (r_idx in seq_along(reps)) {
       rm(train_dt, train_sample, df_factor, bn_fit, network_structure)
       gc()
     } # end LOOCV folds
+    
+    # --- Append to global summary (THIS WAS MISSING)
+    if (length(training_times) > 0) {
+      rep_pct_summary <- data.table(
+        Repetition = rep(rep_num, length(training_times)),
+        Fold = seq_along(training_times),
+        TrainingTime_s = training_times,
+        SamplesRemoved = as.integer(samples_removed),
+        TrainSampleSize = as.integer(train_sample_sizes)
+      )
+      global_summary <- rbindlist(list(global_summary, rep_pct_summary))
+    }    
 
     # After finishing all folds for this percentage, append summary numeralia
     numeralia_file <- file.path(cbns_dir, "training_numeralia.txt")
@@ -600,11 +624,20 @@ for (r_idx in seq_along(reps)) {
 
   # --- Per-repetition summary ---
   rep_summary <- global_summary[Repetition == rep_num]
-  message("\nRepetition ", rep_num, " summary:")
-  message("Avg training time (s): ", round(mean(rep_summary$TrainingTime_s),2), " ± ", round(sd(rep_summary$TrainingTime_s),2))
-  message("Avg samples removed: ", round(mean(rep_summary$SamplesRemoved),1), " ± ", round(sd(rep_summary$SamplesRemoved),1))
-  message("Avg train sample size: ", round(mean(rep_summary$TrainSampleSize),1), " ± ", round(sd(rep_summary$TrainSampleSize),1))
-  message("\nFinished repetition: ", rep_num, "\n")
+  if (nrow(rep_summary) > 0) {
+    message("\nRepetition ", rep_num, " summary:")
+    message("Avg training time (s): ", 
+            round(mean(rep_summary$TrainingTime_s), 2), " ± ", 
+            round(sd(rep_summary$TrainingTime_s), 2))
+    message("Avg samples removed: ", 
+            round(mean(rep_summary$SamplesRemoved), 1), " ± ", 
+            round(sd(rep_summary$SamplesRemoved), 1))
+    message("Avg train sample size: ", 
+            round(mean(rep_summary$TrainSampleSize), 1), " ± ", 
+            round(sd(rep_summary$TrainSampleSize), 1))
+  } else {
+    message("\nRepetition ", rep_num, " summary: no data recorded.")
+  }
 
 } # end repetitions
 

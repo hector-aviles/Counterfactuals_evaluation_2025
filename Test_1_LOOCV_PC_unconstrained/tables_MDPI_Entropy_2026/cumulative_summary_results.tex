@@ -15,10 +15,10 @@
 \toprule
 Category & Crash Scenarios & No Crash Scenarios \\
 \midrule
-Safe Interventions & 1139 & 1124 \\ 
-Unsafe Interventions & 0 & 528 \\ 
+Safe Interventions & 1955 & 2755 \\ 
+Unsafe Interventions & 59 & 122 \\ 
 \midrule
-Total & 1139 & 1652 \\ 
+Total & 2014 & 2877 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -32,12 +32,12 @@ Total & 1139 & 1652 \\
 \cmidrule{2-3}
  & Crash Scenarios & No Crash Scenarios \\
 \midrule
-1 & 589 & 1228 \\ 
-2 & 275 & 212 \\ 
-3 & 0 & 0 \\ 
-4 & 0 & 0 \\ 
-5 & 0 & 0 \\ 
-6 & 0 & 0 \\ 
+1 & 262 & 568 \\ 
+2 & 230 & 496 \\ 
+3 & 255 & 263 \\ 
+4 & 81 & 75 \\ 
+5 & 13 & 0 \\ 
+6 & 23 & 38 \\ 
 \midrule
 Total & 864 & 1440 \\ 
 \bottomrule
@@ -53,14 +53,14 @@ Total & 864 & 1440 \\
 \cmidrule{2-3}
  & Crash Scenarios & No Crash Scenarios \\
 \midrule
-\texttt{cruise} & 0 (0.0\% safe) & 0 (0.0\% safe) & 0 \\ 
-\texttt{keep} & 399 (100.0\% safe) & 816 (68.6\% safe) & 1215 \\ 
-\texttt{change\_to\_left} & 0 (0.0\% safe) & 0 (0.0\% safe) & 0 \\ 
-\texttt{change\_to\_right} & 0 (0.0\% safe) & 0 (0.0\% safe) & 0 \\ 
-\texttt{swerve\_left} & 529 (100.0\% safe) & 612 (76.5\% safe) & 1141 \\ 
-\texttt{swerve\_right} & 211 (100.0\% safe) & 224 (42.9\% safe) & 435 \\ 
+\texttt{cruise} & 244 (93.9\% safe) & 449 (95.3\% safe) & 693 \\ 
+\texttt{keep} & 826 (100.0\% safe) & 1018 (98.9\% safe) & 1844 \\ 
+\texttt{change\_to\_left} & 36 (36.1\% safe) & 71 (47.9\% safe) & 107 \\ 
+\texttt{change\_to\_right} & 70 (70.0\% safe) & 149 (77.2\% safe) & 219 \\ 
+\texttt{swerve\_left} & 556 (100.0\% safe) & 739 (98.9\% safe) & 1295 \\ 
+\texttt{swerve\_right} & 282 (100.0\% safe) & 451 (97.6\% safe) & 733 \\ 
 \midrule
-\textbf{Total} & 1139 (100.0\% safe) & 1652 (68.0\% safe) & 2791 \\ 
+\textbf{Total} & 2014 (97.1\% safe) & 2877 (95.8\% safe) & 4891 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -74,10 +74,10 @@ Total & 864 & 1440 \\
 \toprule
 Outcome & Count \\
 \midrule
-Crash unsafe (True $\rightarrow$ True) & 0 \\ 
-Crash safe (True $\rightarrow$ False) & 864 \\ 
-No crash safe (False $\rightarrow$ False) & 912 \\ 
-No crash unsafe (False $\rightarrow$ True) & 528 \\ 
+Crash unsafe (True $\rightarrow$ True) & 8 \\ 
+Crash safe (True $\rightarrow$ False) & 856 \\ 
+No crash safe (False $\rightarrow$ False) & 1426 \\ 
+No crash unsafe (False $\rightarrow$ True) & 14 \\ 
 \midrule
 Total & 2304 \\ 
 \bottomrule

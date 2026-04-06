@@ -1,0 +1,235 @@
+[conflicted] Will prefer base::setdiff over any other package.
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ forcats   1.0.1     ✔ purrr     1.2.0
+✔ ggplot2   4.0.1     ✔ readr     2.1.6
+✔ lubridate 1.9.4     ✔ tibble    3.3.0
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+=== Configuration ===
+Input dir    : ./Shared_CSVs
+Reps         : 1
+Percentages  : 01, 50, 100
+CI test      : mi
+Alpha        : 0.05
+Max.sx       : 1
+Combo label  : H_mi_alpha0.05_maxsx1
+Results root : /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_sensitivity_analysis_no_synthetic_data/sensitivity_results/H_mi_alpha0.05_maxsx1
+Fold source  : --fold_ids (30 folds) — COMPARABLE
+
+========== Rep 1 | mi | alpha=0.05 | max.sx=1 ==========
+
+--- Pct 01 ---
+  Fold 64 (1/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 65 (2/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 85 (3/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 95 (4/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 147 (5/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 163 (6/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 185 (7/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 190 (8/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 207 (9/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 217 (10/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 218 (11/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 256 (12/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 270 (13/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 316 (14/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 324 (15/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 427 (16/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 473 (17/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 474 (18/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 480 (19/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 496 (20/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 515 (21/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 539 (22/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 548 (23/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 553 (24/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 581 (25/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 665 (26/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 724 (27/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 735 (28/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 741 (29/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+  Fold 749 (30/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=6
+
+  [Pct=01] action_in_LC=0/30(0.0%) | connected=0/30(0.0%) | avg_comps=6.00 | avg_time=0.0s
+
+--- Pct 50 ---
+  Fold 64 (1/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 65 (2/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 85 (3/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 95 (4/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 147 (5/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 163 (6/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 185 (7/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 190 (8/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 207 (9/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 217 (10/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 218 (11/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 256 (12/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 270 (13/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 316 (14/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 324 (15/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 427 (16/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 473 (17/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 474 (18/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 480 (19/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 496 (20/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 515 (21/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 539 (22/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 548 (23/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 553 (24/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 581 (25/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 665 (26/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 724 (27/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 735 (28/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 741 (29/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 749 (30/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+
+  [Pct=50] action_in_LC=0/30(0.0%) | connected=0/30(0.0%) | avg_comps=7.00 | avg_time=0.7s
+
+--- Pct 100 ---
+  Fold 64 (1/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 65 (2/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 85 (3/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 95 (4/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 147 (5/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 163 (6/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 185 (7/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 190 (8/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 207 (9/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 217 (10/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 218 (11/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 256 (12/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 270 (13/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 316 (14/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 324 (15/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 427 (16/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 473 (17/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 474 (18/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 480 (19/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 496 (20/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 515 (21/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 539 (22/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 548 (23/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 553 (24/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 581 (25/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 665 (26/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 724 (27/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 735 (28/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 741 (29/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+  Fold 749 (30/30) [mi|a=0.05|sx=1]
+    LC=NONE | action=FALSE | connected=FALSE | comps=7
+
+  [Pct=100] action_in_LC=0/30(0.0%) | connected=0/30(0.0%) | avg_comps=7.00 | avg_time=1.4s
+
+Rep 1 summary: action_in_LC=0/90(0.0%) | avg_time=0.7s
+
+CSV: /home/dell/source_code/Counterfactuals_evaluation_2025/Test_1_LOOCV_MMPC+HC+BIC_sensitivity_analysis_no_synthetic_data/sensitivity_results/H_mi_alpha0.05_maxsx1/global_summary.csv
+
+=== FINAL SUMMARY: H_mi_alpha0.05_maxsx1 ===
+   Percentage n_folds action_in_LC_n action_in_LC_pct connected_n connected_pct       <char>   <int>          <int>            <num>       <int>         <num>1:         01      30              0                0           0             02:        100      30              0                0           0             03:         50      30              0                0           0             0   avg_components avg_skel_edges avg_time_s sd_time_s            <num>          <num>      <num>     <num>1:              6              6       0.03      0.002:              7              6       1.41      0.233:              7              6       0.66      0.06
+
+
+Top LC neighbor patterns per training %:
+  Pct=01:
+    NONE : 30 folds (100%)
+  Pct=100:
+    NONE : 30 folds (100%)
+  Pct=50:
+    NONE : 30 folds (100%)
+
+Script finished.

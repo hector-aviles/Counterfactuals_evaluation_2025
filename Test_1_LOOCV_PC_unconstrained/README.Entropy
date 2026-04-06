@@ -4,7 +4,7 @@
 source ~/source_code/venv/bin/activate
  
 # numeric arguments indicate the number of repetitions and percentages
-Rscript CBNs_LOOCV_training.R ./Shared_CSVs 1 50,100 
+Rscript CBNs_LOOCV_training.R ./Shared_CSVs 1 01,50,100 
 #Rscript integrated_LOOCV_training.R ./Shared_CSVs 1 01,50,100
 
 # numeric arguments indicate the number of repetitions and percentages 

@@ -1,0 +1,120 @@
+
+================================================================
+ MMPC SENSITIVITY ANALYSIS — COMPARISON TABLE
+ Folds per combination per percentage: ~30
+ Training percentages: 1, 50, 100
+================================================================
+
+--- Training percentage: 1% ---
+Combination                                Test     Alpha  MaxSX     action_in_LC  skel_connected   avg_comps  avg_time_s
+-------------------------------------------------------------------------------------------------------------- 
+mi|a=0.01|sx=3                             mi       0.01   3       30/30 (100.0%)   13/30 (43.3%)        1.57        0.08
+mi|a=0.05|sx=3                             mi       0.05   3       30/30 (100.0%)   13/30 (43.3%)        1.57        0.08
+mi|a=0.10|sx=3                             mi       0.10   3       30/30 (100.0%)   13/30 (43.3%)        1.57        0.08
+mi|a=0.20|sx=3                             mi       0.20   3       30/30 (100.0%)   13/30 (43.3%)        1.57        0.09
+mi|a=0.05|sx=2                             mi       0.05   2          0/30 (0.0%)     0/30 (0.0%)        4.00        0.05
+mi|a=0.05|sx=4                             mi       0.05   4       30/30 (100.0%)  30/30 (100.0%)        1.00        0.17
+mi-sh|a=0.05|sx=3                          mi-sh    0.05   3       30/30 (100.0%)   13/30 (43.3%)        1.57        0.08
+mi|a=0.05|sx=1                             mi       0.05   1          0/30 (0.0%)     0/30 (0.0%)        4.53        0.04
+
+--- Training percentage: 50% ---
+Combination                                Test     Alpha  MaxSX     action_in_LC  skel_connected   avg_comps  avg_time_s
+-------------------------------------------------------------------------------------------------------------- 
+mi|a=0.01|sx=3                             mi       0.01   3          0/30 (0.0%)     0/30 (0.0%)        4.00        3.40
+mi|a=0.05|sx=3                             mi       0.05   3          0/30 (0.0%)     0/30 (0.0%)        4.00        3.40
+mi|a=0.10|sx=3                             mi       0.10   3          0/30 (0.0%)     0/30 (0.0%)        4.00        3.41
+mi|a=0.20|sx=3                             mi       0.20   3          0/30 (0.0%)     0/30 (0.0%)        4.00        3.76
+mi|a=0.05|sx=2                             mi       0.05   2          0/30 (0.0%)     0/30 (0.0%)        6.00        1.65
+mi|a=0.05|sx=4                             mi       0.05   4          0/30 (0.0%)     0/30 (0.0%)        2.10        8.49
+mi-sh|a=0.05|sx=3                          mi-sh    0.05   3          0/30 (0.0%)     0/30 (0.0%)        4.00        3.42
+mi|a=0.05|sx=1                             mi       0.05   1          0/30 (0.0%)     0/30 (0.0%)        7.00        1.10
+
+--- Training percentage: 100% ---
+Combination                                Test     Alpha  MaxSX     action_in_LC  skel_connected   avg_comps  avg_time_s
+-------------------------------------------------------------------------------------------------------------- 
+mi|a=0.01|sx=3                             mi       0.01   3          0/30 (0.0%)     0/30 (0.0%)        4.00        6.82
+mi|a=0.05|sx=3                             mi       0.05   3          0/30 (0.0%)     0/30 (0.0%)        4.00        6.82
+mi|a=0.10|sx=3                             mi       0.10   3          0/30 (0.0%)     0/30 (0.0%)        4.00        7.07
+mi|a=0.20|sx=3                             mi       0.20   3          0/30 (0.0%)     0/30 (0.0%)        4.00        7.52
+mi|a=0.05|sx=2                             mi       0.05   2          0/30 (0.0%)     0/30 (0.0%)        6.00        3.29
+mi|a=0.05|sx=4                             mi       0.05   4          0/30 (0.0%)     0/30 (0.0%)        2.13       15.40
+mi-sh|a=0.05|sx=3                          mi-sh    0.05   3          0/30 (0.0%)     0/30 (0.0%)        4.00        7.07
+mi|a=0.05|sx=1                             mi       0.05   1          0/30 (0.0%)     0/30 (0.0%)        7.00        2.04
+
+================================================================
+ LC NEIGHBOR PATTERNS (top 4 per combination × percentage)
+================================================================
+
+--- Training percentage: 1% ---
+  mi | alpha=0.01 | max.sx=3  (n=30 folds)
+    action                                   : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=3  (n=30 folds)
+    action                                   : 30 (100.0%)
+  mi | alpha=0.10 | max.sx=3  (n=30 folds)
+    action                                   : 30 (100.0%)
+  mi | alpha=0.20 | max.sx=3  (n=30 folds)
+    action                                   : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=2  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=4  (n=30 folds)
+    action                                   : 18 (60.0%)
+    action, free_NW                          : 12 (40.0%)
+  mi-sh | alpha=0.05 | max.sx=3  (n=30 folds)
+    action                                   : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=1  (n=30 folds)
+    free_W                                   : 16 (53.3%)
+    free_E                                   : 14 (46.7%)
+
+--- Training percentage: 50% ---
+  mi | alpha=0.01 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.10 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.20 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=2  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=4  (n=30 folds)
+    free_NW                                  : 25 (83.3%)
+    NONE                                     : 5 (16.7%)
+  mi-sh | alpha=0.05 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=1  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+
+--- Training percentage: 100% ---
+  mi | alpha=0.01 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.10 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.20 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=2  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=4  (n=30 folds)
+    free_NW                                  : 25 (83.3%)
+    NONE                                     : 5 (16.7%)
+  mi-sh | alpha=0.05 | max.sx=3  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+  mi | alpha=0.05 | max.sx=1  (n=30 folds)
+    NONE                                     : 30 (100.0%)
+
+================================================================
+ TRAINING TIME SUMMARY (seconds)
+================================================================
+Combination                                       mean          sd         min
+Combination                                     mean_s        sd_s       min_s       max_s
+------------------------------------------------------------------------------------- 
+mi|a=0.01|sx=3                                    3.43        2.77        0.07        7.05
+mi|a=0.05|sx=3                                    3.43        2.77        0.08        7.03
+mi|a=0.10|sx=3                                    3.52        2.88        0.08        7.73
+mi|a=0.20|sx=3                                    3.79        3.05        0.09        7.76
+mi|a=0.05|sx=2                                    1.66        1.33        0.05        3.56
+mi|a=0.05|sx=4                                    8.02        6.27        0.15       16.76
+mi-sh|a=0.05|sx=3                                 3.53        2.88        0.08        7.64
+mi|a=0.05|sx=1                                    1.06        0.84        0.03        2.29
+

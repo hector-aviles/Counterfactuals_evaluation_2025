@@ -1,0 +1,8 @@
+
+#./run_sensitivity_analysis.sh > sensitivity_master.log 2>&1 & tail -f sensitivity_master.log
+ 
+chmod +x run_sensitivity_analysis.sh
+./run_sensitivity_analysis.sh 2>&1 | tee sensitivity_master.log
+
+chmod +x run_combo_H.sh
+./run_combo_H.sh 2>&1 | tee combo_H.log 

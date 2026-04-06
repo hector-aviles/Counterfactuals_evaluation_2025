@@ -1,0 +1,300 @@
+Fold 64 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.72s
+
+Fold 65 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.47s
+
+Fold 85 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.47s
+
+Fold 95 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.47s
+
+Fold 147 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.51s
+
+Fold 163 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.54s
+
+Fold 185 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.35s
+
+Fold 190 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.35s
+
+Fold 207 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.39s
+
+Fold 217 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.5s
+
+Fold 218 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.54s
+
+Fold 256 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.66s
+
+Fold 270 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.54s
+
+Fold 316 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.49s
+
+Fold 324 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.69s
+
+Fold 427 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.56s
+
+Fold 473 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.44s
+
+Fold 474 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.34s
+
+Fold 480 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.49s
+
+Fold 496 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.51s
+
+Fold 515 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.42s
+
+Fold 539 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.45s
+
+Fold 548 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.49s
+
+Fold 553 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.34s
+
+Fold 581 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.37s
+
+Fold 665 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.57s
+
+Fold 724 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.34s
+
+Fold 735 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.44s
+
+Fold 741 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.54s
+
+Fold 749 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=3
+final_arcs=11  time=5.38s
+
+Fold 64 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.45s
+
+Fold 65 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.24s
+
+Fold 85 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.25s
+
+Fold 95 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.3s
+
+Fold 147 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.24s
+
+Fold 163 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.29s
+
+Fold 185 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.3s
+
+Fold 190 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.25s
+
+Fold 207 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.24s
+
+Fold 217 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.28s
+
+Fold 218 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.22s
+
+Fold 256 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.24s
+
+Fold 270 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.22s
+
+Fold 316 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.33s
+
+Fold 324 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.35s
+
+Fold 427 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.27s
+
+Fold 473 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.28s
+
+Fold 474 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.21s
+
+Fold 480 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.27s
+
+Fold 496 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.23s
+
+Fold 515 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.23s
+
+Fold 539 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.21s
+
+Fold 548 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.85s
+
+Fold 553 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.44s
+
+Fold 581 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.47s
+
+Fold 665 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.54s
+
+Fold 724 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.5s
+
+Fold 735 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.46s
+
+Fold 741 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.5s
+
+Fold 749 (mi-sh|alpha=0.05|max.sx=3)
+LC=NONE  action_in_LC=FALSE
+edges=22  connected=FALSE  comps=4
+final_arcs=11  time=3.52s
+

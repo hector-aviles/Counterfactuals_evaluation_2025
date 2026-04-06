@@ -18,10 +18,10 @@
 \cmidrule{2-4}
  & 01 & 50 & 100 & \\
 \midrule
-Safe (True $\rightarrow$ False) & 288 & 288 & 563 & 1139 \\ 
-Unsafe (True $\rightarrow$ True) & 0 & 0 & 0 & 0 \\ 
+Safe (True $\rightarrow$ False) & 389 & 753 & 813 & 1955 \\ 
+Unsafe (True $\rightarrow$ True) & 33 & 13 & 13 & 59 \\ 
 \midrule
-Total & 288 & 288 & 563 & 1139 \\ 
+Total & 422 & 766 & 826 & 2014 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -35,12 +35,12 @@ Total & 288 & 288 & 563 & 1139 \\
 \cmidrule{2-4}
  & 01 & 50  & 100 & \\
 \midrule
-1 & 288 & 288 & 13 & 589 \\ 
-2 & 0 & 0 & 275 & 275 \\ 
-3 & 0 & 0 & 0 & 0 \\ 
-4 & 0 & 0 & 0 & 0 \\ 
-5 & 0 & 0 & 0 & 0 \\ 
-6 & 0 & 0 & 0 & 0 \\ 
+1 & 213 & 34 & 15 & 262 \\ 
+2 & 55 & 93 & 82 & 230 \\ 
+3 & 7 & 114 & 134 & 255 \\ 
+4 & 0 & 36 & 45 & 81 \\ 
+5 & 0 & 6 & 7 & 13 \\ 
+6 & 13 & 5 & 5 & 23 \\ 
 \midrule
 Total & 288 & 288 & 288 & 864 \\ 
 \bottomrule
@@ -56,14 +56,14 @@ Total & 288 & 288 & 288 & 864 \\
 \cmidrule{2-4}
  & 01 & 50 & 100 & & \\
 \midrule
-\texttt{cruise} & 0 & 0 & 0 & 0 & 0.0\% \\ 
-\texttt{keep} & 70 & 41 & 288 & 399 & 100.0\% \\ 
-\texttt{change\_to\_left} & 0 & 0 & 0 & 0 & 0.0\% \\ 
-\texttt{change\_to\_right} & 0 & 0 & 0 & 0 & 0.0\% \\ 
-\texttt{swerve\_left} & 155 & 99 & 275 & 529 & 100.0\% \\ 
-\texttt{swerve\_right} & 63 & 148 & 0 & 211 & 100.0\% \\ 
+\texttt{cruise} & 14 & 115 & 115 & 244 & 93.9\% \\ 
+\texttt{keep} & 277 & 269 & 280 & 826 & 100.0\% \\ 
+\texttt{change\_to\_left} & 13 & 12 & 11 & 36 & 36.1\% \\ 
+\texttt{change\_to\_right} & 13 & 28 & 29 & 70 & 70.0\% \\ 
+\texttt{swerve\_left} & 84 & 219 & 253 & 556 & 100.0\% \\ 
+\texttt{swerve\_right} & 21 & 123 & 138 & 282 & 100.0\% \\ 
 \midrule
-\textbf{Total} & 288 & 288 & 563 & 1139 & 100.0\% \\ 
+\textbf{Total} & 422 & 766 & 826 & 2014 & 97.1\% \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -80,10 +80,10 @@ Total & 288 & 288 & 288 & 864 \\
 \cmidrule{2-4}
  & 01 & 50  & 100 & \\
 \midrule
-Safe (False $\rightarrow$ False) & 250 & 182 & 692 & 1124 \\ 
-Unsafe (False $\rightarrow$ True) & 230 & 298 & 0 & 528 \\ 
+Safe (False $\rightarrow$ False) & 595 & 1049 & 1111 & 2755 \\ 
+Unsafe (False $\rightarrow$ True) & 74 & 24 & 24 & 122 \\ 
 \midrule
-Total & 480 & 480 & 692 & 1652 \\ 
+Total & 669 & 1073 & 1135 & 2877 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -97,12 +97,12 @@ Total & 480 & 480 & 692 & 1652 \\
 \cmidrule{2-4}
  & 01 & 50 & 100 & \\
 \midrule
-1 & 480 & 480 & 268 & 1228 \\ 
-2 & 0 & 0 & 212 & 212 \\ 
-3 & 0 & 0 & 0 & 0 \\ 
-4 & 0 & 0 & 0 & 0 \\ 
+1 & 388 & 102 & 78 & 568 \\ 
+2 & 67 & 217 & 212 & 496 \\ 
+3 & 1 & 121 & 141 & 263 \\ 
+4 & 0 & 33 & 42 & 75 \\ 
 5 & 0 & 0 & 0 & 0 \\ 
-6 & 0 & 0 & 0 & 0 \\ 
+6 & 24 & 7 & 7 & 38 \\ 
 \midrule
 Total & 480 & 480 & 480 & 1440 \\ 
 \bottomrule
@@ -118,14 +118,14 @@ Total & 480 & 480 & 480 & 1440 \\
 \cmidrule{2-4}
  & 01 & 50  & 100 & & \\
 \midrule
-\texttt{cruise} & 0 & 0 & 0 & 0 & 0.0\% \\ 
-\texttt{keep} & 284 & 182 & 350 & 816 & 68.6\% \\ 
-\texttt{change\_to\_left} & 0 & 0 & 0 & 0 & 0.0\% \\ 
-\texttt{change\_to\_right} & 0 & 0 & 0 & 0 & 0.0\% \\ 
-\texttt{swerve\_left} & 152 & 119 & 341 & 612 & 76.5\% \\ 
-\texttt{swerve\_right} & 44 & 179 & 1 & 224 & 42.9\% \\ 
+\texttt{cruise} & 25 & 212 & 212 & 449 & 95.3\% \\ 
+\texttt{keep} & 351 & 323 & 344 & 1018 & 98.9\% \\ 
+\texttt{change\_to\_left} & 24 & 26 & 21 & 71 & 47.9\% \\ 
+\texttt{change\_to\_right} & 24 & 62 & 63 & 149 & 77.2\% \\ 
+\texttt{swerve\_left} & 146 & 278 & 315 & 739 & 98.9\% \\ 
+\texttt{swerve\_right} & 99 & 172 & 180 & 451 & 97.6\% \\ 
 \midrule
-\textbf{Total} & 480 & 480 & 692 & 1652 & 68.0\% \\ 
+\textbf{Total} & 669 & 1073 & 1135 & 2877 & 95.8\% \\ 
 \bottomrule
 \end{tabular}
 \end{table}

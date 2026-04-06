@@ -1,0 +1,60 @@
+Fold 64 | 0.15s | rm=17399 | sz=19415 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 65 | 0.12s | rm=5004 | sz=19539 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 85 | 0.12s | rm=7522 | sz=19513 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 95 | 0.12s | rm=7502 | sz=19514 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 147 | 0.13s | rm=7500 | sz=19514 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 163 | 0.12s | rm=9195 | sz=19497 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 185 | 0.12s | rm=7631 | sz=19512 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 190 | 0.12s | rm=5001 | sz=19539 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 207 | 0.12s | rm=2510 | sz=19564 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 217 | 0.13s | rm=7507 | sz=19514 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 218 | 0.16s | rm=7507 | sz=19514 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 256 | 0.13s | rm=12692 | sz=19462 | mi | a=0.20 | sx=3 | LC=free_E, free_SW, free_W
+Fold 270 | 0.13s | rm=31391 | sz=19275 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 316 | 0.13s | rm=34057 | sz=19248 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 324 | 0.12s | rm=7180 | sz=19517 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 427 | 0.12s | rm=5114 | sz=19538 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 473 | 0.12s | rm=17262 | sz=19416 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 474 | 0.13s | rm=12692 | sz=19462 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 480 | 0.13s | rm=6057 | sz=19528 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 496 | 0.14s | rm=5934 | sz=19529 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 515 | 0.12s | rm=7500 | sz=19514 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 539 | 0.13s | rm=7511 | sz=19514 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 548 | 0.13s | rm=5004 | sz=19539 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 553 | 0.12s | rm=7916 | sz=19510 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 581 | 0.12s | rm=7509 | sz=19514 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 665 | 0.12s | rm=9195 | sz=19497 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 724 | 0.12s | rm=5040 | sz=19538 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 735 | 0.13s | rm=5000 | sz=19539 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 741 | 0.13s | rm=6745 | sz=19521 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 749 | 0.12s | rm=11589 | sz=19473 | mi | a=0.20 | sx=3 | LC=free_E, free_SE, free_W
+Fold 64 | 0.11s | rm=9899 | sz=12290 | mi | a=0.20 | sx=3 | LC=action
+Fold 65 | 0.09s | rm=4 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 85 | 0.09s | rm=22 | sz=12388 | mi | a=0.20 | sx=3 | LC=action
+Fold 95 | 0.09s | rm=2 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 147 | 0.09s | rm=0 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 163 | 0.09s | rm=1695 | sz=12372 | mi | a=0.20 | sx=3 | LC=action
+Fold 185 | 0.10s | rm=131 | sz=12387 | mi | a=0.20 | sx=3 | LC=action
+Fold 190 | 0.10s | rm=1 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 207 | 0.09s | rm=10 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 217 | 0.09s | rm=7 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 218 | 0.09s | rm=7 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 256 | 0.09s | rm=5192 | sz=12337 | mi | a=0.20 | sx=3 | LC=action
+Fold 270 | 0.09s | rm=26391 | sz=12125 | mi | a=0.20 | sx=3 | LC=action
+Fold 316 | 0.10s | rm=26557 | sz=12123 | mi | a=0.20 | sx=3 | LC=action
+Fold 324 | 0.09s | rm=2180 | sz=12367 | mi | a=0.20 | sx=3 | LC=action
+Fold 427 | 0.10s | rm=114 | sz=12388 | mi | a=0.20 | sx=3 | LC=action
+Fold 473 | 0.09s | rm=12262 | sz=12266 | mi | a=0.20 | sx=3 | LC=action
+Fold 474 | 0.09s | rm=5192 | sz=12337 | mi | a=0.20 | sx=3 | LC=action
+Fold 480 | 0.10s | rm=1057 | sz=12378 | mi | a=0.20 | sx=3 | LC=action
+Fold 496 | 0.10s | rm=3434 | sz=12354 | mi | a=0.20 | sx=3 | LC=action
+Fold 515 | 0.09s | rm=0 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 539 | 0.09s | rm=11 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 548 | 0.10s | rm=4 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 553 | 0.09s | rm=416 | sz=12385 | mi | a=0.20 | sx=3 | LC=action
+Fold 581 | 0.09s | rm=9 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 665 | 0.10s | rm=1695 | sz=12372 | mi | a=0.20 | sx=3 | LC=action
+Fold 724 | 0.09s | rm=40 | sz=12388 | mi | a=0.20 | sx=3 | LC=action
+Fold 735 | 0.09s | rm=0 | sz=12389 | mi | a=0.20 | sx=3 | LC=action
+Fold 741 | 0.09s | rm=1745 | sz=12371 | mi | a=0.20 | sx=3 | LC=action
+Fold 749 | 0.09s | rm=6589 | sz=12323 | mi | a=0.20 | sx=3 | LC=action

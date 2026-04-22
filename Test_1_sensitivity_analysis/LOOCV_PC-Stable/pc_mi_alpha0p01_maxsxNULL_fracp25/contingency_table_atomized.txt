@@ -1,0 +1,105 @@
+=== CRASH SECTION - ZERO OCCURRENCES ===
+(potential_crash_before_intervention is True and frequency = 0)
+
+Number of groups with exactly 1 best interventions: 0
+Number of groups with exactly 2 best interventions: 0
+Number of groups with exactly 3 best interventions: 0
+Number of groups with exactly 4 best interventions: 0
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 0
+
+Number of actions selected for each intervention type:
+(none)
+
+
+Total safe/unsafe actions:
+Total safe actions: 0
+Total unsafe actions: 0
+
+Transition matrix (before -> after):
+    (no data)
+
+=== CRASH SECTION - NON-ZERO OCCURRENCES (>=1) ===
+(potential_crash_before_intervention is True and frequency >= 1)
+
+Number of groups with exactly 1 best interventions: 4
+Number of groups with exactly 2 best interventions: 10
+Number of groups with exactly 3 best interventions: 9
+Number of groups with exactly 4 best interventions: 3
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 2
+
+Number of actions selected for each intervention type:
+change_to_left : Selected 6 times, Safe 4 times, Unsafe 2 times
+change_to_right : Selected 6 times, Safe 4 times, Unsafe 2 times
+cruise : Selected 6 times, Safe 5 times, Unsafe 1 times
+keep : Selected 26 times, Safe 26 times, Unsafe 0 times
+swerve_left : Selected 19 times, Safe 19 times, Unsafe 0 times
+swerve_right : Selected 12 times, Safe 12 times, Unsafe 0 times
+
+Total safe/unsafe actions:
+Total safe actions: 70
+Total unsafe actions: 5
+
+Transition matrix (before -> after):
+    True -> True: 5 (from 2 groups)
+    True -> False: 70 (from 28 groups)
+    False -> True: 0 (from 0 groups)
+    False -> False: 0 (from 0 groups)
+
+=== NO CRASH SECTION - ZERO OCCURRENCES ===
+(potential_crash_before_intervention is False and frequency = 0)
+
+Number of groups with exactly 1 best interventions: 5
+Number of groups with exactly 2 best interventions: 13
+Number of groups with exactly 3 best interventions: 4
+Number of groups with exactly 4 best interventions: 0
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 0
+
+Number of actions selected for each intervention type:
+change_to_left : Selected 1 times, Safe 1 times, Unsafe 0 times
+change_to_right : Selected 6 times, Safe 6 times, Unsafe 0 times
+cruise : Selected 10 times, Safe 10 times, Unsafe 0 times
+keep : Selected 12 times, Safe 12 times, Unsafe 0 times
+swerve_left : Selected 10 times, Safe 10 times, Unsafe 0 times
+swerve_right : Selected 4 times, Safe 4 times, Unsafe 0 times
+
+Total safe/unsafe actions:
+Total safe actions: 43
+Total unsafe actions: 0
+
+Transition matrix (before -> after):
+    True -> True: 0 (from 0 groups)
+    True -> False: 0 (from 0 groups)
+    False -> True: 0 (from 0 groups)
+    False -> False: 43 (from 22 groups)
+
+=== NO CRASH SECTION - NON-ZERO OCCURRENCES (>=1) ===
+(potential_crash_before_intervention is False and frequency >= 1)
+
+Number of groups with exactly 1 best interventions: 6
+Number of groups with exactly 2 best interventions: 11
+Number of groups with exactly 3 best interventions: 8
+Number of groups with exactly 4 best interventions: 2
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 1
+
+Number of actions selected for each intervention type:
+change_to_left : Selected 3 times, Safe 2 times, Unsafe 1 times
+change_to_right : Selected 3 times, Safe 2 times, Unsafe 1 times
+cruise : Selected 8 times, Safe 8 times, Unsafe 0 times
+keep : Selected 22 times, Safe 22 times, Unsafe 0 times
+swerve_left : Selected 17 times, Safe 17 times, Unsafe 0 times
+swerve_right : Selected 13 times, Safe 12 times, Unsafe 1 times
+
+Total safe/unsafe actions:
+Total safe actions: 63
+Total unsafe actions: 3
+
+Transition matrix (before -> after):
+    True -> True: 0 (from 0 groups)
+    True -> False: 0 (from 0 groups)
+    False -> True: 3 (from 1 groups)
+    False -> False: 63 (from 28 groups)
+

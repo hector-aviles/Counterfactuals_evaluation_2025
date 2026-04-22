@@ -1,0 +1,85 @@
+Fold 1 (row 7) | action=change_to_right | state=False_False_False_False_False_True_False | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.13s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 2 (row 9) | action=change_to_left | state=False_False_False_False_False_True_False | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.32s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 3 (row 24) | action=change_to_left | state=False_False_False_False_True_True_True | removed=32957 | train_n=481478 | frac=0.25 | edges=13 | time=1.34s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 4 (row 50) | action=change_to_right | state=False_False_True_False_False_True_True | removed=34057 | train_n=481203 | frac=0.25 | edges=13 | time=1.46s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 5 (row 70) | action=change_to_left | state=False_False_True_True_False_True_False | removed=5001 | train_n=488467 | frac=0.25 | edges=13 | time=1.26s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 6 (row 83) | action=change_to_left | state=False_True_False_False_False_False_False | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.73s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 7 (row 87) | action=change_to_right | state=False_True_False_False_False_True_False | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.37s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 8 (row 88) | action=cruise | state=False_True_False_False_False_True_False | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.19s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 9 (row 96) | action=change_to_right | state=False_True_False_False_True_False_True | removed=7849 | train_n=487755 | frac=0.25 | edges=13 | time=1.17s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 10 (row 110) | action=change_to_left | state=False_True_False_True_False_True_False | removed=5000 | train_n=488467 | frac=0.25 | edges=13 | time=1.19s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 11 (row 126) | action=change_to_left | state=False_True_True_False_False_True_False | removed=5040 | train_n=488457 | frac=0.25 | edges=13 | time=1.57s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 12 (row 128) | action=change_to_left | state=False_True_True_False_False_True_True | removed=12135 | train_n=486684 | frac=0.25 | edges=13 | time=1.32s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 13 (row 134) | action=change_to_left | state=False_True_True_False_True_True_False | removed=5080 | train_n=488447 | frac=0.25 | edges=13 | time=1.46s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 14 (row 135) | action=cruise | state=False_True_True_False_True_True_True | removed=7029 | train_n=487960 | frac=0.25 | edges=13 | time=1.49s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 15 (row 149) | action=cruise | state=True_False_False_False_False_False_True | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.55s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 16 (row 169) | action=cruise | state=True_False_False_True_False_False_False | removed=7509 | train_n=487840 | frac=0.25 | edges=13 | time=1.33s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 17 (row 172) | action=cruise | state=True_False_False_True_False_False_True | removed=5000 | train_n=488467 | frac=0.25 | edges=13 | time=1.69s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 18 (row 182) | action=cruise | state=True_False_False_True_True_False_True | removed=5124 | train_n=488436 | frac=0.25 | edges=13 | time=1.30s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 19 (row 207) | action=change_to_right | state=True_False_True_True_False_False_True | removed=2510 | train_n=489090 | frac=0.25 | edges=13 | time=1.28s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 20 (row 222) | action=change_to_right | state=True_True_False_False_False_False_True | removed=7506 | train_n=487841 | frac=0.25 | edges=13 | time=1.32s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 21 (row 229) | action=change_to_left | state=True_True_False_False_True_False_False | removed=10803 | train_n=487016 | frac=0.25 | edges=13 | time=1.29s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 22 (row 230) | action=cruise | state=True_True_False_False_True_False_False | removed=10803 | train_n=487016 | frac=0.25 | edges=13 | time=1.30s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 23 (row 238) | action=change_to_left | state=True_True_False_False_True_True_True | removed=106959 | train_n=462978 | frac=0.25 | edges=13 | time=1.21s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 24 (row 250) | action=change_to_right | state=True_True_False_True_False_True_True | removed=5870 | train_n=488250 | frac=0.25 | edges=13 | time=1.31s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 25 (row 255) | action=change_to_right | state=True_True_False_True_True_False_True | removed=17262 | train_n=485402 | frac=0.25 | edges=13 | time=1.73s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 26 (row 266) | action=change_to_right | state=True_True_True_False_False_True_False | removed=7139 | train_n=487932 | frac=0.25 | edges=13 | time=1.35s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 27 (row 268) | action=change_to_right | state=True_True_True_False_False_True_True | removed=40588 | train_n=479570 | frac=0.25 | edges=13 | time=1.18s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 28 (row 271) | action=change_to_left | state=True_True_True_False_True_False_True | removed=91843 | train_n=466756 | frac=0.25 | edges=13 | time=1.53s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 29 (row 302) | action=keep | state=False_False_False_True_False_True_False | removed=5000 | train_n=488467 | frac=0.25 | edges=13 | time=1.32s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 30 (row 310) | action=keep | state=False_False_False_True_True_True_False | removed=5000 | train_n=488467 | frac=0.25 | edges=13 | time=1.31s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 31 (row 313) | action=keep | state=False_False_True_False_False_False_False | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.29s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 32 (row 334) | action=keep | state=False_False_True_True_True_True_False | removed=5000 | train_n=488467 | frac=0.25 | edges=13 | time=1.28s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 33 (row 336) | action=keep | state=False_False_True_True_True_True_True | removed=21572 | train_n=484324 | frac=0.25 | edges=13 | time=1.63s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 34 (row 355) | action=cruise | state=False_True_False_True_True_False_True | removed=19441 | train_n=484857 | frac=0.25 | edges=13 | time=1.21s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 35 (row 363) | action=change_to_right | state=False_True_True_False_False_False_True | removed=5004 | train_n=488466 | frac=0.25 | edges=13 | time=1.78s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 36 (row 364) | action=keep | state=False_True_True_False_False_False_True | removed=5004 | train_n=488466 | frac=0.25 | edges=13 | time=1.23s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 37 (row 371) | action=change_to_right | state=False_True_True_False_True_False_True | removed=5774 | train_n=488274 | frac=0.25 | edges=13 | time=1.67s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 38 (row 373) | action=change_to_right | state=False_True_True_False_True_True_False | removed=5080 | train_n=488447 | frac=0.25 | edges=13 | time=1.51s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 39 (row 374) | action=keep | state=False_True_True_False_True_True_False | removed=5080 | train_n=488447 | frac=0.25 | edges=13 | time=1.38s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 40 (row 387) | action=cruise | state=False_True_True_True_False_True_True | removed=39102 | train_n=479942 | frac=0.25 | edges=13 | time=1.25s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 41 (row 397) | action=keep | state=False_True_True_True_True_True_False | removed=2517 | train_n=489088 | frac=0.25 | edges=13 | time=1.30s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 42 (row 407) | action=keep | state=True_False_False_False_True_True_False | removed=9195 | train_n=487418 | frac=0.25 | edges=13 | time=1.28s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 43 (row 413) | action=change_to_left | state=True_False_False_True_False_True_True | removed=5007 | train_n=488466 | frac=0.25 | edges=13 | time=1.29s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 44 (row 415) | action=keep | state=True_False_False_True_True_False_False | removed=7517 | train_n=487838 | frac=0.25 | edges=13 | time=1.25s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 45 (row 421) | action=cruise | state=True_False_True_False_False_False_False | removed=5001 | train_n=488467 | frac=0.25 | edges=13 | time=1.23s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 46 (row 422) | action=keep | state=True_False_True_False_False_False_False | removed=5001 | train_n=488467 | frac=0.25 | edges=13 | time=1.20s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 47 (row 445) | action=cruise | state=True_False_True_True_False_True_True | removed=3100 | train_n=488942 | frac=0.25 | edges=13 | time=1.21s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 48 (row 455) | action=cruise | state=True_False_True_True_True_True_True | removed=9142 | train_n=487432 | frac=0.25 | edges=13 | time=1.24s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 49 (row 457) | action=keep | state=True_True_False_False_False_False_False | removed=7507 | train_n=487840 | frac=0.25 | edges=13 | time=1.23s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 50 (row 475) | action=change_to_left | state=True_True_False_True_True_True_True | removed=11928 | train_n=486735 | frac=0.25 | edges=13 | time=1.27s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 51 (row 481) | action=cruise | state=True_True_True_False_False_True_False | removed=7139 | train_n=487932 | frac=0.25 | edges=13 | time=1.23s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 52 (row 512) | action=keep | state=True_True_True_True_True_True_True | removed=57935 | train_n=475234 | frac=0.25 | edges=13 | time=1.26s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 53 (row 516) | action=swerve_left | state=False_True_True_False_False_False_False | removed=5002 | train_n=488467 | frac=0.25 | edges=13 | time=1.19s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 54 (row 540) | action=swerve_left | state=False_True_True_False_True_True_False | removed=5080 | train_n=488447 | frac=0.25 | edges=13 | time=1.23s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 55 (row 555) | action=swerve_left | state=False_False_True_False_True_False_True | removed=7502 | train_n=487842 | frac=0.25 | edges=13 | time=1.26s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 56 (row 556) | action=swerve_left | state=False_True_True_False_True_False_True | removed=5774 | train_n=488274 | frac=0.25 | edges=13 | time=1.23s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 57 (row 570) | action=swerve_left | state=False_True_False_False_True_True_True | removed=72632 | train_n=471559 | frac=0.25 | edges=13 | time=1.27s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 58 (row 576) | action=swerve_left | state=False_True_True_True_True_True_True | removed=43120 | train_n=478937 | frac=0.25 | edges=13 | time=1.22s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 59 (row 602) | action=swerve_right | state=True_True_False_False_True_True_False | removed=25577 | train_n=483323 | frac=0.25 | edges=13 | time=1.19s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 60 (row 614) | action=swerve_right | state=True_True_False_True_False_False_True | removed=5013 | train_n=488464 | frac=0.25 | edges=13 | time=1.22s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 61 (row 620) | action=swerve_right | state=True_True_True_False_True_False_True | removed=91843 | train_n=466756 | frac=0.25 | edges=13 | time=1.23s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 62 (row 623) | action=swerve_right | state=True_False_True_True_True_False_True | removed=3935 | train_n=488734 | frac=0.25 | edges=13 | time=1.22s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 63 (row 624) | action=swerve_right | state=True_True_True_True_True_False_True | removed=58135 | train_n=475184 | frac=0.25 | edges=13 | time=1.23s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 64 (row 632) | action=swerve_right | state=True_True_True_True_False_True_True | removed=27403 | train_n=482866 | frac=0.25 | edges=13 | time=1.24s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 65 (row 656) | action=swerve_left | state=True_True_True_True_True_False_False | removed=40644 | train_n=479556 | frac=0.25 | edges=13 | time=1.18s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 66 (row 658) | action=swerve_left | state=True_True_False_False_False_True_False | removed=15967 | train_n=485726 | frac=0.25 | edges=13 | time=1.21s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 67 (row 666) | action=swerve_left | state=True_True_False_False_True_True_False | removed=25577 | train_n=483323 | frac=0.25 | edges=13 | time=1.18s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 68 (row 690) | action=swerve_left | state=True_True_False_False_False_True_True | removed=30668 | train_n=482050 | frac=0.25 | edges=13 | time=1.18s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 69 (row 692) | action=swerve_left | state=True_True_True_False_False_True_True | removed=40588 | train_n=479570 | frac=0.25 | edges=13 | time=1.17s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 70 (row 700) | action=swerve_left | state=True_True_True_False_True_True_True | removed=57558 | train_n=475328 | frac=0.25 | edges=13 | time=1.58s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 71 (row 702) | action=swerve_left | state=True_True_False_True_True_True_True | removed=11928 | train_n=486735 | frac=0.25 | edges=13 | time=1.55s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 72 (row 709) | action=swerve_right | state=False_False_False_True_False_False_False | removed=5000 | train_n=488467 | frac=0.25 | edges=13 | time=1.31s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 73 (row 713) | action=swerve_right | state=False_False_False_False_True_False_False | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.17s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 74 (row 715) | action=swerve_right | state=False_False_True_False_True_False_False | removed=7500 | train_n=487842 | frac=0.25 | edges=13 | time=1.10s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 75 (row 719) | action=swerve_right | state=False_False_True_True_True_False_False | removed=5001 | train_n=488467 | frac=0.25 | edges=13 | time=1.27s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 76 (row 743) | action=swerve_right | state=False_False_True_True_False_False_True | removed=7180 | train_n=487922 | frac=0.25 | edges=13 | time=1.11s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 77 (row 754) | action=swerve_right | state=False_True_False_False_False_True_True | removed=129894 | train_n=457244 | frac=0.25 | edges=13 | time=1.07s | restart=0 | perturb=1 | maxp=Inf | score=aic
+Fold 78 (row 763) | action=swerve_right | state=False_False_True_False_True_True_True | removed=17399 | train_n=485368 | frac=0.25 | edges=13 | time=1.17s | restart=0 | perturb=1 | maxp=Inf | score=aic
+
+=== SUMMARY: hc_aic_restart0_perturb1_maxpInf_fracp25 ===
+Folds: 78
+Avg time: 1.31 +/- 0.16 s
+Avg edges: 13.0 +/- 0.0
+Avg removed: 19115.8 +/- 25441.6
+

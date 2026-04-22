@@ -1,0 +1,10 @@
+Fold 78 (dt_unique row 763)
+PC test=mi  alpha=0.05  max.sx=NULL
+Skeleton edges  : 33
+Oriented arcs   : 14
+Connected       : TRUE  Components: 1
+Orient method   : cextend
+CPDAG extended  : TRUE
+Final DAG arcs  : 33
+Struct time (s) : 26.88
+

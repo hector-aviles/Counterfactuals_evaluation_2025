@@ -1,0 +1,10 @@
+Fold 10 (dt_unique row 110)
+PC test=mi  alpha=0.01  max.sx=NULL
+Skeleton edges  : 32
+Oriented arcs   : 20
+Connected       : TRUE  Components: 1
+Orient method   : HC-on-skeleton
+CPDAG extended  : FALSE
+Final DAG arcs  : 32
+Struct time (s) : 31.21
+

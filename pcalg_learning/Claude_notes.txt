@@ -1,0 +1,57 @@
+
+does pcalg have other algorithms that returns a DAG, which other well known algorithms are there in that package?
+
+The short answer is: **most pcalg algorithms return a CPDAG or PAG, not a fully oriented DAG**. Only one natively returns a DAG. Here's the full picture:
+
+---
+
+## pcalg algorithms — what they return
+
+### Returns a **CPDAG** (not a DAG) — the majority
+These find the Markov equivalence class, leaving some edges undirected:
+
+- **`pc()`** — constraint-based, uses conditional independence tests. The classic algorithm. Supports discrete data via `g²` test (`indepTest = disCItest`), which is directly relevant to your case.
+- **`ges()`** — score-based (BIC), the one you originally mentioned. Returns an essential graph (CPDAG).
+- **`ARGES()`** — hybrid variant of GES, also returns a CPDAG. Implemented as a mode inside `ges()`.
+- **`gies()`** — like GES but for mixed observational + interventional data. Returns an interventional CPDAG (I-CPDAG).
+- **`simy()`** — dynamic programming approach by Silander & Myllymäki (2006), guaranteed to find the global optimum of any decomposable scoring criterion, but CPU and memory grow exponentially — feasible only up to ~20 variables. Also returns an equivalence class.
+
+### Returns a **PAG** (even less oriented than a CPDAG) — allows hidden confounders
+- **`fci()`**, **`rfci()`**, **`fciPlus()`** — constraint-based, designed for data with latent variables. These are further from your use case.
+
+### Returns a **true DAG** ✓
+- **`lingam()`** — fits a Linear non-Gaussian Additive Model and returns the corresponding DAG directly, including the full adjacency matrix. It achieves full orientation because it exploits non-Gaussianity of the noise to resolve Markov equivalence. **However**, it assumes continuous data and linear relationships — so it's **not applicable to your discrete factor data**.
+
+---
+
+## What this means for your case
+
+Since your data is **discrete and categorical** (factors), the practical options from pcalg are:
+
+| Algorithm | Output | Discrete data? | Notes |
+|---|---|---|---|
+| `pc()` | CPDAG | ✅ via `disCItest` | Most practical option |
+| `ges()` | CPDAG | ✅ via `DiscreteL0Pen` score | What you originally considered |
+| `lingam()` | **DAG** | ❌ continuous only | Not usable here |
+| `simy()` | CPDAG | ✅ | Only feasible <~20 vars |
+
+So **none of the pcalg algorithms natively give you a fully oriented DAG for discrete data**. You will always need a CPDAG → DAG orientation step before `bn.fit()`. The `pc()` algorithm with `disCItest` is arguably the most natural fit for your data type and is well-studied.
+
+Would you like me to write the bridge function that takes a pcalg CPDAG (from either `pc()` or `ges()`) and converts it into a bnlearn-compatible DAG ready for parameter learning?
+
+But it may return a DAG. I think I should elaborate a test to see if I have a CPDAG or a DAG, translate it to as a bn object (even undirected if possible, mmpc also returns a CPDAG) and then try the conversion to DAG
+
+
+Good design thinking. Here's the factored structure:Now let me show how the LOOCV loop integrates it — just the relevant diff:The design has four clean layers:
+
+**Section 1 — runners** (`run_hc`, `run_ges`, `run_pc`, etc.): one function per algorithm, each responsible for handling that algorithm's specific API quirks (suffStat format for PC, DiscreteL0Pen score for GES, etc.) and normalising the output to a plain adjacency matrix.
+
+**Section 2 — dispatch table** (`.algo_registry`): a named list mapping string → function. Adding a new algorithm means adding one entry here and writing one runner — nothing else changes.
+
+**Section 3 — `classify_graph()`**: detects whether the result is a DAG, CPDAG, or invalid. The check is purely on the adjacency matrix so it works regardless of where the matrix came from.
+
+**Section 4 — `amat_to_bn_dag()`**: converts the matrix to a bnlearn `bn` object and, if it's a CPDAG, calls `cextend()` to pick a consistent DAG extension. Fails explicitly if the extension is impossible rather than silently producing a bad graph.
+
+**Section 5 — `learn_structure()`**: the only function the LOOCV loop calls. To swap algorithms you change `BN_ALGORITHM <- "pc"` at the top of your script. The rest of the loop — `.dot`, `.net`, `.pl` writing — stays exactly as it is.
+
+One thing worth noting: `cextend()` is deterministic but picks an arbitrary extension among valid ones. If you later want to compare algorithms fairly, you may want to set a seed before calling `learn_structure()` per fold, which you're already doing at the repetition level.

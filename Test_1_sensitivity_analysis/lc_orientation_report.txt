@@ -1,0 +1,256 @@
+================================================================================
+LATENT_COLLISION ORIENTATION DIAGNOSTIC REPORT
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  HC+BIC constrained
+────────────────────────────────────────────────────────────────────────────────
+
+  C1  hc_bic_restart0_perturb1_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  78  (100.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C2  hc_bic_restart5_perturb1_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  78  (100.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C3  hc_bic_restart10_perturb1_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  78  (100.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C4  hc_bic_restart0_perturb1_maxp3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  78  (100.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C5  hc_bic_restart0_perturb1_maxp5_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  78  (100.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C6  hc_bic_restart0_perturb2_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  78  (100.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C7  hc_aic_restart0_perturb1_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  78  (100.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+
+────────────────────────────────────────────────────────────────────────────────
+  HC+BIC unconstrained
+────────────────────────────────────────────────────────────────────────────────
+
+  C1  hc_bic_restart0_perturb1_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  78  (100.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C2  hc_bic_restart5_perturb1_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  78  (100.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C3  hc_bic_restart10_perturb1_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  78  (100.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C4  hc_bic_restart0_perturb1_maxp3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  78  (100.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C5  hc_bic_restart0_perturb1_maxp5_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  78  (100.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C6  hc_bic_restart0_perturb2_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  78  (100.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+  C7  hc_aic_restart0_perturb1_maxpInf_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  78  (100.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   0  (0.0%)
+
+
+────────────────────────────────────────────────────────────────────────────────
+  MMPC+HC+BIC
+────────────────────────────────────────────────────────────────────────────────
+
+  C1  mmpc_mi_alpha0p05_maxsx3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   2  (2.6%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   1  (1.3%)
+  Cat4 disconnect      :  75  (96.2%)
+  action child of LC   :   0  (0.0%)
+
+  C2  mmpc_mi_alpha0p01_maxsx3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   2  (2.6%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   1  (1.3%)
+  Cat4 disconnect      :  75  (96.2%)
+  action child of LC   :   0  (0.0%)
+
+  C3  mmpc_mi_alpha0p10_maxsx3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   2  (2.6%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   1  (1.3%)
+  Cat4 disconnect      :  75  (96.2%)
+  action child of LC   :   0  (0.0%)
+
+  C4  mmpc_mi_alpha0p05_maxsx2_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :  78  (100.0%)
+  action child of LC   :   0  (0.0%)
+
+  C5  mmpc_mi_alpha0p05_maxsx4_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  35  (44.9%)
+  Cat2 intermed.       :   2  (2.6%)
+  Cat3 misoriented     :   3  (3.8%)
+  Cat4 disconnect      :  38  (48.7%)
+  action child of LC   :   0  (0.0%)
+
+  C6  mmpc_mi_alpha0p01_maxsx2_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   0  (0.0%)
+  Cat4 disconnect      :  78  (100.0%)
+  action child of LC   :   0  (0.0%)
+
+  C7  mmpc_x2_alpha0p05_maxsx3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   2  (2.6%)
+  Cat2 intermed.       :   0  (0.0%)
+  Cat3 misoriented     :   1  (1.3%)
+  Cat4 disconnect      :  75  (96.2%)
+  action child of LC   :   0  (0.0%)
+
+
+────────────────────────────────────────────────────────────────────────────────
+  PC unconstrained
+────────────────────────────────────────────────────────────────────────────────
+
+  C0  pc_mi_alpha0p01_maxsxNULL_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  27  (34.6%)
+  Cat2 intermed.       :  48  (61.5%)
+  Cat3 misoriented     :   3  (3.8%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   3  (3.8%)
+
+  C1  pc_mi_alpha0p05_maxsx3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  33  (42.3%)
+  Cat3 misoriented     :  45  (57.7%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :  78  (100.0%)
+
+  C2  pc_mi_alpha0p01_maxsx3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  48  (61.5%)
+  Cat3 misoriented     :  30  (38.5%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :  78  (100.0%)
+
+  C3  pc_mi_alpha0p10_maxsx3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  31  (39.7%)
+  Cat3 misoriented     :  47  (60.3%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :  78  (100.0%)
+
+  C4  pc_mi_alpha0p05_maxsx2_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  33  (42.3%)
+  Cat3 misoriented     :  45  (57.7%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :  78  (100.0%)
+
+  C5  pc_mi_alpha0p05_maxsx4_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  33  (42.3%)
+  Cat3 misoriented     :  45  (57.7%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :  78  (100.0%)
+
+  C6  pc_mi_alpha0p05_maxsxNULL_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :  18  (23.1%)
+  Cat2 intermed.       :  57  (73.1%)
+  Cat3 misoriented     :   3  (3.8%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :   3  (3.8%)
+
+  C7  pc_x2_alpha0p05_maxsx3_fracp25
+  Folds analysed       : 78  (missing: 0)
+  Cat1 correct         :   0  (0.0%)
+  Cat2 intermed.       :  33  (42.3%)
+  Cat3 misoriented     :  45  (57.7%)
+  Cat4 disconnect      :   0  (0.0%)
+  action child of LC   :  78  (100.0%)
+
+================================================================================

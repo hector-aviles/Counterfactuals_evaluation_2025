@@ -1,0 +1,7 @@
+action,curr_lane,free_E,free_NE,free_NW,free_SE,free_SW,free_W,orig_label_lc,latent_collision,iaction,probability,elapsed_time,group_id
+keep,True,True,True,True,True,True,True,False,True,change_to_left,0.5952660000000001,2.308238983154297,52
+keep,True,True,True,True,True,True,True,False,True,change_to_right,0.9990009999999999,2.341432809829712,52
+keep,True,True,True,True,True,True,True,False,True,cruise,0.000999,2.313019037246704,52
+keep,True,True,True,True,True,True,True,False,True,keep,1.0,2.342348098754883,52
+keep,True,True,True,True,True,True,True,False,True,swerve_left,0.000999,2.3301432132720947,52
+keep,True,True,True,True,True,True,True,False,True,swerve_right,0.000999,2.3617262840270996,52

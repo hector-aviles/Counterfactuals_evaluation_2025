@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\title{Cumulative Summary Results - TPLP 2025}
+\author{havilesa}
+\date{July 2025}
+\begin{document}
+\maketitle
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Accumulated Safe and Unsafe Outcomes Across All Percentages}
+\begin{tabular}{l|cc}
+\toprule
+Category & Crash Scenarios & No Crash Scenarios \\
+\midrule
+Safe Interventions & 1955 & 2755 \\ 
+Unsafe Interventions & 59 & 122 \\ 
+\midrule
+Total & 2014 & 2877 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Accumulated Number of Ties Across All Percentages.
+Unsafe actions in parentheses (crash section only).}
+\begin{tabular}{c|cc}
+\toprule
+\multirow{2}{*}{\# of ties (1st Place)} & \multicolumn{2}{c|}{Scenario} \\
+\cmidrule{2-3}
+ & Crash Scenarios & No Crash Scenarios \\
+\midrule
+1 & 262 (0) & 568 (0) \\ 
+2 & 230 (0) & 496 (0) \\ 
+3 & 255 (0) & 263 (0) \\ 
+4 & 81 (0) & 75 (0) \\ 
+5 & 13 (0) & 0 \\ 
+6 & 23 (59) & 38 (122) \\ 
+\midrule
+Total & 864 (59) & 1440 (122) \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Accumulated Number of Actions Across All Percentages}
+\begin{tabular}{l|cc|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{2}{c|}{Scenario} & \multirow{2}{*}{Total} \\
+\cmidrule{2-3}
+ & Crash Scenarios & No Crash Scenarios \\
+\midrule
+\texttt{cruise} & 244 (93.9\% safe) & 449 (95.3\% safe) & 693 \\ 
+\texttt{keep} & 826 (100.0\% safe) & 1018 (98.9\% safe) & 1844 \\ 
+\texttt{change\_to\_left} & 36 (36.1\% safe) & 71 (47.9\% safe) & 107 \\ 
+\texttt{change\_to\_right} & 70 (70.0\% safe) & 149 (77.2\% safe) & 219 \\ 
+\texttt{swerve\_left} & 556 (100.0\% safe) & 739 (98.9\% safe) & 1295 \\ 
+\texttt{swerve\_right} & 282 (100.0\% safe) & 451 (97.6\% safe) & 733 \\ 
+\midrule
+\textbf{Total} & 2014 (97.1\% safe) & 2877 (95.8\% safe) & 4891 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Final Summary}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Final Summary of Random Selection Outcomes}
+\begin{tabular}{lc}
+\toprule
+Outcome & Count \\
+\midrule
+Crash unsafe (True $\rightarrow$ True) & 8 \\ 
+Crash safe (True $\rightarrow$ False) & 856 \\ 
+No crash safe (False $\rightarrow$ False) & 1426 \\ 
+No crash unsafe (False $\rightarrow$ True) & 14 \\ 
+\midrule
+Total & 2304 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Grand Total (Crash + No Crash)}
+
+\begin{table}[h]
+\centering
+\caption{Grand Total Safe and Unsafe Outcomes (Crash + No Crash, All Percentages)}
+\begin{tabular}{lc}
+\toprule
+Outcome & Count \\
+\midrule
+Safe & 4710 \\ 
+Unsafe & 181 \\ 
+\midrule
+Total & 4891 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Grand Total Number of Ties Across All Percentages (Crash + No Crash).
+Unsafe actions in parentheses.}
+\begin{tabular}{c|c}
+\toprule
+\# of optimal actions & Total (unsafe) \\
+\midrule
+1 & 830 (0) \\ 
+2 & 726 (0) \\ 
+3 & 518 (0) \\ 
+4 & 156 (0) \\ 
+5 & 13 (0) \\ 
+6 & 61 (181) \\ 
+\midrule
+Total & 2304 (181) \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Grand Total Number of Actions Selected Across All Percentages (Crash + No Crash)}
+\begin{tabular}{l|c|c}
+\toprule
+Action & Total & Safe (\%) \\
+\midrule
+\texttt{cruise} & 693 & 94.8\% \\ 
+\texttt{keep} & 1844 & 99.4\% \\ 
+\texttt{change\_to\_left} & 107 & 43.9\% \\ 
+\texttt{change\_to\_right} & 219 & 74.9\% \\ 
+\texttt{swerve\_left} & 1295 & 99.4\% \\ 
+\texttt{swerve\_right} & 733 & 98.5\% \\ 
+\midrule
+\textbf{Total} & 4891 & 96.3\% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+\end{document}

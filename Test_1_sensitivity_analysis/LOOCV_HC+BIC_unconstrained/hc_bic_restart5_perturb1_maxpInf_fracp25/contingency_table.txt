@@ -1,0 +1,78 @@
+=== CRASH SECTION ===
+(Data from rows where potential_crash_before_intervention is True)
+
+Number of groups with exactly 1 best interventions: 24
+Number of groups with exactly 2 best interventions: 4
+Number of groups with exactly 3 best interventions: 0
+Number of groups with exactly 4 best interventions: 0
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 0
+
+Number of actions selected for each intervention type:
+keep : Selected 27 times, Safe 27 times, Unsafe 0 times
+swerve_left : Selected 4 times, Safe 4 times, Unsafe 0 times
+swerve_right : Selected 1 times, Safe 1 times, Unsafe 0 times
+
+Total safe/unsafe actions:
+Total safe actions: 32
+Total unsafe actions: 0
+
+Transition matrix (before -> after):
+    True -> True: 0 (from 0 groups)
+    True -> False: 32 (from 28 groups)
+
+Detailed transition matrices by number of ties (CRASH SECTION):
+
+For groups with 1 tied best interventions:
+  - Transition matrix (before -> after):
+    True -> True: 0 (from 0 groups)
+    True -> False: 24 (from 24 groups)
+
+For groups with 2 tied best interventions:
+  - Transition matrix (before -> after):
+    True -> True: 0 (from 0 groups)
+    True -> False: 8 (from 4 groups)
+
+
+=== NO CRASH SECTION ===
+(Data from rows where potential_crash_before_intervention is False)
+
+Number of groups with exactly 1 best interventions: 44
+Number of groups with exactly 2 best interventions: 6
+Number of groups with exactly 3 best interventions: 0
+Number of groups with exactly 4 best interventions: 0
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 0
+
+Number of actions selected for each intervention type:
+keep : Selected 37 times, Safe 37 times, Unsafe 0 times
+swerve_left : Selected 10 times, Safe 10 times, Unsafe 0 times
+swerve_right : Selected 9 times, Safe 9 times, Unsafe 0 times
+
+Total safe/unsafe actions:
+Total safe actions: 56
+Total unsafe actions: 0
+
+Transition matrix (before -> after):
+    False -> True: 0 (from 0 groups)
+    False -> False: 56 (from 50 groups)
+
+
+Detailed transition matrices by number of ties (NO CRASH SECTION):
+
+For groups with 1 tied best interventions:
+  - Transition matrix (before -> after):
+    False -> True: 0 (from 0 groups)
+    False -> False: 44 (from 44 groups)
+
+For groups with 2 tied best interventions:
+  - Transition matrix (before -> after):
+    False -> True: 0 (from 0 groups)
+    False -> False: 12 (from 6 groups)
+
+
+=== FINAL SUMMARY ===
+Random selection - Crash before (True) and after intervention (True): 0
+Random selection - Crash before (False) and after intervention (False): 50
+Random selection - Crash before (True) and after intervention (False): 28
+Random selection - Crash before (False) and after intervention (True): 0

@@ -1,0 +1,55 @@
+\begin{table}[!htbp]
+\centering
+\caption{Sensitivity analysis summary across all learning regimes and parameter
+configurations. Values are mean $\pm$ standard deviation across 78 folds per configuration.
+Safe/Unsafe actions: number of ranking-1 actions labelled safe/unsafe per fold.
+Total actions: total ranking-1 actions including ties.}
+\label{tab:sensitivity_summary}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{clcccc}
+\toprule
+\textbf{Config} & \textbf{Parameters} & \textbf{Safe actions} & \textbf{Unsafe actions} & \textbf{Total actions} & \textbf{N} \\
+\midrule
+\multicolumn{6}{c}{HC+BIC w/ constr.} \\
+\midrule
+Baseline & restart=0, perturb=1, maxp=$\infty$, BIC & 2.26 $\pm$ 1.00 & 0.00 $\pm$ 0.00 & 2.26 $\pm$ 1.00 & 78 \\
+C1 & restart=5, perturb=1, maxp=$\infty$, BIC & 2.27 $\pm$ 1.02 & 0.00 $\pm$ 0.00 & 2.27 $\pm$ 1.02 & 78 \\
+C2 & restart=10, perturb=1, maxp=$\infty$, BIC & 2.28 $\pm$ 1.01 & 0.00 $\pm$ 0.00 & 2.28 $\pm$ 1.01 & 78 \\
+C3 & restart=0, perturb=1, maxp=3, BIC & 2.33 $\pm$ 0.75 & 0.00 $\pm$ 0.00 & 2.33 $\pm$ 0.75 & 78 \\
+C4 & restart=0, perturb=1, maxp=5, BIC & 2.36 $\pm$ 1.10 & 0.00 $\pm$ 0.00 & 2.36 $\pm$ 1.10 & 78 \\
+C5 & restart=0, perturb=2, maxp=$\infty$, BIC & 2.26 $\pm$ 1.00 & 0.00 $\pm$ 0.00 & 2.26 $\pm$ 1.00 & 78 \\
+C6 & restart=0, perturb=1, maxp=$\infty$, AIC & 2.26 $\pm$ 1.00 & 0.00 $\pm$ 0.00 & 2.26 $\pm$ 1.00 & 78 \\
+\midrule
+\multicolumn{6}{c}{HC+BIC w/o constr.} \\
+\midrule
+Baseline & restart=0, perturb=1, maxp=$\infty$, BIC & 1.14 $\pm$ 0.35 & 0.00 $\pm$ 0.00 & 1.14 $\pm$ 0.35 & 78 \\
+C1 & restart=5, perturb=1, maxp=$\infty$, BIC & 1.13 $\pm$ 0.34 & 0.00 $\pm$ 0.00 & 1.13 $\pm$ 0.34 & 78 \\
+C2 & restart=10, perturb=1, maxp=$\infty$, BIC & 1.14 $\pm$ 0.35 & 0.00 $\pm$ 0.00 & 1.14 $\pm$ 0.35 & 78 \\
+C3 & restart=0, perturb=1, maxp=3, BIC & 1.60 $\pm$ 0.49 & 0.00 $\pm$ 0.00 & 1.60 $\pm$ 0.49 & 78 \\
+C4 & restart=0, perturb=1, maxp=5, BIC & 1.14 $\pm$ 0.35 & 0.00 $\pm$ 0.00 & 1.14 $\pm$ 0.35 & 78 \\
+C5 & restart=0, perturb=2, maxp=$\infty$, BIC & 1.14 $\pm$ 0.35 & 0.00 $\pm$ 0.00 & 1.14 $\pm$ 0.35 & 78 \\
+C6 & restart=0, perturb=1, maxp=$\infty$, AIC & 1.14 $\pm$ 0.35 & 0.00 $\pm$ 0.00 & 1.14 $\pm$ 0.35 & 78 \\
+\midrule
+\multicolumn{6}{c}{MMPC+HC+BIC} \\
+\midrule
+Baseline & $\alpha$=0.05, max.sx=3, MI & 3.04 $\pm$ 0.86 & 2.83 $\pm$ 0.76 & 5.87 $\pm$ 0.80 & 78 \\
+C1 & $\alpha$=0.01, max.sx=3, MI & 3.04 $\pm$ 0.86 & 2.83 $\pm$ 0.76 & 5.87 $\pm$ 0.80 & 78 \\
+C2 & $\alpha$=0.10, max.sx=3, MI & 3.04 $\pm$ 0.86 & 2.83 $\pm$ 0.76 & 5.87 $\pm$ 0.80 & 78 \\
+C3 & $\alpha$=0.05, max.sx=2, MI & 3.13 $\pm$ 0.71 & 2.87 $\pm$ 0.71 & 6.00 $\pm$ 0.00 & 78 \\
+C4 & $\alpha$=0.05, max.sx=4, MI & 1.97 $\pm$ 1.47 & 1.65 $\pm$ 1.36 & 3.63 $\pm$ 2.51 & 78 \\
+C5 & $\alpha$=0.01, max.sx=2, MI & 3.13 $\pm$ 0.71 & 2.87 $\pm$ 0.71 & 6.00 $\pm$ 0.00 & 78 \\
+C6 & $\alpha$=0.05, max.sx=3, $\chi^2$ & 3.04 $\pm$ 0.86 & 2.83 $\pm$ 0.76 & 5.87 $\pm$ 0.80 & 78 \\
+\midrule
+\multicolumn{6}{c}{PC w/o constr.} \\
+\midrule
+Baseline & $\alpha$=0.01, max.sx=NULL, MI (original) & 2.26 $\pm$ 0.86 & 0.10 $\pm$ 0.52 & 2.36 $\pm$ 1.10 & 78 \\
+C1 & $\alpha$=0.05, max.sx=3, MI & 3.13 $\pm$ 0.71 & 2.87 $\pm$ 0.71 & 6.00 $\pm$ 0.00 & 78 \\
+C2 & $\alpha$=0.01, max.sx=3, MI & 3.13 $\pm$ 0.71 & 2.87 $\pm$ 0.71 & 6.00 $\pm$ 0.00 & 78 \\
+%C2 & $\alpha$=0.10, max.sx=3, MI & 3.13 $\pm$ 0.71 & 2.87 $\pm$ 0.71 & 6.00 $\pm$ 0.00 & 78 \\
+C3 & $\alpha$=0.05, max.sx=2, MI & 3.13 $\pm$ 0.71 & 2.87 $\pm$ 0.71 & 6.00 $\pm$ 0.00 & 78 \\
+C4 & $\alpha$=0.05, max.sx=4, MI & 3.13 $\pm$ 0.71 & 2.87 $\pm$ 0.71 & 6.00 $\pm$ 0.00 & 78 \\
+C5 & $\alpha$=0.05, max.sx=NULL, MI & 2.26 $\pm$ 0.83 & 0.10 $\pm$ 0.52 & 2.36 $\pm$ 1.08 & 78 \\
+C6 & $\alpha$=0.05, max.sx=3, $\chi^2$ & 3.13 $\pm$ 0.71 & 2.87 $\pm$ 0.71 & 6.00 $\pm$ 0.00 & 78 \\
+\bottomrule
+\end{tabular}}
+\end{table}

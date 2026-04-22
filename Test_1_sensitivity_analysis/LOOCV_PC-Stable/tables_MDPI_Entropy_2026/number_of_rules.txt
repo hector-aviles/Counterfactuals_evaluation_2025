@@ -1,0 +1,20 @@
+Analyzing number of rules per training percentage
+
+
+Processing: ../rep_1/01/cBNs
+  Files processed: 768/768
+  Average number of logic rules (':-'):       167.000  ±  0.000
+  Average 'latent_collision :-' occurrences:   96.000  ±  0.000
+------------------------------------------------------------
+
+Processing: ../rep_1/50/cBNs
+  Files processed: 768/768
+  Average number of logic rules (':-'):       327.000  ±  0.000
+  Average 'latent_collision :-' occurrences:  192.000  ±  0.000
+------------------------------------------------------------
+
+Processing: ../rep_1/100/cBNs
+  Files processed: 768/768
+  Average number of logic rules (':-'):       327.000  ±  0.000
+  Average 'latent_collision :-' occurrences:  192.000  ±  0.000
+------------------------------------------------------------

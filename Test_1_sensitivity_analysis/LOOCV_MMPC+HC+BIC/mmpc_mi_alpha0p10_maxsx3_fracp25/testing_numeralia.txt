@@ -1,0 +1,110 @@
+
+==================================================
+Testing run: mmpc_mi_alpha0p10_maxsx3_fracp25
+Folds: 1-78
+Started: 2026-04-11 23:56:47
+==================================================
+
+==================================================
+SUMMARY: mmpc_mi_alpha0p10_maxsx3_fracp25
+Folds processed : 0
+Folds skipped   : 0 (already done)
+Folds failed    : 78 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78]
+Avg time/fold   : 0.00 +/- 0.00 s
+Aggregate CSV   : ./mmpc_mi_alpha0p10_maxsx3_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-11 23:57:07
+==================================================
+
+==================================================
+Testing run: mmpc_mi_alpha0p10_maxsx3_fracp25
+Folds: 1-78
+Started: 2026-04-12 00:22:33
+==================================================
+Fold 1: 7.81s
+Fold 2: 7.76s
+Fold 3: 7.90s
+Fold 4: 7.76s
+Fold 5: 7.79s
+Fold 6: 7.78s
+Fold 7: 7.82s
+Fold 8: 7.79s
+Fold 9: 7.78s
+Fold 10: 7.78s
+Fold 11: 7.76s
+Fold 12: 7.80s
+Fold 13: 7.76s
+Fold 14: 7.77s
+Fold 15: 7.78s
+Fold 16: 7.81s
+Fold 17: 7.80s
+Fold 18: 7.79s
+Fold 19: 7.77s
+Fold 20: 7.78s
+Fold 21: 7.83s
+Fold 22: 7.82s
+Fold 23: 7.69s
+Fold 24: 7.79s
+Fold 25: 7.81s
+Fold 26: 7.79s
+Fold 27: 7.77s
+Fold 28: 12.87s
+Fold 29: 7.80s
+Fold 30: 7.82s
+Fold 31: 7.80s
+Fold 32: 7.80s
+Fold 33: 7.77s
+Fold 34: 7.79s
+Fold 35: 7.79s
+Fold 36: 7.82s
+Fold 37: 7.81s
+Fold 38: 7.78s
+Fold 39: 7.79s
+Fold 40: 7.75s
+Fold 41: 7.77s
+Fold 42: 7.76s
+Fold 43: 7.74s
+Fold 44: 7.80s
+Fold 45: 7.80s
+Fold 46: 7.80s
+Fold 47: 7.76s
+Fold 48: 8.43s
+Fold 49: 7.97s
+Fold 50: 7.97s
+Fold 51: 7.99s
+Fold 52: 8.26s
+Fold 53: 7.98s
+Fold 54: 7.99s
+Fold 55: 7.96s
+Fold 56: 8.00s
+Fold 57: 8.01s
+Fold 58: 7.97s
+Fold 59: 7.97s
+Fold 60: 7.95s
+Fold 61: 8.01s
+Fold 62: 7.95s
+Fold 63: 7.96s
+Fold 64: 7.98s
+Fold 65: 8.01s
+Fold 66: 7.99s
+Fold 67: 7.94s
+Fold 68: 8.02s
+Fold 69: 7.99s
+Fold 70: 13.19s
+Fold 71: 7.96s
+Fold 72: 7.95s
+Fold 73: 7.99s
+Fold 74: 7.98s
+Fold 75: 7.96s
+Fold 76: 7.96s
+Fold 77: 7.95s
+Fold 78: 7.99s
+
+==================================================
+SUMMARY: mmpc_mi_alpha0p10_maxsx3_fracp25
+Folds processed : 78
+Folds skipped   : 0 (already done)
+Folds failed    : 0
+Avg time/fold   : 8.00 +/- 0.83 s
+Aggregate CSV   : ./mmpc_mi_alpha0p10_maxsx3_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-12 00:32:58
+==================================================

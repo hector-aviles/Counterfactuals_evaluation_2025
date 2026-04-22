@@ -1,0 +1,25 @@
+source ~/source_code/venv/bin/activate
+
+chmod +x run_pc_sensitivity.sh run_pc_testing.sh
+
+./run_pc_sensitivity.sh ./Shared_CSVs 2>&1 | tee pc_sensitivity_master.log
+
+./run_pc_testing.sh 2>&1 | tee pc_testing_master.log
+
+python3 best_interventions_pc_sensitivity.py --all
+
+####################################
+
+Add the original configuration (it is missing)
+
+# Train Config 0
+Rscript CBNs_PC_sensitivity.R ./Shared_CSVs --alpha 0.01 --max.sx NULL --test mi --fraction 0.25
+
+# Evaluate Config 0
+python3 run_pc_testing.py ./pc_mi_alpha0p01_maxsxNULL_fracp25 --folds 1-78
+
+# Step 3
+python3 best_interventions_pc_sensitivity.py --combos pc_mi_alpha0p01_maxsxNULL_fracp25
+
+# Regenerate summary table
+python3 summarize_sensitivity_results.py --base_dir .

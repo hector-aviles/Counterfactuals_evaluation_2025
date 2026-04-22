@@ -1,0 +1,13 @@
+source ~/source_code/venv/bin/activate
+
+# chmod +x run_hc_sensitivity.sh
+./run_hc_sensitivity.sh ./Shared_CSVs 2>&1 | tee hc_sensitivity_master.log
+
+# To resume after interruption on a specific fold:
+# python3 run_hc_testing.py ./hc_bic_restart0_perturb1_maxpInf_fracp25 --folds 15-78
+
+# chmod +x run_hc_testing.sh 
+./run_hc_testing.sh 2>&1 | tee run_hc_testing.log
+
+# python3 best_interventions_with_frequency.py --combos hc_bic_restart0_perturb1_maxpInf_fracp25,hc_bic_restart5_perturb1_maxpInf_fracp25
+python3 best_interventions_with_frequency.py --all

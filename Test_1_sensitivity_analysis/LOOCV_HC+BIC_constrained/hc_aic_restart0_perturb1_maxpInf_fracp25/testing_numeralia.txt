@@ -1,0 +1,17 @@
+
+==================================================
+Testing run: hc_aic_restart0_perturb1_maxpInf_fracp25
+Folds: 1-1
+Started: 2026-04-10 08:33:36
+==================================================
+Fold 1: 35.79s | rows=6
+
+==================================================
+SUMMARY: hc_aic_restart0_perturb1_maxpInf_fracp25
+Folds processed : 1
+Folds skipped   : 0 (already done)
+Folds failed    : 0
+Avg time/fold   : 35.79 +/- 0.00 s
+Aggregate CSV   : ./hc_aic_restart0_perturb1_maxpInf_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-10 08:34:12
+==================================================

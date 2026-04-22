@@ -1,0 +1,8 @@
+Fold 61 (dt_unique row 620)
+MMPC alpha=0.01 max.sx=2 test=mi
+LC neighbors: NONE
+action in LC neighbors: FALSE
+Skeleton edges: 14
+Connected: FALSE
+Components: 4
+

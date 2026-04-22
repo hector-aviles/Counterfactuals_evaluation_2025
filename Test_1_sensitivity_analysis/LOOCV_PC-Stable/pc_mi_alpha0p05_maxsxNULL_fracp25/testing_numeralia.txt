@@ -1,0 +1,94 @@
+
+==================================================
+Testing run: pc_mi_alpha0p05_maxsxNULL_fracp25
+Folds: 1-78
+Started: 2026-04-12 14:16:41
+==================================================
+Fold 1: 15.02s
+Fold 2: 15.30s
+Fold 3: 15.52s
+Fold 4: 15.20s
+Fold 5: 14.97s
+Fold 6: 15.06s
+Fold 7: 20.93s
+Fold 8: 21.05s
+Fold 9: 14.92s
+Fold 10: 15.08s
+Fold 11: 14.99s
+Fold 12: 20.91s
+Fold 13: 14.97s
+Fold 14: 14.98s
+Fold 15: 14.99s
+Fold 16: 15.01s
+Fold 17: 20.90s
+Fold 18: 15.03s
+Fold 19: 21.01s
+Fold 20: 14.92s
+Fold 21: 14.96s
+Fold 22: 15.03s
+Fold 23: 16.75s
+Fold 24: 20.95s
+Fold 25: 15.00s
+Fold 26: 20.84s
+Fold 27: 14.88s
+Fold 28: 16.72s
+Fold 29: 15.01s
+Fold 30: 15.03s
+Fold 31: 14.85s
+Fold 32: 15.06s
+Fold 33: 15.12s
+Fold 34: 15.04s
+Fold 35: 14.96s
+Fold 36: 14.93s
+Fold 37: 15.03s
+Fold 38: 20.79s
+Fold 39: 15.02s
+Fold 40: 14.99s
+Fold 41: 22.35s
+Fold 42: 15.65s
+Fold 43: 15.76s
+Fold 44: 15.76s
+Fold 45: 15.88s
+Fold 46: 22.20s
+Fold 47: 15.64s
+Fold 48: 15.68s
+Fold 49: 15.71s
+Fold 50: 22.25s
+Fold 51: 22.29s
+Fold 52: 15.72s
+Fold 53: 15.71s
+Fold 54: 22.22s
+Fold 55: 15.72s
+Fold 56: 15.82s
+Fold 57: 15.81s
+Fold 58: 15.71s
+Fold 59: 22.07s
+Fold 60: 15.70s
+Fold 61: 17.81s
+Fold 62: 22.24s
+Fold 63: 15.77s
+Fold 64: 15.86s
+Fold 65: 15.81s
+Fold 66: 22.03s
+Fold 67: 15.63s
+Fold 68: 15.67s
+Fold 69: 15.79s
+Fold 70: 15.72s
+Fold 71: 22.28s
+Fold 72: 15.73s
+Fold 73: 15.75s
+Fold 74: 15.80s
+Fold 75: 22.39s
+Fold 76: 15.86s
+Fold 77: 15.80s
+Fold 78: 15.86s
+
+==================================================
+SUMMARY: pc_mi_alpha0p05_maxsxNULL_fracp25
+Folds processed : 78
+Folds skipped   : 0 (already done)
+Folds failed    : 0
+Avg time/fold   : 16.89 +/- 2.69 s
+Aggregate CSV   : ./pc_mi_alpha0p05_maxsxNULL_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-12 14:38:38
+==================================================

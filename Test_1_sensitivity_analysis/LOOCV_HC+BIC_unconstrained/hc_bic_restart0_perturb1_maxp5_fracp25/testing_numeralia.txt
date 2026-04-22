@@ -1,0 +1,94 @@
+
+==================================================
+Testing run: hc_bic_restart0_perturb1_maxp5_fracp25
+Folds: 1-78
+Started: 2026-04-09 22:35:20
+==================================================
+Fold 1: 15.15s | rows=6
+Fold 2: 15.18s | rows=6
+Fold 3: 14.99s | rows=6
+Fold 4: 15.37s | rows=6
+Fold 5: 15.21s | rows=6
+Fold 6: 15.28s | rows=6
+Fold 7: 15.28s | rows=6
+Fold 8: 15.22s | rows=6
+Fold 9: 15.19s | rows=6
+Fold 10: 15.22s | rows=6
+Fold 11: 14.98s | rows=6
+Fold 12: 15.23s | rows=6
+Fold 13: 15.04s | rows=6
+Fold 14: 15.15s | rows=6
+Fold 15: 15.20s | rows=6
+Fold 16: 14.94s | rows=6
+Fold 17: 15.16s | rows=6
+Fold 18: 15.24s | rows=6
+Fold 19: 15.04s | rows=6
+Fold 20: 15.05s | rows=6
+Fold 21: 15.19s | rows=6
+Fold 22: 15.20s | rows=6
+Fold 23: 15.15s | rows=6
+Fold 24: 15.12s | rows=6
+Fold 25: 15.18s | rows=6
+Fold 26: 15.21s | rows=6
+Fold 27: 15.28s | rows=6
+Fold 28: 15.28s | rows=6
+Fold 29: 15.19s | rows=6
+Fold 30: 15.18s | rows=6
+Fold 31: 15.23s | rows=6
+Fold 32: 14.94s | rows=6
+Fold 33: 15.16s | rows=6
+Fold 34: 15.18s | rows=6
+Fold 35: 15.03s | rows=6
+Fold 36: 15.05s | rows=6
+Fold 37: 15.24s | rows=6
+Fold 38: 15.02s | rows=6
+Fold 39: 15.11s | rows=6
+Fold 40: 15.23s | rows=6
+Fold 41: 14.96s | rows=6
+Fold 42: 15.16s | rows=6
+Fold 43: 15.27s | rows=6
+Fold 44: 15.28s | rows=6
+Fold 45: 14.96s | rows=6
+Fold 46: 15.17s | rows=6
+Fold 47: 14.77s | rows=6
+Fold 48: 14.96s | rows=6
+Fold 49: 14.75s | rows=6
+Fold 50: 15.03s | rows=6
+Fold 51: 14.93s | rows=6
+Fold 52: 14.99s | rows=6
+Fold 53: 14.90s | rows=6
+Fold 54: 14.91s | rows=6
+Fold 55: 14.89s | rows=6
+Fold 56: 14.98s | rows=6
+Fold 57: 14.89s | rows=6
+Fold 58: 14.95s | rows=6
+Fold 59: 15.02s | rows=6
+Fold 60: 14.92s | rows=6
+Fold 61: 15.03s | rows=6
+Fold 62: 14.71s | rows=6
+Fold 63: 15.06s | rows=6
+Fold 64: 15.07s | rows=6
+Fold 65: 14.93s | rows=6
+Fold 66: 15.00s | rows=6
+Fold 67: 14.97s | rows=6
+Fold 68: 14.95s | rows=6
+Fold 69: 15.03s | rows=6
+Fold 70: 14.96s | rows=6
+Fold 71: 14.97s | rows=6
+Fold 72: 14.98s | rows=6
+Fold 73: 14.92s | rows=6
+Fold 74: 14.99s | rows=6
+Fold 75: 15.12s | rows=6
+Fold 76: 15.21s | rows=6
+Fold 77: 14.92s | rows=6
+Fold 78: 14.93s | rows=6
+
+==================================================
+SUMMARY: hc_bic_restart0_perturb1_maxp5_fracp25
+Folds processed : 78
+Folds skipped   : 0 (already done)
+Folds failed    : 0
+Avg time/fold   : 15.07 +/- 0.14 s
+Aggregate CSV   : ./hc_bic_restart0_perturb1_maxp5_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-09 22:54:56
+==================================================

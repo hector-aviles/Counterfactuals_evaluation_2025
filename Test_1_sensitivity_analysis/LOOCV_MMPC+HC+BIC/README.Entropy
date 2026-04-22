@@ -1,0 +1,10 @@
+source ~/source_code/venv/bin/activate
+
+# chmod +x run_mmpc_sensitivity.sh
+./run_mmpc_sensitivity.sh ./Shared_CSVs 2>&1 | tee mmpc_sensitivity_master.log
+
+
+./run_mmpc_testing.sh 2>&1 | tee mmpc_testing_master.log
+
+
+python3 best_interventions_mmpc_sensitivity.py --all

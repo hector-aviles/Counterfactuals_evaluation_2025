@@ -1,0 +1,132 @@
+
+==================================================
+Testing run: hc_bic_restart0_perturb1_maxpInf_fracp25
+Folds: 1-78
+Started: 2026-04-09 12:45:32
+==================================================
+
+==================================================
+Testing run: hc_bic_restart0_perturb1_maxpInf_fracp25
+Folds: 1-78
+Started: 2026-04-09 12:48:08
+==================================================
+Fold 1: 41.73s | rows=6
+Fold 2: 31.46s | rows=6
+Fold 3: 31.76s | rows=6
+Fold 4: 31.47s | rows=6
+Fold 5: 31.53s | rows=6
+Fold 6: 31.28s | rows=6
+Fold 7: 31.50s | rows=6
+Fold 8: 31.57s | rows=6
+Fold 9: 31.38s | rows=6
+Fold 10: 31.37s | rows=6
+Fold 11: 31.51s | rows=6
+Fold 12: 31.39s | rows=6
+Fold 13: 31.56s | rows=6
+Fold 14: 31.48s | rows=6
+Fold 15: 32.36s | rows=6
+Fold 16: 31.61s | rows=6
+Fold 17: 31.44s | rows=6
+Fold 18: 31.60s | rows=6
+Fold 19: 31.41s | rows=6
+Fold 20: 32.33s | rows=6
+Fold 21: 32.72s | rows=6
+Fold 22: 32.52s | rows=6
+Fold 23: 31.62s | rows=6
+Fold 25: 32.08s | rows=6
+Fold 26: 31.37s | rows=6
+Fold 27: 31.47s | rows=6
+Fold 28: 31.66s | rows=6
+Fold 29: 31.24s | rows=6
+Fold 30: 31.46s | rows=6
+Fold 31: 31.40s | rows=6
+Fold 32: 31.88s | rows=6
+Fold 33: 31.35s | rows=6
+Fold 34: 31.39s | rows=6
+Fold 35: 31.52s | rows=6
+Fold 36: 31.58s | rows=6
+Fold 37: 35.71s | rows=6
+Fold 38: 32.40s | rows=6
+Fold 39: 32.68s | rows=6
+Fold 40: 35.15s | rows=6
+Fold 41: 35.40s | rows=6
+Fold 42: 33.53s | rows=6
+Fold 43: 29.75s | rows=6
+Fold 44: 33.99s | rows=6
+Fold 45: 35.77s | rows=6
+Fold 46: 31.64s | rows=6
+Fold 47: 31.50s | rows=6
+Fold 48: 32.43s | rows=6
+Fold 49: 31.54s | rows=6
+Fold 50: 31.41s | rows=6
+Fold 51: 31.49s | rows=6
+Fold 52: 31.52s | rows=6
+Fold 53: 31.64s | rows=6
+Fold 54: 31.65s | rows=6
+Fold 55: 33.95s | rows=6
+Fold 56: 32.39s | rows=6
+Fold 57: 31.38s | rows=6
+Fold 58: 32.95s | rows=6
+Fold 59: 32.78s | rows=6
+Fold 60: 32.74s | rows=6
+Fold 61: 31.45s | rows=6
+Fold 62: 31.37s | rows=6
+Fold 63: 33.25s | rows=6
+Fold 64: 29.40s | rows=6
+Fold 65: 29.27s | rows=6
+Fold 66: 33.87s | rows=6
+Fold 67: 35.27s | rows=6
+Fold 68: 32.31s | rows=6
+Fold 69: 31.64s | rows=6
+Fold 70: 30.56s | rows=6
+Fold 71: 31.63s | rows=6
+Fold 72: 32.05s | rows=6
+Fold 73: 32.51s | rows=6
+Fold 74: 31.41s | rows=6
+Fold 75: 31.51s | rows=6
+Fold 76: 31.72s | rows=6
+Fold 77: 31.43s | rows=6
+Fold 78: 31.53s | rows=6
+
+==================================================
+SUMMARY: hc_bic_restart0_perturb1_maxpInf_fracp25
+Folds processed : 77
+Folds skipped   : 1 (already done)
+Folds failed    : 0
+Avg time/fold   : 32.14 +/- 1.65 s
+Aggregate CSV   : ./hc_bic_restart0_perturb1_maxpInf_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-09 13:29:23
+==================================================
+
+==================================================
+Testing run: hc_bic_restart0_perturb1_maxpInf_fracp25
+Folds: 24-24
+Started: 2026-04-10 09:20:57
+==================================================
+
+==================================================
+SUMMARY: hc_bic_restart0_perturb1_maxpInf_fracp25
+Folds processed : 0
+Folds skipped   : 1 (already done)
+Folds failed    : 0
+Avg time/fold   : 0.00 +/- 0.00 s
+Aggregate CSV   : ./hc_bic_restart0_perturb1_maxpInf_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-10 09:20:57
+==================================================
+
+==================================================
+Testing run: hc_bic_restart0_perturb1_maxpInf_fracp25
+Folds: 24-24
+Started: 2026-04-10 09:21:28
+==================================================
+Fold 24: 32.02s | rows=6
+
+==================================================
+SUMMARY: hc_bic_restart0_perturb1_maxpInf_fracp25
+Folds processed : 1
+Folds skipped   : 0 (already done)
+Folds failed    : 0
+Avg time/fold   : 32.02 +/- 0.00 s
+Aggregate CSV   : ./hc_bic_restart0_perturb1_maxpInf_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-10 09:22:00
+==================================================

@@ -23,24 +23,24 @@ Transition matrix (before -> after):
 === CRASH SECTION - NON-ZERO OCCURRENCES (>=1) ===
 (Data from rows where potential_crash_before_intervention is True and frequency >= 1)
 
-Number of groups with exactly 1 best interventions: 13
-Number of groups with exactly 2 best interventions: 275
+Number of groups with exactly 1 best interventions: 17
+Number of groups with exactly 2 best interventions: 271
 Number of groups with exactly 3 best interventions: 0
 Number of groups with exactly 4 best interventions: 0
 Number of groups with exactly 5 best interventions: 0
 Number of groups with exactly 6 best interventions: 0
 
 Number of actions selected for each intervention type:
-keep : Selected 288 times, Safe 288 times, Unsafe 0 times
-swerve_left : Selected 275 times, Safe 275 times, Unsafe 0 times
+keep : Selected 287 times, Safe 287 times, Unsafe 0 times
+swerve_left : Selected 272 times, Safe 272 times, Unsafe 0 times
 
 Total safe/unsafe actions:
-Total safe actions: 563
+Total safe actions: 559
 Total unsafe actions: 0
 
 Transition matrix (before -> after):
     True -> True: 0 (from 0 groups)
-    True -> False: 563 (from 288 groups)
+    True -> False: 559 (from 288 groups)
 
 
 === NO CRASH SECTION - ZERO OCCURRENCES ===
@@ -69,22 +69,22 @@ Transition matrix (before -> after):
 === NO CRASH SECTION - NON-ZERO OCCURRENCES (>=1) ===
 (Data from rows where potential_crash_before_intervention is False and frequency >= 1)
 
-Number of groups with exactly 1 best interventions: 112
-Number of groups with exactly 2 best interventions: 102
+Number of groups with exactly 1 best interventions: 110
+Number of groups with exactly 2 best interventions: 104
 Number of groups with exactly 3 best interventions: 0
 Number of groups with exactly 4 best interventions: 0
 Number of groups with exactly 5 best interventions: 0
 Number of groups with exactly 6 best interventions: 0
 
 Number of actions selected for each intervention type:
-keep : Selected 145 times, Safe 145 times, Unsafe 0 times
-swerve_left : Selected 170 times, Safe 170 times, Unsafe 0 times
+keep : Selected 142 times, Safe 142 times, Unsafe 0 times
+swerve_left : Selected 175 times, Safe 175 times, Unsafe 0 times
 swerve_right : Selected 1 times, Safe 1 times, Unsafe 0 times
 
 Total safe/unsafe actions:
-Total safe actions: 316
+Total safe actions: 318
 Total unsafe actions: 0
 
 Transition matrix (before -> after):
     False -> True: 0 (from 0 groups)
-    False -> False: 316 (from 214 groups)
+    False -> False: 318 (from 214 groups)

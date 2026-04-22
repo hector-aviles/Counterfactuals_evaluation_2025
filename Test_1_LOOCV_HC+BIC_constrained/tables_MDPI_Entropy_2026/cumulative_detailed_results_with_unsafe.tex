@@ -1,0 +1,198 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\title{Cumulative Results - TPLP 2025}
+\author{havilesa}
+\date{July 2025}
+\begin{document}
+\maketitle
+
+\section{Crashes}
+\begin{table}[h]
+\centering
+\caption{Cumulative Safe and Unsafe Outcomes by Data Training Percentage (Crash Scenarios)}
+\begin{tabular}{l|ccc|c}
+\toprule
+\multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-4}
+ & 01 & 50 & 100 & \\
+\midrule
+Safe (True $\rightarrow$ False) & 650 & 702 & 734 & 2086 \\ 
+Unsafe (True $\rightarrow$ True) & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 650 & 702 & 734 & 2086 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Ties by Data Training Percentage (Crash Scenarios).
+Each cell shows tied actions / query groups (unsafe actions in parentheses).}
+\begin{tabular}{c|ccc|c}
+\toprule
+\multirow{2}{*}{\# of optimal actions} & \multicolumn{3}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-4}
+ & 01 & 50 & 100 & \\
+\midrule
+1 & 106/106 (0) & 76/76 (0) & 61/61 (0) & 243/243 (0) \\ 
+2 & 104/52 (0) & 130/65 (0) & 140/70 (0) & 374/187 (0) \\ 
+3 & 261/87 (0) & 297/99 (0) & 306/102 (0) & 864/288 (0) \\ 
+4 & 144/36 (0) & 164/41 (0) & 192/48 (0) & 500/125 (0) \\ 
+5 & 35/7 (0) & 35/7 (0) & 35/7 (0) & 105/21 (0) \\ 
+6 & 0/0 & 0/0 & 0/0 & 0/0 \\ 
+\midrule
+Total groups & 288 (0) & 288 (0) & 288 (0) & 864 (0) \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Actions Selected by Data Training Percentage (Crash Scenarios)}
+\begin{tabular}{l|ccc|c|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
+\cmidrule{2-4}
+ & 01 & 50 & 100 & & \\
+\midrule
+\texttt{cruise} & 112 & 112 & 112 & 336 & 100.0\% \\ 
+\texttt{keep} & 254 & 245 & 247 & 746 & 100.0\% \\ 
+\texttt{change\_to\_left} & 24 & 24 & 24 & 72 & 100.0\% \\ 
+\texttt{change\_to\_right} & 0 & 24 & 24 & 48 & 100.0\% \\ 
+\texttt{swerve\_left} & 130 & 170 & 185 & 485 & 100.0\% \\ 
+\texttt{swerve\_right} & 130 & 127 & 142 & 399 & 100.0\% \\ 
+\midrule
+\textbf{Total} & 650 & 702 & 734 & 2086 & 100.0\% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\pagebreak
+\section{No Crashes}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Safe and Unsafe Outcomes by Data Training Percentage (No Crash Scenarios)}
+\begin{tabular}{l|ccc|c}
+\toprule
+\multirow{2}{*}{Outcome} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-4}
+ & 01 & 50  & 100 & \\
+\midrule
+Safe (False $\rightarrow$ False) & 1011 & 1029 & 1050 & 3090 \\ 
+Unsafe (False $\rightarrow$ True) & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 1011 & 1029 & 1050 & 3090 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Ties by Data Training Percentage (No Crash Scenarios).
+Each cell shows tied actions / query groups (unsafe actions in parentheses).}
+\begin{tabular}{c|ccc|c}
+\toprule
+\multirow{2}{*}{\# of optimal actions} & \multicolumn{3}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-4}
+ & 01 & 50 & 100 & \\
+\midrule
+1 & 143/143 (0) & 128/128 (0) & 124/124 (0) & 395/395 (0) \\ 
+2 & 364/182 (0) & 388/194 (0) & 362/181 (0) & 1114/557 (0) \\ 
+3 & 348/116 (0) & 357/119 (0) & 408/136 (0) & 1113/371 (0) \\ 
+4 & 156/39 (0) & 156/39 (0) & 156/39 (0) & 468/117 (0) \\ 
+5 & 0/0 & 0/0 & 0/0 & 0/0 \\ 
+6 & 0/0 & 0/0 & 0/0 & 0/0 \\ 
+\midrule
+Total groups & 480 (0) & 480 (0) & 480 (0) & 1440 (0) \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cumulative Number of Actions Selected by Data Training Percentage (No Crash Scenarios)}
+\begin{tabular}{l|ccc|c|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{5}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
+\cmidrule{2-4}
+ & 01 & 50  & 100 & & \\
+\midrule
+\texttt{cruise} & 208 & 208 & 208 & 624 & 100.0\% \\ 
+\texttt{keep} & 304 & 284 & 292 & 880 & 100.0\% \\ 
+\texttt{change\_to\_left} & 56 & 56 & 56 & 168 & 100.0\% \\ 
+\texttt{change\_to\_right} & 0 & 56 & 56 & 112 & 100.0\% \\ 
+\texttt{swerve\_left} & 223 & 240 & 250 & 713 & 100.0\% \\ 
+\texttt{swerve\_right} & 220 & 185 & 188 & 593 & 100.0\% \\ 
+\midrule
+\textbf{Total} & 1011 & 1029 & 1050 & 3090 & 100.0\% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\pagebreak
+\section{Grand Total (Crash + No Crash)}
+
+\begin{table}[h]
+\centering
+\caption{Grand Total Safe and Unsafe Outcomes by Data Training Percentage (Crash + No Crash)}
+\begin{tabular}{l|ccc|c}
+\toprule
+\multirow{2}{*}{Outcome} & \multicolumn{3}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-4}
+ & 01 & 50 & 100 & \\
+\midrule
+Safe & 1661 & 1731 & 1784 & 5176 \\ 
+Unsafe & 0 & 0 & 0 & 0 \\ 
+\midrule
+Total & 1661 & 1731 & 1784 & 5176 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Grand Total Number of Ties by Data Training Percentage (Crash + No Crash).
+Each cell shows tied actions / query groups (unsafe actions in parentheses).}
+\begin{tabular}{c|ccc|c}
+\toprule
+\multirow{2}{*}{\# of optimal actions} & \multicolumn{3}{c|}{Data training percentage} & \multirow{2}{*}{Total} \\
+\cmidrule{2-4}
+ & 01 & 50 & 100 & \\
+\midrule
+1 & 249/249 (0) & 204/204 (0) & 185/185 (0) & 638/638 (0) \\ 
+2 & 468/234 (0) & 518/259 (0) & 502/251 (0) & 1488/744 (0) \\ 
+3 & 609/203 (0) & 654/218 (0) & 714/238 (0) & 1977/659 (0) \\ 
+4 & 300/75 (0) & 320/80 (0) & 348/87 (0) & 968/242 (0) \\ 
+5 & 35/7 (0) & 35/7 (0) & 35/7 (0) & 105/21 (0) \\ 
+6 & 0/0 & 0/0 & 0/0 & 0/0 \\ 
+\midrule
+Total groups & 768 (0) & 768 (0) & 768 (0) & 2304 (0) \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Grand Total Number of Actions Selected by Data Training Percentage (Crash + No Crash)}
+\begin{tabular}{l|ccc|c|c}
+\toprule
+\multirow{2}{*}{Action} & \multicolumn{3}{c|}{Data training percentage} & \multirow{2}{*}{Total} & \multirow{2}{*}{Safe (\%)} \\
+\cmidrule{2-4}
+ & 01 & 50 & 100 & & \\
+\midrule
+\texttt{cruise} & 320 & 320 & 320 & 960 & 100.0\% \\ 
+\texttt{keep} & 558 & 529 & 539 & 1626 & 100.0\% \\ 
+\texttt{change\_to\_left} & 80 & 80 & 80 & 240 & 100.0\% \\ 
+\texttt{change\_to\_right} & 0 & 80 & 80 & 160 & 100.0\% \\ 
+\texttt{swerve\_left} & 353 & 410 & 435 & 1198 & 100.0\% \\ 
+\texttt{swerve\_right} & 350 & 312 & 330 & 992 & 100.0\% \\ 
+\midrule
+\textbf{Total} & 1661 & 1731 & 1784 & 5176 & 100.0\% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

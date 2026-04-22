@@ -1,0 +1,115 @@
+
+==================================================
+Testing run: hc_aic_restart0_perturb1_maxpInf_fracp25
+Folds: 1-78
+Started: 2026-04-09 15:55:58
+==================================================
+
+==================================================
+Testing run: hc_aic_restart0_perturb1_maxpInf_fracp25
+Folds: 1-78
+Started: 2026-04-09 17:23:58
+==================================================
+Fold 2: 33.66s | rows=6
+Fold 3: 29.96s | rows=6
+Fold 4: 30.10s | rows=6
+Fold 5: 30.44s | rows=6
+Fold 6: 30.40s | rows=6
+Fold 7: 29.91s | rows=6
+Fold 8: 30.02s | rows=6
+Fold 9: 29.82s | rows=6
+Fold 10: 30.02s | rows=6
+Fold 11: 30.01s | rows=6
+Fold 12: 30.14s | rows=6
+Fold 13: 30.00s | rows=6
+Fold 14: 29.92s | rows=6
+Fold 15: 29.94s | rows=6
+Fold 16: 29.83s | rows=6
+Fold 17: 29.84s | rows=6
+Fold 18: 30.06s | rows=6
+Fold 19: 30.03s | rows=6
+Fold 20: 29.86s | rows=6
+Fold 21: 29.84s | rows=6
+Fold 22: 30.10s | rows=6
+Fold 23: 29.90s | rows=6
+Fold 24: 29.93s | rows=6
+Fold 25: 29.85s | rows=6
+Fold 26: 31.51s | rows=6
+Fold 27: 31.80s | rows=6
+Fold 28: 31.75s | rows=6
+Fold 29: 31.74s | rows=6
+Fold 30: 31.79s | rows=6
+Fold 31: 31.76s | rows=6
+Fold 32: 31.67s | rows=6
+Fold 33: 31.61s | rows=6
+Fold 34: 31.79s | rows=6
+Fold 35: 31.62s | rows=6
+Fold 36: 31.61s | rows=6
+Fold 37: 31.66s | rows=6
+Fold 38: 31.83s | rows=6
+Fold 39: 31.86s | rows=6
+Fold 40: 31.90s | rows=6
+Fold 41: 31.68s | rows=6
+Fold 42: 31.63s | rows=6
+Fold 43: 30.44s | rows=6
+Fold 44: 30.21s | rows=6
+Fold 45: 30.04s | rows=6
+Fold 46: 29.90s | rows=6
+Fold 47: 29.93s | rows=6
+Fold 48: 29.92s | rows=6
+Fold 49: 30.14s | rows=6
+Fold 50: 30.11s | rows=6
+Fold 51: 30.05s | rows=6
+Fold 52: 29.94s | rows=6
+Fold 53: 30.23s | rows=6
+Fold 54: 30.05s | rows=6
+Fold 55: 29.90s | rows=6
+Fold 56: 30.06s | rows=6
+Fold 57: 30.23s | rows=6
+Fold 58: 30.09s | rows=6
+Fold 59: 30.12s | rows=6
+Fold 60: 30.13s | rows=6
+Fold 61: 30.07s | rows=6
+Fold 62: 29.98s | rows=6
+Fold 63: 30.48s | rows=6
+Fold 64: 33.08s | rows=6
+Fold 65: 32.54s | rows=6
+Fold 66: 32.43s | rows=6
+Fold 67: 32.48s | rows=6
+Fold 68: 32.46s | rows=6
+Fold 69: 32.41s | rows=6
+Fold 70: 32.65s | rows=6
+Fold 71: 32.36s | rows=6
+Fold 72: 32.80s | rows=6
+Fold 73: 32.56s | rows=6
+Fold 74: 31.65s | rows=6
+Fold 75: 30.18s | rows=6
+Fold 76: 30.04s | rows=6
+Fold 77: 29.93s | rows=6
+Fold 78: 29.98s | rows=6
+
+==================================================
+SUMMARY: hc_aic_restart0_perturb1_maxpInf_fracp25
+Folds processed : 77
+Folds skipped   : 1 (already done)
+Folds failed    : 0
+Avg time/fold   : 30.81 +/- 1.05 s
+Aggregate CSV   : ./hc_aic_restart0_perturb1_maxpInf_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-09 18:03:31
+==================================================
+
+==================================================
+Testing run: hc_aic_restart0_perturb1_maxpInf_fracp25
+Folds: 1-1
+Started: 2026-04-10 08:32:17
+==================================================
+
+==================================================
+SUMMARY: hc_aic_restart0_perturb1_maxpInf_fracp25
+Folds processed : 0
+Folds skipped   : 1 (already done)
+Folds failed    : 0
+Avg time/fold   : 0.00 +/- 0.00 s
+Aggregate CSV   : ./hc_aic_restart0_perturb1_maxpInf_fracp25/twin_networks_results_all.csv
+Finished        : 2026-04-10 08:32:17
+==================================================

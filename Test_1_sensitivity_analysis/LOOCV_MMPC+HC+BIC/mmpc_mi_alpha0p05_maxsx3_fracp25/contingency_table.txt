@@ -1,0 +1,84 @@
+=== CRASH SECTION ===
+(Data from rows where potential_crash_before_intervention is True)
+
+Number of groups with exactly 1 best interventions: 1
+Number of groups with exactly 2 best interventions: 0
+Number of groups with exactly 3 best interventions: 0
+Number of groups with exactly 4 best interventions: 0
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 27
+
+Number of actions selected for each intervention type:
+change_to_left : Selected 27 times, Safe 5 times, Unsafe 22 times
+change_to_right : Selected 28 times, Safe 4 times, Unsafe 24 times
+cruise : Selected 27 times, Safe 5 times, Unsafe 22 times
+keep : Selected 27 times, Safe 27 times, Unsafe 0 times
+swerve_left : Selected 27 times, Safe 27 times, Unsafe 0 times
+swerve_right : Selected 27 times, Safe 27 times, Unsafe 0 times
+
+Total safe/unsafe actions:
+Total safe actions: 95
+Total unsafe actions: 68
+
+Transition matrix (before -> after):
+    True -> True: 68 (from 28 groups)
+    True -> False: 95 (from 27 groups)
+
+Detailed transition matrices by number of ties (CRASH SECTION):
+
+For groups with 1 tied best interventions:
+  - Transition matrix (before -> after):
+    True -> True: 1 (from 1 groups)
+    True -> False: 0 (from 0 groups)
+
+For groups with 6 tied best interventions:
+  - Transition matrix (before -> after):
+    True -> True: 67 (from 27 groups)
+    True -> False: 95 (from 27 groups)
+
+
+=== NO CRASH SECTION ===
+(Data from rows where potential_crash_before_intervention is False)
+
+Number of groups with exactly 1 best interventions: 1
+Number of groups with exactly 2 best interventions: 0
+Number of groups with exactly 3 best interventions: 0
+Number of groups with exactly 4 best interventions: 0
+Number of groups with exactly 5 best interventions: 0
+Number of groups with exactly 6 best interventions: 49
+
+Number of actions selected for each intervention type:
+change_to_left : Selected 49 times, Safe 8 times, Unsafe 41 times
+change_to_right : Selected 50 times, Safe 8 times, Unsafe 42 times
+cruise : Selected 49 times, Safe 17 times, Unsafe 32 times
+keep : Selected 49 times, Safe 36 times, Unsafe 13 times
+swerve_left : Selected 49 times, Safe 37 times, Unsafe 12 times
+swerve_right : Selected 49 times, Safe 36 times, Unsafe 13 times
+
+Total safe/unsafe actions:
+Total safe actions: 142
+Total unsafe actions: 153
+
+Transition matrix (before -> after):
+    False -> True: 153 (from 50 groups)
+    False -> False: 142 (from 49 groups)
+
+
+Detailed transition matrices by number of ties (NO CRASH SECTION):
+
+For groups with 1 tied best interventions:
+  - Transition matrix (before -> after):
+    False -> True: 1 (from 1 groups)
+    False -> False: 0 (from 0 groups)
+
+For groups with 6 tied best interventions:
+  - Transition matrix (before -> after):
+    False -> True: 152 (from 49 groups)
+    False -> False: 142 (from 49 groups)
+
+
+=== FINAL SUMMARY ===
+Random selection - Crash before (True) and after intervention (True): 13
+Random selection - Crash before (False) and after intervention (False): 32
+Random selection - Crash before (True) and after intervention (False): 15
+Random selection - Crash before (False) and after intervention (True): 18

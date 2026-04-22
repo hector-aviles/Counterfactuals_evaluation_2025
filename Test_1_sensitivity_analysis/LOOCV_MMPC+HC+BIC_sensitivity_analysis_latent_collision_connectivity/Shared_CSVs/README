@@ -1,0 +1,7 @@
+synthetic_DB.csv (500 repetitions of every crash example)
+integrated_DB_auto_humans_swerve.csv (all samples including swerve examples)
+
+complete_DB_discrete.csv (all examples synthetic_DB + integrated_DB_auto_humans_swerve)
+
+Rscript create_all_swerve_examples.R 
+

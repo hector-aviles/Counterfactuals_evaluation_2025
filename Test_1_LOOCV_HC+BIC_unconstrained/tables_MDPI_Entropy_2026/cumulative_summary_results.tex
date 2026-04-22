@@ -15,10 +15,10 @@
 \toprule
 Category & Crash Scenarios & No Crash Scenarios \\
 \midrule
-Safe Interventions & 1139 & 1124 \\ 
-Unsafe Interventions & 0 & 528 \\ 
+Safe Interventions & 1251 & 1799 \\ 
+Unsafe Interventions & 0 & 0 \\ 
 \midrule
-Total & 1139 & 1652 \\ 
+Total & 1251 & 1799 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -32,8 +32,8 @@ Total & 1139 & 1652 \\
 \cmidrule{2-3}
  & Crash Scenarios & No Crash Scenarios \\
 \midrule
-1 & 589 & 1228 \\ 
-2 & 275 & 212 \\ 
+1 & 477 & 1081 \\ 
+2 & 387 & 359 \\ 
 3 & 0 & 0 \\ 
 4 & 0 & 0 \\ 
 5 & 0 & 0 \\ 
@@ -54,13 +54,13 @@ Total & 864 & 1440 \\
  & Crash Scenarios & No Crash Scenarios \\
 \midrule
 \texttt{cruise} & 0 (0.0\% safe) & 0 (0.0\% safe) & 0 \\ 
-\texttt{keep} & 399 (100.0\% safe) & 816 (68.6\% safe) & 1215 \\ 
+\texttt{keep} & 861 (100.0\% safe) & 1049 (100.0\% safe) & 1910 \\ 
 \texttt{change\_to\_left} & 0 (0.0\% safe) & 0 (0.0\% safe) & 0 \\ 
 \texttt{change\_to\_right} & 0 (0.0\% safe) & 0 (0.0\% safe) & 0 \\ 
-\texttt{swerve\_left} & 529 (100.0\% safe) & 612 (76.5\% safe) & 1141 \\ 
-\texttt{swerve\_right} & 211 (100.0\% safe) & 224 (42.9\% safe) & 435 \\ 
+\texttt{swerve\_left} & 390 (100.0\% safe) & 628 (100.0\% safe) & 1018 \\ 
+\texttt{swerve\_right} & 0 (0.0\% safe) & 122 (100.0\% safe) & 122 \\ 
 \midrule
-\textbf{Total} & 1139 (100.0\% safe) & 1652 (68.0\% safe) & 2791 \\ 
+\textbf{Total} & 1251 (100.0\% safe) & 1799 (100.0\% safe) & 3050 \\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -76,8 +76,8 @@ Outcome & Count \\
 \midrule
 Crash unsafe (True $\rightarrow$ True) & 0 \\ 
 Crash safe (True $\rightarrow$ False) & 864 \\ 
-No crash safe (False $\rightarrow$ False) & 912 \\ 
-No crash unsafe (False $\rightarrow$ True) & 528 \\ 
+No crash safe (False $\rightarrow$ False) & 1440 \\ 
+No crash unsafe (False $\rightarrow$ True) & 0 \\ 
 \midrule
 Total & 2304 \\ 
 \bottomrule
